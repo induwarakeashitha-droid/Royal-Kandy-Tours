@@ -1,23 +1,128 @@
-.body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
+* {
+    box-sizing: border-box;
 }
 
-.navbar {
-    width: 100%;
-    height: 60px;
-    background-color: rgba(0, 0, 0, 0.5);
-    display: flex;
-    align-items: center;
-    padding: 0 20px;
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    background-color: #fff;
+    color: #2C2B2A;
 }
- 
-.navbar a {
-    color: white;
+
+a {
+    color: inherit;
     text-decoration: none;
-    margin-right: 20px;
 }
-.navbar a:hover {
-    color: #ffcc00
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+.serif {
+    font-family: 'Cormorant Garamond', serif;
+}
+
+.nav-link {
+    position: relative;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: currentColor;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+.nav-link.active::after {
+    background: #D4AF37;
+}
+
+.hero-gradient {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.4) 100%);
+}
+
+.gold-scrim {
+    position: relative;
+    overflow: hidden;
+}
+
+.gold-scrim::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(212, 175, 55, 0.15);
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    z-index: 10;
+}
+
+.gold-scrim:hover::before {
+    opacity: 1;
+}
+
+.gold-scrim:hover img {
+    filter: grayscale(0%) brightness(1.05);
+}
+
+.gold-scrim img {
+    filter: grayscale(100%);
+    transition: all 0.6s ease;
+}
+
+.rounded-jumbo {
+    border-radius: 2rem;
+}
+
+.shadow-soft {
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.06);
+}
+
+.shadow-lift {
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.10);
+}
+
+.animate-fadeUp {
+    animation: fadeUp 0.8s ease-out both;
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(12px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.tour-image,
+.destination-card img {
+    transition: transform 0.7s ease;
+}
+
+.stretched-link {
+    position: relative;
+    z-index: 2;
+}
+
+.stretched-link::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 1;
 }

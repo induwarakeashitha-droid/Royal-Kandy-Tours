@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        window.FontAwesomeConfig = {
+          autoReplaceSvg: 'nest'
+        };
+      </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destinations | CeylonCharm</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        ink: '#2C2B2A',
+                        muted: '#706E6B',
+                        line: '#EADCC9',
+                        sand: '#F5F2EB',
+                        pearl: '#FAF9F6',
+                        gold: '#D4AF37',
+                    },
+                    fontFamily: {
+                        serif: ['"Cormorant Garamond"', 'serif'],
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #fff; color: #2C2B2A; }
+        .serif { font-family: 'Cormorant Garamond', serif; }
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 100%;
+            height: 1px;
+            background: currentColor;
+            transform: scaleX(0);
+            transform-origin: right;
+            transition: transform 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+        }
+        .nav-link:hover::after, .nav-link.active::after {
+            transform: scaleX(1);
+            transform-origin: left;
+        }
+        .gold-scrim::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: rgba(212, 175, 55, 0.1);
+            opacity: 0;
+            transition: opacity 0.4s ease;
+            z-index: 10;
+        }
+        .gold-scrim:hover::before { opacity: 1; }
+        .destination-card:hover img { transform: scale(1.05); }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 w-full z-50 px-6 py-4 flex justify-between items-center bg-white/80 backdrop-blur-md border-b border-line">
+        <div class="flex items-center space-x-8">
+            <a href="Home__desktop.html" class="serif text-2xl font-medium tracking-tight text-ink">Ceylon<span class="text-gold">Charm</span></a>
+            <div class="hidden md:flex space-x-6 text-sm font-medium text-muted">
+                <a href="Home__desktop.html#about" class="nav-link relative">About Us</a>
+                <a href="Destinations__desktop.html" class="nav-link relative active text-ink">Destinations</a>
+                <a href="Home__desktop.html#reviews" class="nav-link relative">Reviews</a>
+                <a href="Home__desktop.html#gallery" class="nav-link relative">Gallery</a>
+            </div>
+        </div>
+        <button class="bg-ink text-white px-6 py-2 rounded-full text-xs uppercase tracking-widest hover:bg-black transition-colors">
+            Book Now
+        </button>
+    </nav>
+
+    <!-- Header -->
+    <header class="pt-32 pb-16 px-6 bg-pearl">
+        <div class="max-w-7xl mx-auto text-center">
+            <span class="text-xs uppercase tracking-[0.3em] text-gold mb-4 block">Curated Collection</span>
+            <h1 class="serif text-6xl md:text-7xl text-ink mb-6">Our Destinations</h1>
+            <p class="text-muted max-w-2xl mx-auto font-light leading-relaxed">From mist-covered mountains to sun-drenched golden shores, explore the diverse landscapes and ancient wonders of Sri Lanka.</p>
+        </div>
+    </header>
+
+    <!-- Filters (Simplified/Decent) -->
+    <div class="sticky top-[73px] z-40 bg-white border-b border-line px-6 py-4">
+        <div class="max-w-7xl mx-auto flex flex-wrap gap-4 items-center justify-center">
+            <button class="px-6 py-2 rounded-full border border-gold bg-gold text-white text-xs uppercase tracking-widest">All</button>
+            <button class="px-6 py-2 rounded-full border border-line text-muted text-xs uppercase tracking-widest hover:border-gold transition-colors">Coastal</button>
+            <button class="px-6 py-2 rounded-full border border-line text-muted text-xs uppercase tracking-widest hover:border-gold transition-colors">Cultural Triangle</button>
+            <button class="px-6 py-2 rounded-full border border-line text-muted text-xs uppercase tracking-widest hover:border-gold transition-colors">Highlands</button>
+            <button class="px-6 py-2 rounded-full border border-line text-muted text-xs uppercase tracking-widest hover:border-gold transition-colors">Wildlife</button>
+        </div>
+    </div>
+
+    <!-- Grid -->
+    <section class="py-16 px-6">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+            
+            <!-- Ella -->
+            <a href="#" class="destination-card group block">
+                <div class="relative aspect-[4/5] overflow-hidden rounded-2xl mb-6 gold-scrim shadow-sm">
+                    <img class="w-full h-full object-cover transition-transform duration-700" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/gen_af9ed59139_1a29e439ae24dc42.png" alt="the iconic nine arch bridge in ella sri lanka surrounded by lush green tea plantations and tropical " />
+                </div>
+                <div class="flex justify-between items-start">
+                    <div>
+                        <h3 class="serif text-3xl text-ink group-hover:text-gold transition-colors mb-1">Ella</h3>
+                        <p class="text-xs uppercase tracking-widest text-muted">Highlands • Scenic Railways</p>
+                    </div>
+                    <span class="text-gold"><i class="fa-solid fa-arrow-right-long opacity-0 group-hover:opacity-100 transition-all -translate-x-4 group-hover:translate-x-0"></i></span>
+                </div>
+            </a>
+
+            <!-- Kandy -->
+            <a href="#" class="destination-card group block">
+                <div class="relative aspect-[4/5] overflow-hidden rounded-2xl mb-6 gold-scrim shadow-sm">
+                    <img class="w-full h-full object-cover transition-transform duration-700" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/gen_d5b90a7856_9a9760158331a0a2.png" alt="the sacred temple of the tooth relic in kandy sri lanka reflecting in the lake at dusk, golden hour," />
+                </div>
+                <div class="flex justify-between items-start">
+                    <div>
+                        <h3 class="serif text-3xl text-ink group-hover:text-gold transition-colors mb-1">Kandy</h3>
+                        <p class="text-xs uppercase tracking-widest text-muted">Cultural • Heritage</p>
+                    </div>
+                    <span class="text-gold"><i class="fa-solid fa-arrow-right-long opacity-0 group-hover:opacity-100 transition-all -translate-x-4 group-hover:translate-x-0"></i></span>
+                </div>
+            </a>
+
+            <!-- Galle -->
+            <a href="#" class="destination-card group block">
+                <div class="relative aspect-[4/5] overflow-hidden rounded-2xl mb-6 gold-scrim shadow-sm">
+                    <img class="w-full h-full object-cover transition-transform duration-700" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/gen_fd4b9b94c3_6bc78d6d037e6293.png" alt="galle fort lighthouse standing tall against a blue sky by the indian ocean in sri lanka, colonial ar" />
+                </div>
+                <div class="flex justify-between items-start">
+                    <div>
+                        <h3 class="serif text-3xl text-ink group-hover:text-gold transition-colors mb-1">Galle</h3>
+                        <p class="text-xs uppercase tracking-widest text-muted">Coastal • Colonial History</p>
+                    </div>
+                    <span class="text-gold"><i class="fa-solid fa-arrow-right-long opacity-0 group-hover:opacity-100 transition-all -translate-x-4 group-hover:translate-x-0"></i></span>
+                </div>
+            </a>
+
+            <!-- Dambulla -->
+            <a href="#" class="destination-card group block">
+                <div class="relative aspect-[4/5] overflow-hidden rounded-2xl mb-6 gold-scrim shadow-sm">
+                    <img class="w-full h-full object-cover transition-transform duration-700" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/gen_ec53f98837_7633bcfc25f018b1.png" alt="ancient cave temple complex in dambulla sri lanka with gold buddha statues and intricate wall painti" />
+                </div>
+                <div class="flex justify-between items-start">
+                    <div>
+                        <h3 class="serif text-3xl text-ink group-hover:text-gold transition-colors mb-1">Dambulla</h3>
+                        <p class="text-xs uppercase tracking-widest text-muted">Spiritual • Ancient Caves</p>
+                    </div>
+                    <span class="text-gold"><i class="fa-solid fa-arrow-right-long opacity-0 group-hover:opacity-100 transition-all -translate-x-4 group-hover:translate-x-0"></i></span>
+                </div>
+            </a>
+
+            <!-- Mirissa -->
+            <a href="#" class="destination-card group block">
+                <div class="relative aspect-[4/5] overflow-hidden rounded-2xl mb-6 gold-scrim shadow-sm">
+                    <img class="w-full h-full object-cover transition-transform duration-700" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/gen_9e5accc72c_3c2dcbac4389e314.png" alt="coconut tree hill in mirissa sri lanka at sunset with palm trees overlooking the turquoise ocean, tr" />
+                </div>
+                <div class="flex justify-between items-start">
+                    <div>
+                        <h3 class="serif text-3xl text-ink group-hover:text-gold transition-colors mb-1">Mirissa</h3>
+                        <p class="text-xs uppercase tracking-widest text-muted">Beaches • Whale Watching</p>
+                    </div>
+                    <span class="text-gold"><i class="fa-solid fa-arrow-right-long opacity-0 group-hover:opacity-100 transition-all -translate-x-4 group-hover:translate-x-0"></i></span>
+                </div>
+            </a>
+
+            <!-- Anuradhapura -->
+            <a href="#" class="destination-card group block">
+                <div class="relative aspect-[4/5] overflow-hidden rounded-2xl mb-6 gold-scrim shadow-sm">
+                    <img class="w-full h-full object-cover transition-transform duration-700" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/gen_fc171a0e26_c088f2038a04cb62.png" alt="massive white stupa ruwanwelisaya in the ancient city of anuradhapura sri lanka against a clear sky," />
+                </div>
+                <div class="flex justify-between items-start">
+                    <div>
+                        <h3 class="serif text-3xl text-ink group-hover:text-gold transition-colors mb-1">Anuradhapura</h3>
+                        <p class="text-xs uppercase tracking-widest text-muted">History • Sacred City</p>
+                    </div>
+                    <span class="text-gold"><i class="fa-solid fa-arrow-right-long opacity-0 group-hover:opacity-100 transition-all -translate-x-4 group-hover:translate-x-0"></i></span>
+                </div>
+            </a>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-pearl pt-24 pb-12 px-6 border-t border-line mt-24">
+        <div class="max-w-7xl mx-auto text-center md:text-left">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
+                <div class="md:col-span-1">
+                    <a href="Home__desktop.html" class="serif text-3xl font-medium tracking-tight text-ink block mb-6">Ceylon<span class="text-gold">Charm</span></a>
+                    <p class="text-sm text-muted font-light leading-relaxed">Your trusted companion for discovering the authentic soul of Sri Lanka.</p>
+                </div>
+                <div>
+                    <h4 class="text-xs uppercase tracking-widest text-ink font-semibold mb-6">Explore</h4>
+                    <ul class="space-y-4 text-sm text-muted font-light">
+                        <li><a href="Destinations__desktop.html" class="hover:text-ink transition-colors">Destinations</a></li>
+                        <li><a href="#" class="hover:text-ink transition-colors">Experiences</a></li>
+                        <li><a href="#" class="hover:text-ink transition-colors">Travel Guides</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-xs uppercase tracking-widest text-ink font-semibold mb-6">Company</h4>
+                    <ul class="space-y-4 text-sm text-muted font-light">
+                        <li><a href="Home__desktop.html#about" class="hover:text-ink transition-colors">About Us</a></li>
+                        <li><a href="#" class="hover:text-ink transition-colors">Careers</a></li>
+                        <li><a href="#" class="hover:text-ink transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-xs uppercase tracking-widest text-ink font-semibold mb-6">Follow Us</h4>
+                    <div class="flex justify-center md:justify-start space-x-6 text-muted">
+                        <a href="#" class="hover:text-gold transition-colors"><i class="fa-brands fa-instagram text-xl"></i></a>
+                        <a href="#" class="hover:text-gold transition-colors"><i class="fa-brands fa-facebook text-xl"></i></a>
+                        <a href="#" class="hover:text-gold transition-colors"><i class="fa-brands fa-twitter text-xl"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-line pt-12 flex flex-col md:flex-row justify-between items-center text-xs text-muted font-light">
+                <p>&copy; 2024 CeylonCharm. All rights reserved.</p>
+                <div class="flex space-x-8 mt-6 md:mt-0">
+                    <a href="#" class="hover:text-ink">Privacy Policy</a>
+                    <a href="#" class="hover:text-ink">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

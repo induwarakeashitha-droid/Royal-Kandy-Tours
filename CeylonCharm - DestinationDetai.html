@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        window.FontAwesomeConfig = {
+          autoReplaceSvg: 'nest'
+        };
+      </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ella | CeylonCharm</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        ink: '#2C2B2A',
+                        muted: '#706E6B',
+                        line: '#EADCC9',
+                        sand: '#F5F2EB',
+                        pearl: '#FAF9F6',
+                        gold: '#D4AF37',
+                    },
+                    fontFamily: {
+                        serif: ['"Cormorant Garamond"', 'serif'],
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #fff; color: #2C2B2A; }
+        .serif { font-family: 'Cormorant Garamond', serif; }
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 100%;
+            height: 1px;
+            background: currentColor;
+            transform: scaleX(0);
+            transform-origin: right;
+            transition: transform 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+        }
+        .nav-link:hover::after, .nav-link.active::after {
+            transform: scaleX(1);
+            transform-origin: left;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 w-full z-50 px-6 py-4 flex justify-between items-center bg-white/80 backdrop-blur-md border-b border-line">
+        <div class="flex items-center space-x-8">
+            <a href="Home__desktop.html" class="serif text-2xl font-medium tracking-tight text-ink">Ceylon<span class="text-gold">Charm</span></a>
+            <div class="hidden md:flex space-x-6 text-sm font-medium text-muted">
+                <a href="Home__desktop.html#about" class="nav-link relative">About Us</a>
+                <a href="Destinations__desktop.html" class="nav-link relative active text-ink">Destinations</a>
+                <a href="Home__desktop.html#reviews" class="nav-link relative">Reviews</a>
+                <a href="Home__desktop.html#gallery" class="nav-link relative">Gallery</a>
+            </div>
+        </div>
+        <button class="bg-ink text-white px-6 py-2 rounded-full text-xs uppercase tracking-widest hover:bg-black transition-colors">
+            Book Now
+        </button>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="relative h-[70vh] flex items-end pb-24 px-6 overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img class="w-full h-full object-cover" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/gen_e186818720_62b15cdb91664bb8.png" alt="dramatic aerial view of the nine arch bridge in ella sri lanka surrounded by dense green pine forest" />
+            <div class="absolute inset-0 bg-gradient-to-t from-white via-transparent to-transparent"></div>
+        </div>
+        <div class="relative z-10 max-w-7xl mx-auto w-full">
+            <span class="text-xs uppercase tracking-[0.4em] text-ink/70 mb-4 block">Central Highlands</span>
+            <h1 class="serif text-7xl md:text-9xl text-ink leading-none">Ella</h1>
+        </div>
+    </header>
+
+    <!-- Content -->
+    <section class="py-20 px-6">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-16">
+            
+            <!-- Main Content -->
+            <div class="lg:col-span-8 space-y-12">
+                <div class="space-y-6 text-lg text-muted font-light leading-relaxed">
+                    <p class="text-ink font-normal text-2xl serif italic">"A small village nestled in the heart of the central highlands, Ella is a paradise for hikers, nature lovers, and anyone seeking serenity in the clouds."</p>
+                    <p>Ella is one of the most charming destinations in Sri Lanka. It’s a place where you can take it slow, walk through emerald tea plantations, and listen to the sounds of cascading waterfalls. The cool mountain air and the breathtaking views from Ella Gap make it an unforgettable stop on any itinerary.</p>
+                </div>
+
+                <!-- Key Highlights -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="space-y-4">
+                        <div class="h-64 rounded-2xl overflow-hidden">
+                            <img class="w-full h-full object-cover" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/gen_7f64988a8a_a6725229013b2c5e.png" alt="view of the ella gap between two mountains with valley below in sri lanka, atmospheric mist" />
+                        </div>
+                        <h3 class="serif text-2xl text-ink">Ella Gap</h3>
+                        <p class="text-sm text-muted font-light">Breathtaking views looking out between the mountains towards the southern plains.</p>
+                    </div>
+                    <div class="space-y-4">
+                        <div class="h-64 rounded-2xl overflow-hidden">
+                            <img class="w-full h-full object-cover" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/gen_1532c31c75_0788069745da52a7.png" alt="scenic blue train traveling through tea plantations in ella sri lanka, editorial travel photography" />
+                        </div>
+                        <h3 class="serif text-2xl text-ink">The Kandy-Ella Train</h3>
+                        <p class="text-sm text-muted font-light">Arguably the most beautiful train journey in the world, passing through tea estates and tunnels.</p>
+                    </div>
+                </div>
+
+                <!-- Things to do -->
+                <div class="pt-12 border-t border-line">
+                    <h3 class="serif text-4xl text-ink mb-8">What to Experience</h3>
+                    <ul class="space-y-6">
+                        <li class="flex items-start space-x-6">
+                            <span class="text-gold serif text-2xl">01.</span>
+                            <div>
+                                <h4 class="font-medium text-ink">Hike Little Adam's Peak</h4>
+                                <p class="text-sm text-muted font-light mt-1">An easy hike for panoramic views of the entire region, best enjoyed at sunrise.</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start space-x-6">
+                            <span class="text-gold serif text-2xl">02.</span>
+                            <div>
+                                <h4 class="font-medium text-ink">Visit Ravana Falls</h4>
+                                <p class="text-sm text-muted font-light mt-1">One of the widest waterfalls in the country, steeped in ancient Hindu mythology.</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start space-x-6">
+                            <span class="text-gold serif text-2xl">03.</span>
+                            <div>
+                                <h4 class="font-medium text-ink">Nine Arch Bridge at Noon</h4>
+                                <p class="text-sm text-muted font-light mt-1">Witness the iconic train pass over the architectural marvel of the colonial era.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Sidebar -->
+            <aside class="lg:col-span-4">
+                <div class="sticky top-32 space-y-8">
+                    <!-- Quick Facts -->
+                    <div class="bg-pearl p-8 rounded-3xl border border-line">
+                        <h4 class="serif text-2xl text-ink mb-6">Quick Facts</h4>
+                        <div class="space-y-4 text-sm">
+                            <div class="flex justify-between border-b border-line pb-4">
+                                <span class="text-muted">Elevation</span>
+                                <span class="text-ink font-medium">1,041 m</span>
+                            </div>
+                            <div class="flex justify-between border-b border-line pb-4">
+                                <span class="text-muted">Best Time</span>
+                                <span class="text-ink font-medium">Jan — May</span>
+                            </div>
+                            <div class="flex justify-between border-b border-line pb-4">
+                                <span class="text-muted">Climate</span>
+                                <span class="text-ink font-medium">Cool & Misty</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="text-muted">Stay Duration</span>
+                                <span class="text-ink font-medium">2-3 Nights</span>
+                            </div>
+                        </div>
+                        <button class="w-full bg-gold text-white mt-8 py-4 rounded-full text-xs uppercase tracking-widest hover:bg-ink transition-colors">
+                            Plan Your Visit
+                        </button>
+                    </div>
+
+                    <!-- Small Gallery Preview -->
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="h-32 rounded-xl overflow-hidden">
+                            <img class="w-full h-full object-cover" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/gen_6288346a29_2951713ae75121eb.png" alt="close up of tea picker in a tea estate in ella sri lanka, green background" />
+                        </div>
+                        <div class="h-32 rounded-xl overflow-hidden">
+                            <img class="w-full h-full object-cover" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/gen_c61093cf77_4cbc8d304f6e8793.png" alt="a cozy mountain lodge overlooking ella gap, interior view with terrace" />
+                        </div>
+                    </div>
+                </div>
+            </aside>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-pearl pt-24 pb-12 px-6 border-t border-line mt-24">
+        <div class="max-w-7xl mx-auto text-center md:text-left">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
+                <div class="md:col-span-1">
+                    <a href="Home__desktop.html" class="serif text-3xl font-medium tracking-tight text-ink block mb-6">Ceylon<span class="text-gold">Charm</span></a>
+                    <p class="text-sm text-muted font-light leading-relaxed">Your trusted companion for discovering the authentic soul of Sri Lanka.</p>
+                </div>
+                <div>
+                    <h4 class="text-xs uppercase tracking-widest text-ink font-semibold mb-6">Explore</h4>
+                    <ul class="space-y-4 text-sm text-muted font-light">
+                        <li><a href="Destinations__desktop.html" class="hover:text-ink transition-colors">Destinations</a></li>
+                        <li><a href="#" class="hover:text-ink transition-colors">Experiences</a></li>
+                        <li><a href="#" class="hover:text-ink transition-colors">Travel Guides</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-xs uppercase tracking-widest text-ink font-semibold mb-6">Company</h4>
+                    <ul class="space-y-4 text-sm text-muted font-light">
+                        <li><a href="Home__desktop.html#about" class="hover:text-ink transition-colors">About Us</a></li>
+                        <li><a href="#" class="hover:text-ink transition-colors">Careers</a></li>
+                        <li><a href="#" class="hover:text-ink transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-xs uppercase tracking-widest text-ink font-semibold mb-6">Follow Us</h4>
+                    <div class="flex justify-center md:justify-start space-x-6 text-muted">
+                        <a href="#" class="hover:text-gold transition-colors"><i class="fa-brands fa-instagram text-xl"></i></a>
+                        <a href="#" class="hover:text-gold transition-colors"><i class="fa-brands fa-facebook text-xl"></i></a>
+                        <a href="#" class="hover:text-gold transition-colors"><i class="fa-brands fa-twitter text-xl"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-line pt-12 flex flex-col md:flex-row justify-between items-center text-xs text-muted font-light">
+                <p>&copy; 2024 CeylonCharm. All rights reserved.</p>
+                <div class="flex space-x-8 mt-6 md:mt-0">
+                    <a href="#" class="hover:text-ink">Privacy Policy</a>
+                    <a href="#" class="hover:text-ink">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
