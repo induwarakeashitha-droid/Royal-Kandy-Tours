@@ -34,19 +34,65 @@
 </head>
 <body class="antialiased">
 
-    <!-- Navigation -->
-    <nav class="fixed top-0 left-0 w-full z-50 px-6 py-4 flex justify-between items-center bg-white/80 backdrop-blur-md border-b border-line">
-        <div class="flex items-center space-x-8">
-            <a href="index.html" class="serif text-2xl font-medium tracking-tight text-ink">Royal <span class="text-gold">Kandy</span> Tours</a>
-            <div class="hidden md:flex space-x-6 text-sm font-medium text-muted">
-                <a href="index.html#about" class="nav-link relative">About Us</a>
-                <a href="destinations.html" class="nav-link relative">Destinations</a>
-                <a href="tours.html" class="nav-link relative">Tours</a>
-                <a href="index.html#reviews" class="nav-link relative">Reviews</a>
-            </div>
+  <!-- STICKY HEADER WRAPPER -->
+  <header class="site-header light-header" id="siteHeader">
+    <!-- TOP UTILITY BAR (LINE 1) -->
+    <div class="topbar">
+      <div class="topbar-inner">
+        <div class="topbar-item email-item">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          <a href="mailto:hello@royalkandytours.com">hello@royalkandytours.com</a>
         </div>
-        <a href="tours.html" class="bg-ink text-white px-6 py-2 rounded-full text-xs uppercase tracking-widest hover:bg-black transition-colors">Book Now</a>
+        <div class="divider-dot"></div>
+        <div class="topbar-item">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+          <a href="tel:+94770000000">Call Nalinda</a>
+        </div>
+        <a class="book-pill" href="tours.html">
+          <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M8 2v4M16 2v4M3 10h18M5 4h14a2 2 0 012 2v14a2 2 0 01-2 2H5a2 2 0 01-2-2V6a2 2 0 012-2z"/></svg>
+          Book Your Tour
+        </a>
+      </div>
+    </div>
+
+    <!-- MAIN NAV BAR (LINE 2) -->
+    <nav class="navbar" id="navbar">
+      <div class="nav-inner">
+        <a href="index.html" class="logo">
+          <img src="assets/logo.png" alt="Royal Kandy Tours">
+        </a>
+
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#about">About Us</a></li>
+          <li><a href="tours.html" class="active">Tours</a></li>
+          <li><a href="destinations.html">Destinations</a></li>
+          <li><a href="index.html#reviews">Reviews</a></li>
+          <li><a href="index.html#gallery">Gallery</a></li>
+        </ul>
+
+        <div class="nav-icons">
+          <button class="menu-toggle" id="menuToggle" aria-label="Open menu">
+            <div class="bars"><span></span><span></span><span></span></div>
+            MENU
+          </button>
+        </div>
+      </div>
     </nav>
+  </header>
+
+  <!-- MOBILE DRAWER -->
+  <div class="scrim" id="scrim"></div>
+  <div class="mobile-drawer" id="mobileDrawer">
+    <button class="close-drawer" id="closeDrawer">&times;</button>
+    <img class="drawer-logo" src="assets/logo.png" alt="Royal Kandy Tours">
+    <a href="index.html">Home</a>
+    <a href="index.html#about">About Us</a>
+    <a href="tours.html" class="active">Tours</a>
+    <a href="destinations.html">Destinations</a>
+    <a href="index.html#reviews">Reviews</a>
+    <a href="index.html#gallery">Gallery</a>
+  </div>
 
     <!-- Header -->
     <header class="pt-32 pb-16 px-6 bg-pearl">
@@ -120,13 +166,13 @@
         <div id="tour-container" class="max-w-7xl mx-auto space-y-16">
             <div id="tour-1" class="tour-card group flex flex-col lg:flex-row bg-white rounded-[2rem] overflow-hidden border border-line shadow-sm hover:shadow-lift transition-all duration-500 cursor-pointer">
                 <div class="lg:w-2/5 relative h-80 lg:h-auto overflow-hidden">
-                    <img class="tour-image w-full h-full object-cover transition-transform duration-700" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/gen_55a41eaa46_4aafa72bda03be56.png" alt="Luxury wellness resort infinity pool in Sri Lanka." />
+                    <img class="tour-image w-full h-full object-cover transition-transform duration-700" src="assets/10day-private-tour.avif" alt="Luxury wellness resort infinity pool in Sri Lanka." />
                     <div class="absolute top-6 left-6 bg-white/90 backdrop-blur-md px-4 py-1 rounded-full text-[10px] uppercase tracking-widest font-bold text-gold z-10">Most Popular</div>
                 </div>
                 <div class="lg:w-3/5 p-8 lg:p-12 flex flex-col justify-between relative">
                     <div>
                         <div class="flex justify-between items-start mb-4">
-                            <span class="text-xs uppercase tracking-widest text-muted font-medium">10 Days • Luxury Heritage</span>
+                            <span class="text-xs uppercase tracking-widest text-muted font-medium">10 Days •</span>
                             <div class="flex items-center text-gold text-xs" aria-label="5 star rating out of 48 reviews">
                                 <i class="fa-solid fa-star"></i>
                                 <i class="fa-solid fa-star"></i>
@@ -139,7 +185,7 @@
                         <h3 class="serif text-4xl text-ink mb-6 group-hover:text-gold transition-colors">
                             <a href="#" class="stretched-link">The Royal Ceylon Heritage Tour</a>
                         </h3>
-                        <p class="text-muted font-light leading-relaxed mb-8">Travel back in time through the Cultural Triangle. Visit the ancient ruins of Anuradhapura, the rock fortress of Sigiriya, and the sacred temples of Kandy with private guided tours and luxury stays.</p>
+                        <p class="text-muted font-light leading-relaxed mb-8">Experience Sri Lanka in 10 days—climb Sigiriya, visit sacred Kandy, ride through tea country to Ella, go on a Yala safari, and unwind on Mirissa’s golden beaches and historic Galle Fort.</p>
                         <div class="grid grid-cols-2 md:grid-cols-4 gap-6 pb-8 border-b border-line mb-8">
                             <div class="text-center">
                                 <i class="fa-solid fa-hotel text-gold mb-2" aria-hidden="true"></i>
@@ -162,7 +208,7 @@
                     <div class="flex flex-col md:flex-row items-center justify-between gap-6">
                         <div>
                             <p class="text-xs text-muted uppercase tracking-widest font-medium">Starting from</p>
-                            <p class="text-2xl font-bold text-ink">$2,450 <span class="text-sm font-light text-muted">/ person</span></p>
+                            <p class="text-2xl font-bold text-ink">$860 <span class="text-sm font-light text-muted">/ person</span></p>
                         </div>
                         <div class="flex space-x-4 w-full md:w-auto relative z-20">
                             <button class="btn-action flex-grow md:flex-none px-8 py-4 rounded-full border border-ink text-xs uppercase tracking-widest hover:bg-ink hover:text-white transition-all font-bold">Details</button>
@@ -174,12 +220,12 @@
 
             <div id="tour-2" class="tour-card group flex flex-col lg:flex-row bg-white rounded-[2rem] overflow-hidden border border-line shadow-sm hover:shadow-lift transition-all duration-500 cursor-pointer">
                 <div class="lg:w-2/5 relative h-80 lg:h-auto overflow-hidden">
-                    <img class="tour-image w-full h-full object-cover transition-transform duration-700" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/gen_c9a533b931_fba11be326f10995.png" alt="Safari jeep in Yala National Park." />
+                    <img class="tour-image w-full h-full object-cover transition-transform duration-700" src="assets/selfie-at-nine-arch.avif" alt="Safari jeep in Yala National Park." />
                 </div>
                 <div class="lg:w-3/5 p-8 lg:p-12 flex flex-col justify-between relative">
                     <div>
                         <div class="flex justify-between items-start mb-4">
-                            <span class="text-xs uppercase tracking-widest text-muted font-medium">7 Days • Wild & Coastal Expedition</span>
+                            <span class="text-xs uppercase tracking-widest text-muted font-medium">7 Days • </span>
                             <div class="flex items-center text-gold text-xs" aria-label="4.5 star rating out of 32 reviews">
                                 <i class="fa-solid fa-star"></i>
                                 <i class="fa-solid fa-star"></i>
@@ -189,8 +235,8 @@
                                 <span class="text-muted ml-2">(32)</span>
                             </div>
                         </div>
-                        <h3 class="serif text-4xl text-ink mb-6 group-hover:text-gold transition-colors">Wildlife Safaris & Southern Shores</h3>
-                        <p class="text-muted font-light leading-relaxed mb-8">An adventure-packed week exploring the wild side of Sri Lanka. Safari through Yala and Udawalawe National Parks before relaxing on the pristine beaches of Mirissa and Galle.</p>
+                        <h3 class="serif text-4xl text-ink mb-6 group-hover:text-gold transition-colors">7-Day Highlights Tour: Sigiriya, Kandy & Ella</h3>
+                        <p class="text-muted font-light leading-relaxed mb-8">Discover Sri Lanka's ancient wonders. Visit sacred temples, explore ancient kingdoms, and experience authentic village life with a private guide and vehicle.</p>
                         <div class="grid grid-cols-2 md:grid-cols-4 gap-6 pb-8 border-b border-line mb-8">
                             <div class="text-center">
                                 <i class="fa-solid fa-tent text-gold mb-2" aria-hidden="true"></i>
@@ -213,7 +259,7 @@
                     <div class="flex flex-col md:flex-row items-center justify-between gap-6">
                         <div>
                             <p class="text-xs text-muted uppercase tracking-widest font-medium">Starting from</p>
-                            <p class="text-2xl font-bold text-ink">$1,890 <span class="text-sm font-light text-muted">/ person</span></p>
+                            <p class="text-2xl font-bold text-ink">$700 <span class="text-sm font-light text-muted">/ person</span></p>
                         </div>
                         <div class="flex space-x-4 w-full md:w-auto relative z-20">
                             <button class="btn-action flex-grow md:flex-none px-8 py-4 rounded-full border border-ink text-xs uppercase tracking-widest hover:bg-ink hover:text-white transition-all font-bold">Details</button>
@@ -225,12 +271,12 @@
 
             <div id="tour-3" class="tour-card group flex flex-col lg:flex-row bg-white rounded-[2rem] overflow-hidden border border-line shadow-sm hover:shadow-lift transition-all duration-500 cursor-pointer">
                 <div class="lg:w-2/5 relative h-80 lg:h-auto overflow-hidden">
-                    <img class="tour-image w-full h-full object-cover transition-transform duration-700" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/gen_83264902ef_9806cbbff9915da1.png" alt="Train winding through tea plantations in Sri Lanka." />
+                    <img class="tour-image w-full h-full object-cover transition-transform duration-700" src="assets/selfie-with-chinese-tourists.avif" alt="Train winding through tea plantations in Sri Lanka." />
                 </div>
                 <div class="lg:w-3/5 p-8 lg:p-12 flex flex-col justify-between relative">
                     <div>
                         <div class="flex justify-between items-start mb-4">
-                            <span class="text-xs uppercase tracking-widest text-muted font-medium">5 Days • Highlands Escape</span>
+                            <span class="text-xs uppercase tracking-widest text-muted font-medium">5 Days •</span>
                             <div class="flex items-center text-gold text-xs" aria-label="5 star rating out of 26 reviews">
                                 <i class="fa-solid fa-star"></i>
                                 <i class="fa-solid fa-star"></i>
@@ -240,31 +286,31 @@
                                 <span class="text-muted ml-2">(26)</span>
                             </div>
                         </div>
-                        <h3 class="serif text-4xl text-ink mb-6 group-hover:text-gold transition-colors">Tea Estates & Misty Mountains</h3>
-                        <p class="text-muted font-light leading-relaxed mb-8">A short but soul-stirring journey through the tea-covered hills. Experience the world-famous train ride, visit colonial tea factories, and hike the trails of Ella and Nuwara Eliya.</p>
+                        <h3 class="serif text-4xl text-ink mb-6 group-hover:text-gold transition-colors">5-Days Round Tour</h3>
+                        <p class="text-muted font-light leading-relaxed mb-8">Explore Sigiriya, Polonnaruwa, Minneriya Safari, Kandy, and Pinnawala on a 5-day private tour with airport transfers, private transport, and an English-speaking chauffeur-guide.</p>
                         <div class="grid grid-cols-2 md:grid-cols-4 gap-6 pb-8 border-b border-line mb-8">
                             <div class="text-center">
-                                <i class="fa-solid fa-leaf text-gold mb-2" aria-hidden="true"></i>
-                                <p class="text-[10px] uppercase tracking-widest text-ink font-semibold">Tea Tasting</p>
+                                <i class="fa-solid fa-tent text-gold mb-2" aria-hidden="true"></i>
+                                <p class="text-[10px] uppercase tracking-widest text-ink font-semibold">Luxury Camps</p>
                             </div>
                             <div class="text-center">
-                                <i class="fa-solid fa-train text-gold mb-2" aria-hidden="true"></i>
-                                <p class="text-[10px] uppercase tracking-widest text-ink font-semibold">1st Class Rail</p>
+                                <i class="fa-solid fa-compass text-gold mb-2" aria-hidden="true"></i>
+                                <p class="text-[10px] uppercase tracking-widest text-ink font-semibold">Expert Ranger</p>
                             </div>
                             <div class="text-center">
-                                <i class="fa-solid fa-mountain text-gold mb-2" aria-hidden="true"></i>
-                                <p class="text-[10px] uppercase tracking-widest text-ink font-semibold">Guided Hikes</p>
+                                <i class="fa-solid fa-binoculars text-gold mb-2" aria-hidden="true"></i>
+                                <p class="text-[10px] uppercase tracking-widest text-ink font-semibold">All Safaris</p>
                             </div>
                             <div class="text-center">
-                                <i class="fa-solid fa-mug-hot text-gold mb-2" aria-hidden="true"></i>
-                                <p class="text-[10px] uppercase tracking-widest text-ink font-semibold">Boutique Stays</p>
+                                <i class="fa-solid fa-umbrella-beach text-gold mb-2" aria-hidden="true"></i>
+                                <p class="text-[10px] uppercase tracking-widest text-ink font-semibold">Beach Stay</p>
                             </div>
                         </div>
                     </div>
                     <div class="flex flex-col md:flex-row items-center justify-between gap-6">
                         <div>
                             <p class="text-xs text-muted uppercase tracking-widest font-medium">Starting from</p>
-                            <p class="text-2xl font-bold text-ink">$1,250 <span class="text-sm font-light text-muted">/ person</span></p>
+                            <p class="text-2xl font-bold text-ink">$500 <span class="text-sm font-light text-muted">/ person</span></p>
                         </div>
                         <div class="flex space-x-4 w-full md:w-auto relative z-20">
                             <button class="btn-action flex-grow md:flex-none px-8 py-4 rounded-full border border-ink text-xs uppercase tracking-widest hover:bg-ink hover:text-white transition-all font-bold">Details</button>
