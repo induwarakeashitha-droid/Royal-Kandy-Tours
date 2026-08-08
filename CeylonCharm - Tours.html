@@ -341,7 +341,99 @@
             <button class="px-8 py-3 bg-ink text-white rounded-full text-xs uppercase tracking-widest hover:bg-black transition-all">Clear All Filters</button>
         </div>
     </section>
+<section class="trust-badges-section">
+  <div class="trust-badges-container">
+    
+    <!-- Partner / Accreditation Badges -->
+    <a href="YOUR_GETYOURGUIDE_LINK" target="_blank" rel="noopener" class="badge-item">
+      <img src="images/logos/getyourguide.svg" alt="GetYourGuide Authorized Partner">
+    </a>
 
+    <a href="YOUR_VIATOR_LINK" target="_blank" rel="noopener" class="badge-item">
+      <img src="images/logos/viator.svg" alt="Viator Partner">
+    </a>
+
+    <a href="YOUR_TRUSTPILOT_LINK" target="_blank" rel="noopener" class="badge-item">
+      <img src="images/logos/trustpilot.svg" alt="Trustpilot Rated">
+    </a>
+
+    <a href="YOUR_TOURRADAR_LINK" target="_blank" rel="noopener" class="badge-item">
+      <img src="images/logos/tourradar.svg" alt="TourRadar Verified">
+    </a>
+
+    <div class="badge-item">
+      <img src="images/logos/so-srilanka.png" alt="So Sri Lanka Tourism Board">
+    </div>
+
+    <div class="badge-item">
+      <img src="images/logos/safe-travels.png" alt="WTTC Safe Travels Approved Stamp">
+    </div>
+
+  </div>
+</section>
+<style>
+    /* Section Background & Padding */
+.trust-badges-section {
+  width: 100%;
+  background-color: #ffffff; /* Or transparent / matching section background */
+  padding: 25px 20px;
+  border-top: 1px solid #eaeaea;
+  border-bottom: 1px solid #eaeaea;
+}
+
+/* Flexbox Layout Container */
+.trust-badges-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+/* Individual Badge Item Styling */
+.badge-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+/* Uniform Logo Sizing */
+.badge-item img {
+  height: 42px;             /* Enforces equal visual height across different logos */
+  width: auto;
+  max-width: 140px;
+  object-fit: contain;
+  filter: grayscale(0%);     /* Set to grayscale(100%) if you prefer a subtle monochrome look */
+  opacity: 0.9;
+}
+
+/* Hover Effect for Clickable Partners */
+.badge-item:hover {
+  transform: translateY(-2px);
+}
+
+.badge-item img:hover {
+  opacity: 1;
+  filter: grayscale(0%);
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .trust-badges-container {
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .badge-item img {
+    height: 32px;            /* Slightly smaller on mobile screens */
+    max-width: 110px;
+  }
+}
+</style>
     <!-- Footer -->
     <footer class="bg-pearl pt-24 pb-12 px-6 border-t border-line mt-24">
         <div class="max-w-7xl mx-auto text-center md:text-left">

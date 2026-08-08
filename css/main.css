@@ -8,14 +8,14 @@
     --gold-deep:#a9791f;
     --gold:#cf9f3f;
     --gold-light:#e8c069;
-    --white:#ffffff;
+    --white:#f5efe1;
     --ink:#141210;
     --ink-soft:#2a251d;
     --line:#ece4d3;
   }
 
   *{margin:0;padding:0;box-sizing:border-box;}
-  body{font-family:'Jost',sans-serif;background:var(--white);color:var(--ink);}
+  body{font-family:'Jost',sans-serif;background:#f5efe1;color:var(--ink);}
   a{text-decoration:none;color:inherit;}
 
   /* ===== FIXED HEADER CONTAINER ===== */
@@ -451,7 +451,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Inter', sans-serif;
-    background-color: #fff;
+    background-color: #f5efe1;
     color: #2C2B2A;
 }
 
