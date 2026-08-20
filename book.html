@@ -1009,6 +1009,31 @@
         window.scrollTo({ top: 0, behavior: 'smooth' });
       }, 1500);
     }
+
+    // ---- Pre-select tour from URL query params ----
+    window.addEventListener('DOMContentLoaded', () => {
+      const urlParams = new URLSearchParams(window.location.search);
+      const tourParam = urlParams.get('tour');
+      if (tourParam) {
+        const decodedTour = decodeURIComponent(tourParam).toLowerCase();
+        let targetCard = null;
+        document.querySelectorAll('#tourCards .tour-card').forEach(card => {
+          const input = card.querySelector('input[type="radio"]');
+          if (input) {
+            const val = input.value.toLowerCase();
+            if (val.includes(decodedTour) || decodedTour.includes(val) || 
+               (decodedTour.includes('heritage') && val.includes('classic')) ||
+               (decodedTour.includes('highlights') && val.includes('cultural')) ||
+               (decodedTour.includes('5-day') && val.includes('highlands'))) {
+              targetCard = card;
+            }
+          }
+        });
+        if (targetCard) {
+          targetCard.click();
+        }
+      }
+    });
   </script>
 
 </body>

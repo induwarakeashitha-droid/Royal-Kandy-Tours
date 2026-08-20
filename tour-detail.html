@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Royal Ceylon Heritage Tour (10 Days) | Royal Kandy Tours</title>
+    <meta name="description" content="Embark on a 10-day luxury private journey across Sri Lanka: Sigiriya, Kandy, Ella, Yala National Park safari, Mirissa beach, and Galle Fort with Royal Kandy Tours.">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        ink: '#2C2B2A',
+                        muted: '#706E6B',
+                        line: '#EADCC9',
+                        sand: '#F5F2EB',
+                        pearl: '#FAF9F6',
+                        gold: '#D4AF37',
+                    },
+                    fontFamily: {
+                        serif: ['"Cormorant Garamond"', 'serif'],
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/fontawesome-config.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
+    <script src="js/site.js" defer></script>
+</head>
+<body class="antialiased bg-pearl text-ink font-sans">
+
+  <!-- STICKY HEADER WRAPPER -->
+  <header class="site-header" id="siteHeader">
+    <!-- TOP UTILITY BAR (LINE 1) -->
+    <div class="topbar">
+      <div class="topbar-inner">
+        <div class="topbar-item email-item">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          <a href="mailto:hello@royalkandytours.com">hello@royalkandytours.com</a>
+        </div>
+        <div class="divider-dot"></div>
+        <div class="topbar-item">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+          <a href="tel:+94770000000">Call Nalinda</a>
+        </div>
+        <a class="book-pill" href="book.html?tour=The+Royal+Ceylon+Heritage+Tour">
+          <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M8 2v4M16 2v4M3 10h18M5 4h14a2 2 0 012 2v14a2 2 0 01-2 2H5a2 2 0 01-2-2V6a2 2 0 012-2z"/></svg>
+          Book Your Tour
+        </a>
+      </div>
+    </div>
+
+    <!-- MAIN NAV BAR (LINE 2) -->
+    <nav class="navbar" id="navbar">
+      <div class="nav-inner">
+        <a href="index.html" class="logo">
+          <img src="assets/logo.png" alt="Royal Kandy Tours">
+        </a>
+
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#about">About Us</a></li>
+          <li><a href="tours.html" class="active">Tours</a></li>
+          <li><a href="destinations.html">Destinations</a></li>
+          <li><a href="index.html#reviews">Reviews</a></li>
+          <li><a href="index.html#gallery">Gallery</a></li>
+        </ul>
+
+        <div class="nav-icons">
+          <button class="menu-toggle" id="menuToggle" aria-label="Open menu">
+            <div class="bars"><span></span><span></span><span></span></div>
+            MENU
+          </button>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- MOBILE DRAWER -->
+  <div class="scrim" id="scrim"></div>
+  <div class="mobile-drawer" id="mobileDrawer">
+    <button class="close-drawer" id="closeDrawer">&times;</button>
+    <img class="drawer-logo" src="assets/logo.png" alt="Royal Kandy Tours">
+    <a href="index.html">Home</a>
+    <a href="index.html#about">About Us</a>
+    <a href="tours.html" class="active">Tours</a>
+    <a href="destinations.html">Destinations</a>
+    <a href="index.html#reviews">Reviews</a>
+    <a href="index.html#gallery">Gallery</a>
+  </div>
+
+  <!-- HERO SECTION -->
+  <header class="relative h-[75vh] flex items-end pb-16 px-6 overflow-hidden">
+      <div class="absolute inset-0 z-0">
+          <img class="w-full h-full object-cover" src="assets/10day-private-tour.avif" alt="The Royal Ceylon Heritage Tour luxury infinity pool and island landscape." />
+          <div class="absolute inset-0 bg-gradient-to-t from-ink via-ink/40 to-black/20"></div>
+      </div>
+      
+      <div class="relative z-10 max-w-7xl mx-auto w-full text-white">
+          <!-- BREADCRUMB -->
+          <nav class="flex items-center space-x-2 text-xs uppercase tracking-widest text-white/70 mb-4">
+              <a href="index.html" class="hover:text-gold transition-colors">Home</a>
+              <span>/</span>
+              <a href="tours.html" class="hover:text-gold transition-colors">Tours</a>
+              <span>/</span>
+              <span class="text-gold font-medium">10-Day Royal Ceylon</span>
+          </nav>
+
+          <div class="flex flex-wrap items-center gap-3 mb-4">
+              <span class="bg-gold text-white text-[10px] uppercase font-bold tracking-widest px-3 py-1 rounded-full">Most Popular Signature Tour</span>
+              <span class="bg-white/20 backdrop-blur-md text-white text-[10px] uppercase font-semibold tracking-widest px-3 py-1 rounded-full"><i class="fa-solid fa-clock mr-1"></i> 10 Days / 9 Nights</span>
+              <div class="flex items-center text-gold text-xs bg-black/40 backdrop-blur-md px-3 py-1 rounded-full border border-white/10">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <span class="text-white ml-2 text-[11px] font-semibold">5.0 (48 Reviews)</span>
+              </div>
+          </div>
+
+          <h1 class="serif text-5xl md:text-7xl lg:text-8xl text-white font-medium leading-tight mb-4">The Royal Ceylon Heritage Tour</h1>
+          <p class="text-white/80 max-w-2xl text-base md:text-lg font-light leading-relaxed">
+              The definitive Sri Lankan expedition: Climb ancient Sigiriya, explore sacred Kandy, ride mountain railways through Ella, spot wild leopards in Yala, and relax on Mirissa's golden coast.
+          </p>
+      </div>
+  </header>
+
+  <!-- QUICK STATS RIBBON -->
+  <section class="bg-white border-b border-line px-6 py-6 shadow-sm">
+      <div class="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6 text-center">
+          <div class="border-r border-line last:border-r-0 pr-4">
+              <span class="block text-[10px] uppercase tracking-widest text-muted font-semibold">Duration</span>
+              <span class="serif text-xl font-bold text-ink">10 Days / 9 Nights</span>
+          </div>
+          <div class="border-r border-line last:border-r-0 pr-4">
+              <span class="block text-[10px] uppercase tracking-widest text-muted font-semibold">Group Style</span>
+              <span class="serif text-xl font-bold text-ink">100% Private</span>
+          </div>
+          <div class="border-r border-line last:border-r-0 pr-4">
+              <span class="block text-[10px] uppercase tracking-widest text-muted font-semibold">Vehicle</span>
+              <span class="serif text-xl font-bold text-ink">Luxury AC Sedan/Van</span>
+          </div>
+          <div class="border-r border-line last:border-r-0 pr-4">
+              <span class="block text-[10px] uppercase tracking-widest text-muted font-semibold">Meals Included</span>
+              <span class="serif text-xl font-bold text-ink">Daily Breakfast & Dinner</span>
+          </div>
+          <div class="border-r border-line last:border-r-0 pr-4">
+              <span class="block text-[10px] uppercase tracking-widest text-muted font-semibold">Guide</span>
+              <span class="serif text-xl font-bold text-ink">Private Driver-Guide</span>
+          </div>
+          <div>
+              <span class="block text-[10px] uppercase tracking-widest text-muted font-semibold">Price From</span>
+              <span class="serif text-xl font-bold text-gold">$860 <span class="text-xs font-normal text-muted">/ person</span></span>
+          </div>
+      </div>
+  </section>
+
+  <!-- MAIN TOUR CONTENT SECTION -->
+  <section class="py-16 px-6">
+      <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12">
+          
+          <!-- LEFT COLUMN (8 COLS): OVERVIEW, ITINERARY, INCLUSIONS, FAQ -->
+          <div class="lg:col-span-8 space-y-16">
+              
+              <!-- OVERVIEW STORY -->
+              <div class="bg-white p-8 md:p-10 rounded-3xl border border-line shadow-sm space-y-6">
+                  <div class="border-l-2 border-gold pl-6 py-1">
+                      <p class="serif italic text-2xl md:text-3xl text-ink leading-relaxed">
+                          "Immerse yourself in thousands of years of royal history, misty cloud forests, thrilling safari adventures, and serene palm-fringed coastlines — seamlessly guided from start to finish."
+                      </p>
+                  </div>
+                  <p class="text-muted font-light leading-relaxed">
+                      Our signature 10-day private itinerary is designed for travelers who want an effortless, all-encompassing journey through Sri Lanka's icon destinations. Travel in comfort with your dedicated English-speaking chauffeur-guide, staying in handpicked boutique hotels and luxury resorts.
+                  </p>
+                  <p class="text-muted font-light leading-relaxed">
+                      Every element is tailored to your pacing: skip standard tourist rushes, enjoy authentic village lunches, take the world-famous Kandy to Ella train ride, experience jeep safaris deep inside Yala, and soak up the heritage charm of Galle Fort.
+                  </p>
+
+                  <!-- HIGHLIGHT BULLETS -->
+                  <div class="grid grid-cols-1 md:grid-cols-2 gap-4 pt-4 border-t border-line text-sm">
+                      <div class="flex items-center space-x-3 text-ink">
+                          <i class="fa-solid fa-check text-gold"></i>
+                          <span>Climb UNESCO Sigiriya Rock Fortress at sunrise</span>
+                      </div>
+                      <div class="flex items-center space-x-3 text-ink">
+                          <i class="fa-solid fa-check text-gold"></i>
+                          <span>Visit Kandy's Sacred Temple of the Tooth</span>
+                      </div>
+                      <div class="flex items-center space-x-3 text-ink">
+                          <i class="fa-solid fa-check text-gold"></i>
+                          <span>Scenic blue train journey from Kandy to Ella</span>
+                      </div>
+                      <div class="flex items-center space-x-3 text-ink">
+                          <i class="fa-solid fa-check text-gold"></i>
+                          <span>Private 4x4 Jeep Safari in Yala National Park</span>
+                      </div>
+                      <div class="flex items-center space-x-3 text-ink">
+                          <i class="fa-solid fa-check text-gold"></i>
+                          <span>Sunset walk on historic Galle Fort ramparts</span>
+                      </div>
+                      <div class="flex items-center space-x-3 text-ink">
+                          <i class="fa-solid fa-check text-gold"></i>
+                          <span>Relaxation on Mirissa's palm-lined beaches</span>
+                      </div>
+                  </div>
+              </div>
+
+              <!-- ROUTE MAP HIGHLIGHT -->
+              <div class="bg-sand/60 p-8 rounded-3xl border border-line">
+                  <h3 class="serif text-3xl text-ink mb-4">Tour Route Overview</h3>
+                  <div class="flex flex-wrap items-center gap-2 text-xs font-semibold uppercase tracking-wider text-muted">
+                      <span class="bg-white px-4 py-2 rounded-full border border-line text-ink">Colombo Airport</span>
+                      <i class="fa-solid fa-arrow-right text-gold"></i>
+                      <span class="bg-white px-4 py-2 rounded-full border border-line text-ink">Sigiriya & Dambulla</span>
+                      <i class="fa-solid fa-arrow-right text-gold"></i>
+                      <span class="bg-white px-4 py-2 rounded-full border border-line text-ink">Kandy</span>
+                      <i class="fa-solid fa-arrow-right text-gold"></i>
+                      <span class="bg-white px-4 py-2 rounded-full border border-line text-ink">Ella Highlands</span>
+                      <i class="fa-solid fa-arrow-right text-gold"></i>
+                      <span class="bg-white px-4 py-2 rounded-full border border-line text-ink">Yala Safari</span>
+                      <i class="fa-solid fa-arrow-right text-gold"></i>
+                      <span class="bg-white px-4 py-2 rounded-full border border-line text-ink">Mirissa & Galle</span>
+                  </div>
+              </div>
+
+              <!-- DAY BY DAY ITINERARY -->
+              <div class="space-y-8">
+                  <div class="flex justify-between items-end">
+                      <div>
+                          <span class="text-xs uppercase tracking-[0.3em] text-gold font-semibold block mb-2">Detailed Schedule</span>
+                          <h3 class="serif text-4xl text-ink">Day-by-Day Itinerary</h3>
+                      </div>
+                      <span class="text-xs text-muted font-light">Customizable upon request</span>
+                  </div>
+
+                  <div class="space-y-6">
+                      
+                      <!-- DAY 1 -->
+                      <div class="bg-white rounded-3xl p-8 border border-line shadow-sm hover:shadow-md transition-all">
+                          <div class="flex flex-col md:flex-row md:items-center justify-between border-b border-line pb-4 mb-6 gap-2">
+                              <div class="flex items-center space-x-4">
+                                  <span class="bg-gold text-white text-xs font-bold uppercase tracking-widest px-4 py-1.5 rounded-full">Day 01</span>
+                                  <h4 class="serif text-2xl text-ink font-semibold">Arrival in Colombo & Transfer to Sigiriya</h4>
+                              </div>
+                              <span class="text-xs uppercase tracking-wider text-muted"><i class="fa-solid fa-location-dot text-gold mr-1"></i> Sigiriya</span>
+                          </div>
+                          <div class="grid grid-cols-1 md:grid-cols-12 gap-6">
+                              <div class="md:col-span-8 space-y-4 text-sm text-muted font-light leading-relaxed">
+                                  <p>Welcome to Sri Lanka! Meet your private chauffeur-guide Nalinda upon arrival at Bandaranaike International Airport (CMB). Board your air-conditioned vehicle and journey through lush coconut groves to the heart of the Cultural Triangle in Sigiriya.</p>
+                                  <p>Check in to your luxury eco-resort, unwind by the pool, and enjoy a traditional Sri Lankan welcome dinner.</p>
+                                  <div class="flex items-center space-x-6 text-xs text-ink pt-2 font-medium">
+                                      <span><i class="fa-solid fa-hotel text-gold mr-1"></i> Stay: Hotel Sigiriya / Aliya Resort</span>
+                                      <span><i class="fa-solid fa-utensils text-gold mr-1"></i> Meals: Dinner</span>
+                                  </div>
+                              </div>
+                              <div class="md:col-span-4 h-40 rounded-2xl overflow-hidden">
+                                  <img src="assets/Anuradhapura-Sri-Lanka-Cultural-Triangle.jpeg" alt="Sigiriya rock fortress landscape" class="w-full h-full object-cover">
+                              </div>
+                          </div>
+                      </div>
+
+                      <!-- DAY 2 -->
+                      <div class="bg-white rounded-3xl p-8 border border-line shadow-sm hover:shadow-md transition-all">
+                          <div class="flex flex-col md:flex-row md:items-center justify-between border-b border-line pb-4 mb-6 gap-2">
+                              <div class="flex items-center space-x-4">
+                                  <span class="bg-gold text-white text-xs font-bold uppercase tracking-widest px-4 py-1.5 rounded-full">Day 02</span>
+                                  <h4 class="serif text-2xl text-ink font-semibold">Sigiriya Rock Citadel & Village Safari</h4>
+                              </div>
+                              <span class="text-xs uppercase tracking-wider text-muted"><i class="fa-solid fa-location-dot text-gold mr-1"></i> Sigiriya</span>
+                          </div>
+                          <div class="grid grid-cols-1 md:grid-cols-12 gap-6">
+                              <div class="md:col-span-8 space-y-4 text-sm text-muted font-light leading-relaxed">
+                                  <p>Ascend the iconic 5th-century Sigiriya Rock Fortress (Lion Rock) in the cool morning air. Marvel at ancient frescoes, mirror walls, and the summit palace ruins overlooking 360-degree jungle canopy.</p>
+                                  <p>In the afternoon, experience an authentic village safari: ride a bullock cart, cross a lotus lake on a wooden catamaran, and participate in a live traditional cooking demonstration with local hosts.</p>
+                                  <div class="flex items-center space-x-6 text-xs text-ink pt-2 font-medium">
+                                      <span><i class="fa-solid fa-hotel text-gold mr-1"></i> Stay: Hotel Sigiriya</span>
+                                      <span><i class="fa-solid fa-utensils text-gold mr-1"></i> Meals: Breakfast, Village Lunch, Dinner</span>
+                                  </div>
+                              </div>
+                              <div class="md:col-span-4 h-40 rounded-2xl overflow-hidden">
+                                  <img src="assets/Sri-Lanka-natural-landscape-view.jpg" alt="Sigiriya village safari and nature" class="w-full h-full object-cover">
+                              </div>
+                          </div>
+                      </div>
+
+                      <!-- DAY 3 -->
+                      <div class="bg-white rounded-3xl p-8 border border-line shadow-sm hover:shadow-md transition-all">
+                          <div class="flex flex-col md:flex-row md:items-center justify-between border-b border-line pb-4 mb-6 gap-2">
+                              <div class="flex items-center space-x-4">
+                                  <span class="bg-gold text-white text-xs font-bold uppercase tracking-widest px-4 py-1.5 rounded-full">Day 03</span>
+                                  <h4 class="serif text-2xl text-ink font-semibold">Dambulla Cave Temple & Drive to Kandy</h4>
+                              </div>
+                              <span class="text-xs uppercase tracking-wider text-muted"><i class="fa-solid fa-location-dot text-gold mr-1"></i> Kandy</span>
+                          </div>
+                          <div class="grid grid-cols-1 md:grid-cols-12 gap-6">
+                              <div class="md:col-span-8 space-y-4 text-sm text-muted font-light leading-relaxed">
+                                  <p>Explore the UNESCO-listed Dambulla Cave Temple complex, housing over 150 serene Buddha statues and magnificent ancient ceiling murals carved into solid granite caves.</p>
+                                  <p>Continue drive southwards to Kandy, stopping at a spice garden in Matale to learn about Sri Lankan cinnamon, cardamom, and herbal medicine. Evening check-in at a hillside hotel overlooking Kandy Lake.</p>
+                                  <div class="flex items-center space-x-6 text-xs text-ink pt-2 font-medium">
+                                      <span><i class="fa-solid fa-hotel text-gold mr-1"></i> Stay: Earl's Regency / Golden Crown Kandy</span>
+                                      <span><i class="fa-solid fa-utensils text-gold mr-1"></i> Meals: Breakfast, Dinner</span>
+                                  </div>
+                              </div>
+                              <div class="md:col-span-4 h-40 rounded-2xl overflow-hidden">
+                                  <img src="assets/Dambulla-Cave-Temple.jpg" alt="Dambulla cave temple view" class="w-full h-full object-cover">
+                              </div>
+                          </div>
+                      </div>
+
+                      <!-- DAY 4 -->
+                      <div class="bg-white rounded-3xl p-8 border border-line shadow-sm hover:shadow-md transition-all">
+                          <div class="flex flex-col md:flex-row md:items-center justify-between border-b border-line pb-4 mb-6 gap-2">
+                              <div class="flex items-center space-x-4">
+                                  <span class="bg-gold text-white text-xs font-bold uppercase tracking-widest px-4 py-1.5 rounded-full">Day 04</span>
+                                  <h4 class="serif text-2xl text-ink font-semibold">Kandy Cultural Highlights & Sacred Temple</h4>
+                              </div>
+                              <span class="text-xs uppercase tracking-wider text-muted"><i class="fa-solid fa-location-dot text-gold mr-1"></i> Kandy</span>
+                          </div>
+                          <div class="grid grid-cols-1 md:grid-cols-12 gap-6">
+                              <div class="md:col-span-8 space-y-4 text-sm text-muted font-light leading-relaxed">
+                                  <p>Discover the last royal capital of Sri Lanka. Stroll around Kandy Lake, visit the Royal Botanical Gardens of Peradeniya featuring giant palm avenues and orchid houses.</p>
+                                  <p>In the evening, attend the traditional Kandyan Cultural Dance performance followed by a evening ceremony at the sacred Temple of the Sacred Tooth Relic (Sri Dalada Maligawa).</p>
+                                  <div class="flex items-center space-x-6 text-xs text-ink pt-2 font-medium">
+                                      <span><i class="fa-solid fa-hotel text-gold mr-1"></i> Stay: Earl's Regency Kandy</span>
+                                      <span><i class="fa-solid fa-utensils text-gold mr-1"></i> Meals: Breakfast, Dinner</span>
+                                  </div>
+                              </div>
+                              <div class="md:col-span-4 h-40 rounded-2xl overflow-hidden">
+                                  <img src="assets/kandy-lake.jpg" alt="Kandy lake view" class="w-full h-full object-cover">
+                              </div>
+                          </div>
+                      </div>
+
+                      <!-- DAY 5 -->
+                      <div class="bg-white rounded-3xl p-8 border border-line shadow-sm hover:shadow-md transition-all">
+                          <div class="flex flex-col md:flex-row md:items-center justify-between border-b border-line pb-4 mb-6 gap-2">
+                              <div class="flex items-center space-x-4">
+                                  <span class="bg-gold text-white text-xs font-bold uppercase tracking-widest px-4 py-1.5 rounded-full">Day 05</span>
+                                  <h4 class="serif text-2xl text-ink font-semibold">Scenic Hill Country Train Journey to Ella</h4>
+                              </div>
+                              <span class="text-xs uppercase tracking-wider text-muted"><i class="fa-solid fa-location-dot text-gold mr-1"></i> Ella</span>
+                          </div>
+                          <div class="grid grid-cols-1 md:grid-cols-12 gap-6">
+                              <div class="md:col-span-8 space-y-4 text-sm text-muted font-light leading-relaxed">
+                                  <p>Board the famous mountain blue train from Peradeniya / Nuwara Eliya to Ella. Ride through rolling emerald tea estates, mist-covered valleys, and cascading waterfalls — renowned as one of the world's most scenic train rides.</p>
+                                  <p>Your driver will pick you up at Ella station and check into your mountain view suite overlooking Ella Gap.</p>
+                                  <div class="flex items-center space-x-6 text-xs text-ink pt-2 font-medium">
+                                      <span><i class="fa-solid fa-hotel text-gold mr-1"></i> Stay: 98 Acres Resort & Spa / Ella Mount Heaven</span>
+                                      <span><i class="fa-solid fa-utensils text-gold mr-1"></i> Meals: Breakfast, Dinner</span>
+                                  </div>
+                              </div>
+                              <div class="md:col-span-4 h-40 rounded-2xl overflow-hidden">
+                                  <img src="assets/selfie-at-nine-arch.avif" alt="Scenic train journey to Ella" class="w-full h-full object-cover">
+                              </div>
+                          </div>
+                      </div>
+
+                      <!-- DAY 6 -->
+                      <div class="bg-white rounded-3xl p-8 border border-line shadow-sm hover:shadow-md transition-all">
+                          <div class="flex flex-col md:flex-row md:items-center justify-between border-b border-line pb-4 mb-6 gap-2">
+                              <div class="flex items-center space-x-4">
+                                  <span class="bg-gold text-white text-xs font-bold uppercase tracking-widest px-4 py-1.5 rounded-full">Day 06</span>
+                                  <h4 class="serif text-2xl text-ink font-semibold">Ella Gap, Nine Arch Bridge & Little Adam's Peak</h4>
+                              </div>
+                              <span class="text-xs uppercase tracking-wider text-muted"><i class="fa-solid fa-location-dot text-gold mr-1"></i> Ella</span>
+                          </div>
+                          <div class="grid grid-cols-1 md:grid-cols-12 gap-6">
+                              <div class="md:col-span-8 space-y-4 text-sm text-muted font-light leading-relaxed">
+                                  <p>Wake up to crisp mountain air. Walk through tea fields to the iconic Nine Arch Bridge in time to watch the train pass across the colonial stone viaduct.</p>
+                                  <p>Take an easy afternoon hike up Little Adam's Peak for 360-degree views of Ella Gap, followed by relaxing at a panoramic mountain café or zip-lining experience.</p>
+                                  <div class="flex items-center space-x-6 text-xs text-ink pt-2 font-medium">
+                                      <span><i class="fa-solid fa-hotel text-gold mr-1"></i> Stay: 98 Acres Resort & Spa</span>
+                                      <span><i class="fa-solid fa-utensils text-gold mr-1"></i> Meals: Breakfast, Dinner</span>
+                                  </div>
+                              </div>
+                              <div class="md:col-span-4 h-40 rounded-2xl overflow-hidden">
+                                  <img src="assets/Ella-9arch-landscapejpg.jpg" alt="Nine arch bridge in Ella" class="w-full h-full object-cover">
+                              </div>
+                          </div>
+                      </div>
+
+                      <!-- DAY 7 -->
+                      <div class="bg-white rounded-3xl p-8 border border-line shadow-sm hover:shadow-md transition-all">
+                          <div class="flex flex-col md:flex-row md:items-center justify-between border-b border-line pb-4 mb-6 gap-2">
+                              <div class="flex items-center space-x-4">
+                                  <span class="bg-gold text-white text-xs font-bold uppercase tracking-widest px-4 py-1.5 rounded-full">Day 07</span>
+                                  <h4 class="serif text-2xl text-ink font-semibold">Ella to Yala & Private 4x4 Wildlife Safari</h4>
+                              </div>
+                              <span class="text-xs uppercase tracking-wider text-muted"><i class="fa-solid fa-location-dot text-gold mr-1"></i> Yala</span>
+                          </div>
+                          <div class="grid grid-cols-1 md:grid-cols-12 gap-6">
+                              <div class="md:col-span-8 space-y-4 text-sm text-muted font-light leading-relaxed">
+                                  <p>Descend from the central highlands through Ravana Waterfalls toward the southern dry zone. Arrive in Yala by afternoon.</p>
+                                  <p>Embark on an exciting 4x4 private jeep safari inside Yala National Park — home to one of the world's highest density of leopards, Asian wild elephants, sloth bears, and crocodiles.</p>
+                                  <div class="flex items-center space-x-6 text-xs text-ink pt-2 font-medium">
+                                      <span><i class="fa-solid fa-hotel text-gold mr-1"></i> Stay: Cinnamon Wild Yala / Jetwing Yala</span>
+                                      <span><i class="fa-solid fa-utensils text-gold mr-1"></i> Meals: Breakfast, Safari Snacks, Dinner</span>
+                                  </div>
+                              </div>
+                              <div class="md:col-span-4 h-40 rounded-2xl overflow-hidden">
+                                  <img src="at_yala_safari.jpg" alt="Yala safari leopard and wildlife" class="w-full h-full object-cover">
+                              </div>
+                          </div>
+                      </div>
+
+                      <!-- DAY 8 -->
+                      <div class="bg-white rounded-3xl p-8 border border-line shadow-sm hover:shadow-md transition-all">
+                          <div class="flex flex-col md:flex-row md:items-center justify-between border-b border-line pb-4 mb-6 gap-2">
+                              <div class="flex items-center space-x-4">
+                                  <span class="bg-gold text-white text-xs font-bold uppercase tracking-widest px-4 py-1.5 rounded-full">Day 08</span>
+                                  <h4 class="serif text-2xl text-ink font-semibold">Coastal Journey to Mirissa & Coconut Tree Hill</h4>
+                              </div>
+                              <span class="text-xs uppercase tracking-wider text-muted"><i class="fa-solid fa-location-dot text-gold mr-1"></i> Mirissa</span>
+                          </div>
+                          <div class="grid grid-cols-1 md:grid-cols-12 gap-6">
+                              <div class="md:col-span-8 space-y-4 text-sm text-muted font-light leading-relaxed">
+                                  <p>Drive along the scenic southern shoreline to the tropical paradise of Mirissa. Check in to your beach resort.</p>
+                                  <p>Spend the afternoon relaxing on golden sands, watching stilt fishermen in Weligama, and catching sunset at the famous Coconut Tree Hill vantage point.</p>
+                                  <div class="flex items-center space-x-6 text-xs text-ink pt-2 font-medium">
+                                      <span><i class="fa-solid fa-hotel text-gold mr-1"></i> Stay: Mandara Resort Mirissa / Sri Sharavi Beach</span>
+                                      <span><i class="fa-solid fa-utensils text-gold mr-1"></i> Meals: Breakfast, Dinner</span>
+                                  </div>
+                              </div>
+                              <div class="md:col-span-4 h-40 rounded-2xl overflow-hidden">
+                                  <img src="assets/mirissa-coconuttreehill-srilanka.jpg" alt="Mirissa coconut tree hill" class="w-full h-full object-cover">
+                              </div>
+                          </div>
+                      </div>
+
+                      <!-- DAY 9 -->
+                      <div class="bg-white rounded-3xl p-8 border border-line shadow-sm hover:shadow-md transition-all">
+                          <div class="flex flex-col md:flex-row md:items-center justify-between border-b border-line pb-4 mb-6 gap-2">
+                              <div class="flex items-center space-x-4">
+                                  <span class="bg-gold text-white text-xs font-bold uppercase tracking-widest px-4 py-1.5 rounded-full">Day 09</span>
+                                  <h4 class="serif text-2xl text-ink font-semibold">Mirissa Whale Watching & Historic Galle Fort</h4>
+                              </div>
+                              <span class="text-xs uppercase tracking-wider text-muted"><i class="fa-solid fa-location-dot text-gold mr-1"></i> Galle</span>
+                          </div>
+                          <div class="grid grid-cols-1 md:grid-cols-12 gap-6">
+                              <div class="md:col-span-8 space-y-4 text-sm text-muted font-light leading-relaxed">
+                                  <p>Optional early morning catamaran excursion to spot Blue Whales and playful dolphins off the coast of Mirissa.</p>
+                                  <p>Later, explore UNESCO World Heritage Galle Fort. Walk cobblestone streets lined with Dutch-colonial villas, artisan boutiques, lighthouse views, and sunset watchpoints over the Indian Ocean.</p>
+                                  <div class="flex items-center space-x-6 text-xs text-ink pt-2 font-medium">
+                                      <span><i class="fa-solid fa-hotel text-gold mr-1"></i> Stay: Fort Bazaar / Amangalla Galle</span>
+                                      <span><i class="fa-solid fa-utensils text-gold mr-1"></i> Meals: Breakfast, Farewell Dinner</span>
+                                  </div>
+                              </div>
+                              <div class="md:col-span-4 h-40 rounded-2xl overflow-hidden">
+                                  <img src="assets/Lighthouse-Fort-Galle-Sri-Lanka.jpg" alt="Galle Fort Lighthouse" class="w-full h-full object-cover">
+                              </div>
+                          </div>
+                      </div>
+
+                      <!-- DAY 10 -->
+                      <div class="bg-white rounded-3xl p-8 border border-line shadow-sm hover:shadow-md transition-all">
+                          <div class="flex flex-col md:flex-row md:items-center justify-between border-b border-line pb-4 mb-6 gap-2">
+                              <div class="flex items-center space-x-4">
+                                  <span class="bg-gold text-white text-xs font-bold uppercase tracking-widest px-4 py-1.5 rounded-full">Day 10</span>
+                                  <h4 class="serif text-2xl text-ink font-semibold">Galle to Colombo & Airport Departure</h4>
+                              </div>
+                              <span class="text-xs uppercase tracking-wider text-muted"><i class="fa-solid fa-location-dot text-gold mr-1"></i> Colombo / CMB Airport</span>
+                          </div>
+                          <div class="grid grid-cols-1 md:grid-cols-12 gap-6">
+                              <div class="md:col-span-8 space-y-4 text-sm text-muted font-light leading-relaxed">
+                                  <p>Enjoy a relaxed breakfast at Galle Fort. Drive along the Southern Expressway toward Colombo for a quick panoramic city tour, last-minute souvenir shopping, or tea tasting.</p>
+                                  <p>Transfer to Colombo International Airport (CMB) with memories to last a lifetime. Safe travels!</p>
+                                  <div class="flex items-center space-x-6 text-xs text-ink pt-2 font-medium">
+                                      <span><i class="fa-solid fa-plane text-gold mr-1"></i> Departure Transfer Included</span>
+                                      <span><i class="fa-solid fa-utensils text-gold mr-1"></i> Meals: Breakfast</span>
+                                  </div>
+                              </div>
+                              <div class="md:col-span-4 h-40 rounded-2xl overflow-hidden">
+                                  <img src="assets/Lagoon-tour.jpg" alt="Sri Lanka coastal farewell view" class="w-full h-full object-cover">
+                              </div>
+                          </div>
+                      </div>
+
+                  </div>
+              </div>
+
+              <!-- INCLUSIONS & EXCLUSIONS -->
+              <div class="bg-white rounded-3xl p-8 md:p-10 border border-line shadow-sm">
+                  <h3 class="serif text-3xl text-ink mb-8">What's Included & Excluded</h3>
+                  <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                      <!-- INCLUDED -->
+                      <div class="space-y-4">
+                          <h4 class="text-xs font-bold uppercase tracking-widest text-emerald-700 bg-emerald-50 px-4 py-2 rounded-full inline-block">
+                              <i class="fa-solid fa-circle-check mr-2"></i> What's Included
+                          </h4>
+                          <ul class="space-y-3 text-sm text-muted font-light">
+                              <li class="flex items-start"><i class="fa-solid fa-check text-emerald-600 mt-1 mr-3 text-xs"></i> 9 Nights stay in premium 4★ & 5★ boutique hotels</li>
+                              <li class="flex items-start"><i class="fa-solid fa-check text-emerald-600 mt-1 mr-3 text-xs"></i> Daily breakfast & luxury dinners (Half Board)</li>
+                              <li class="flex items-start"><i class="fa-solid fa-check text-emerald-600 mt-1 mr-3 text-xs"></i> Private AC luxury vehicle with unlimited mileage</li>
+                              <li class="flex items-start"><i class="fa-solid fa-check text-emerald-600 mt-1 mr-3 text-xs"></i> Dedicated English-speaking chauffeur-guide (Nalinda)</li>
+                              <li class="flex items-start"><i class="fa-solid fa-check text-emerald-600 mt-1 mr-3 text-xs"></i> Kandy to Ella Scenic Train Reserved Tickets</li>
+                              <li class="flex items-start"><i class="fa-solid fa-check text-emerald-600 mt-1 mr-3 text-xs"></i> Yala National Park 4x4 Private Jeep Safari + Permits</li>
+                              <li class="flex items-start"><i class="fa-solid fa-check text-emerald-600 mt-1 mr-3 text-xs"></i> All highway tolls, fuel, parking & driver lodging</li>
+                              <li class="flex items-start"><i class="fa-solid fa-check text-emerald-600 mt-1 mr-3 text-xs"></i> Airport pickup & drop-off transfers</li>
+                          </ul>
+                      </div>
+
+                      <!-- EXCLUDED -->
+                      <div class="space-y-4">
+                          <h4 class="text-xs font-bold uppercase tracking-widest text-rose-700 bg-rose-50 px-4 py-2 rounded-full inline-block">
+                              <i class="fa-solid fa-circle-xmark mr-2"></i> What's Excluded
+                          </h4>
+                          <ul class="space-y-3 text-sm text-muted font-light">
+                              <li class="flex items-start"><i class="fa-solid fa-xmark text-rose-500 mt-1 mr-3 text-xs"></i> International airfare tickets & visa fees</li>
+                              <li class="flex items-start"><i class="fa-solid fa-xmark text-rose-500 mt-1 mr-3 text-xs"></i> Lunches (unless specified in village tour)</li>
+                              <li class="flex items-start"><i class="fa-solid fa-xmark text-rose-500 mt-1 mr-3 text-xs"></i> Optional whale watching boat trip in Mirissa</li>
+                              <li class="flex items-start"><i class="fa-solid fa-xmark text-rose-500 mt-1 mr-3 text-xs"></i> Personal expenses, souvenirs & alcoholic drinks</li>
+                              <li class="flex items-start"><i class="fa-solid fa-xmark text-rose-500 mt-1 mr-3 text-xs"></i> Gratuities / Tipping for guide & staff</li>
+                          </ul>
+                      </div>
+                  </div>
+              </div>
+
+              <!-- FREQUENTLY ASKED QUESTIONS -->
+              <div class="bg-white rounded-3xl p-8 md:p-10 border border-line shadow-sm space-y-6">
+                  <h3 class="serif text-3xl text-ink">Frequently Asked Questions</h3>
+                  <div class="space-y-4 text-sm">
+                      <div class="border-b border-line pb-4">
+                          <h4 class="font-semibold text-ink text-base mb-2">Can this 10-day itinerary be customized?</h4>
+                          <p class="text-muted font-light">Absolutely! All our tours are 100% private. We can adjust hotel choices, add extra days on the beach, or include specialized activities like cooking classes or whale watching.</p>
+                      </div>
+                      <div class="border-b border-line pb-4">
+                          <h4 class="font-semibold text-ink text-base mb-2">What vehicle will be used for our group?</h4>
+                          <p class="text-muted font-light">For 2-3 guests, we provide a modern air-conditioned luxury sedan (Toyota Prius / Allion). For 4+ guests, we use a spacious luxury van (Toyota HiAce Super GL).</p>
+                      </div>
+                      <div class="border-b border-line pb-4">
+                          <h4 class="font-semibold text-ink text-base mb-2">How does booking & payment work?</h4>
+                          <p class="text-muted font-light">You can lock in your dates with a small 20% deposit online. The remaining balance is payable upon arrival in Sri Lanka in USD or EUR.</p>
+                      </div>
+                  </div>
+              </div>
+
+          </div>
+
+          <!-- RIGHT COLUMN (4 COLS): STICKY SIDEBAR BOOKING CARD & GUIDE PROFILES -->
+          <aside class="lg:col-span-4">
+              <div class="sticky top-32 space-y-8">
+                  
+                  <!-- BOOKING CARD -->
+                  <div class="bg-white p-8 rounded-3xl border border-line shadow-lift space-y-6">
+                      <div class="flex justify-between items-end border-b border-line pb-6">
+                          <div>
+                              <span class="text-xs uppercase tracking-widest text-muted font-medium block mb-1">Starting Price</span>
+                              <div class="flex items-baseline space-x-1">
+                                  <span class="serif text-4xl font-bold text-ink">$860</span>
+                                  <span class="text-xs text-muted font-light">/ per person</span>
+                              </div>
+                          </div>
+                          <span class="bg-emerald-50 text-emerald-700 text-[10px] font-bold uppercase tracking-wider px-3 py-1 rounded-full">Best Value</span>
+                      </div>
+
+                      <!-- HIGHLIGHT STATS -->
+                      <div class="space-y-3 text-xs">
+                          <div class="flex justify-between text-muted">
+                              <span>Duration:</span>
+                              <span class="font-semibold text-ink">10 Days / 9 Nights</span>
+                          </div>
+                          <div class="flex justify-between text-muted">
+                              <span>Availability:</span>
+                              <span class="font-semibold text-emerald-600">Daily Departures</span>
+                          </div>
+                          <div class="flex justify-between text-muted">
+                              <span>Pick-up Location:</span>
+                              <span class="font-semibold text-ink">CMB Airport / Colombo Hotel</span>
+                          </div>
+                          <div class="flex justify-between text-muted">
+                              <span>Free Cancellation:</span>
+                              <span class="font-semibold text-ink">Up to 7 days prior</span>
+                          </div>
+                      </div>
+
+                      <!-- CTA BUTTONS -->
+                      <div class="space-y-3 pt-2">
+                          <a href="book.html?tour=The+Royal+Ceylon+Heritage+Tour" class="w-full flex items-center justify-center bg-gold text-white font-semibold py-4 rounded-full text-xs uppercase tracking-widest hover:bg-ink transition-all shadow-md">
+                              <i class="fa-solid fa-calendar-check mr-2"></i> Book This Tour
+                          </a>
+                          <a href="https://wa.me/94770000000?text=Hi%20Nalinda,%20I'm%20interested%20in%20The%20Royal%20Ceylon%20Heritage%20Tour%20(10%20Days)" target="_blank" class="w-full flex items-center justify-center bg-emerald-600 text-white font-semibold py-3.5 rounded-full text-xs uppercase tracking-widest hover:bg-emerald-700 transition-all">
+                              <i class="fa-brands fa-whatsapp mr-2 text-base"></i> Inquiry on WhatsApp
+                          </a>
+                      </div>
+
+                      <div class="text-center pt-2">
+                          <p class="text-[11px] text-muted"><i class="fa-solid fa-shield-halved text-gold mr-1"></i> No hidden fees. Instant confirmation available.</p>
+                      </div>
+                  </div>
+
+                  <!-- GUIDE ASSURANCE CARD -->
+                  <div class="bg-pearl p-6 rounded-3xl border border-line flex items-center space-x-4">
+                      <img src="assets/Selfie.jpg" alt="Nalinda driver guide" class="w-16 h-16 rounded-full object-cover border-2 border-gold flex-shrink-0">
+                      <div>
+                          <h4 class="font-semibold text-ink text-sm">Guided by Nalinda</h4>
+                          <p class="text-xs text-muted font-light mb-1">Founder & Chauffeur-Guide</p>
+                          <a href="tel:+94770000000" class="text-xs text-gold font-medium hover:underline"><i class="fa-solid fa-phone mr-1"></i> +94 77 000 0000</a>
+                      </div>
+                  </div>
+
+                  <!-- OTHER SUGGESTED TOURS -->
+                  <div class="bg-white p-6 rounded-3xl border border-line space-y-4">
+                      <h4 class="serif text-2xl text-ink">Other Signature Tours</h4>
+                      
+                      <a href="tour-7-day-highlights.html" class="flex items-center space-x-4 group border-b border-line pb-4 last:border-0 last:pb-0">
+                          <div class="w-16 h-16 rounded-xl overflow-hidden flex-shrink-0">
+                              <img src="assets/selfie-at-nine-arch.avif" alt="7-Day Tour" class="w-full h-full object-cover group-hover:scale-105 transition-transform">
+                          </div>
+                          <div>
+                              <h5 class="text-sm font-medium text-ink group-hover:text-gold transition-colors">7-Day Highlights Tour</h5>
+                              <p class="text-xs text-muted">Sigiriya, Kandy & Ella</p>
+                              <span class="text-xs font-bold text-gold">$700 / person</span>
+                          </div>
+                      </a>
+
+                      <a href="tour-5-day-round.html" class="flex items-center space-x-4 group">
+                          <div class="w-16 h-16 rounded-xl overflow-hidden flex-shrink-0">
+                              <img src="assets/selfie-with-chinese-tourists.avif" alt="5-Day Tour" class="w-full h-full object-cover group-hover:scale-105 transition-transform">
+                          </div>
+                          <div>
+                              <h5 class="text-sm font-medium text-ink group-hover:text-gold transition-colors">5-Days Round Tour</h5>
+                              <p class="text-xs text-muted">Cultural Triangle & Safari</p>
+                              <span class="text-xs font-bold text-gold">$500 / person</span>
+                          </div>
+                      </a>
+                  </div>
+
+              </div>
+          </aside>
+
+      </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-pearl pt-24 pb-12 px-6 border-t border-line mt-24">
+      <div class="max-w-7xl mx-auto text-center md:text-left">
+          <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
+              <div class="md:col-span-1">
+                  <a href="index.html" class="serif text-3xl font-medium tracking-tight text-ink block mb-6">Royal <span class="text-gold">Kandy</span> Tours</a>
+                  <p class="text-sm text-muted font-light leading-relaxed">Your local driver and guide for authentic, personally-planned journeys across Sri Lanka.</p>
+              </div>
+              <div>
+                  <h4 class="text-xs uppercase tracking-widest text-ink font-semibold mb-6">Explore</h4>
+                  <ul class="space-y-4 text-sm text-muted font-light">
+                      <li><a href="destinations.html" class="hover:text-ink transition-colors">Destinations</a></li>
+                      <li><a href="tours.html" class="hover:text-ink transition-colors">Tours</a></li>
+                      <li><a href="index.html#gallery" class="hover:text-ink transition-colors">Gallery</a></li>
+                  </ul>
+              </div>
+              <div>
+                  <h4 class="text-xs uppercase tracking-widest text-ink font-semibold mb-6">Company</h4>
+                  <ul class="space-y-4 text-sm text-muted font-light">
+                      <li><a href="index.html#about" class="hover:text-ink transition-colors">About Us</a></li>
+                      <li><a href="index.html#reviews" class="hover:text-ink transition-colors">Reviews</a></li>
+                      <li><a href="book.html" class="hover:text-ink transition-colors">Book Now</a></li>
+                  </ul>
+              </div>
+              <div>
+                  <h4 class="text-xs uppercase tracking-widest text-ink font-semibold mb-6">Follow Us</h4>
+                  <div class="flex justify-center md:justify-start space-x-6 text-muted">
+                      <a href="#" class="hover:text-gold transition-colors"><i class="fa-brands fa-instagram text-xl"></i></a>
+                      <a href="#" class="hover:text-gold transition-colors"><i class="fa-brands fa-facebook text-xl"></i></a>
+                      <a href="#" class="hover:text-gold transition-colors"><i class="fa-brands fa-whatsapp text-xl"></i></a>
+                  </div>
+              </div>
+          </div>
+          <div class="border-t border-line pt-12 flex flex-col md:flex-row justify-between items-center text-xs text-muted font-light">
+              <p>&copy; 2026 Royal Kandy Tours, Kandy, Sri Lanka. All rights reserved.</p>
+              <div class="flex space-x-8 mt-6 md:mt-0">
+                  <a href="#" class="hover:text-ink">Privacy Policy</a>
+                  <a href="#" class="hover:text-ink">Terms of Service</a>
+              </div>
+          </div>
+      </div>
+  </footer>
+
+</body>
+</html>

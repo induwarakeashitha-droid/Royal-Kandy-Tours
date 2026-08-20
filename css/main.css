@@ -573,3 +573,519 @@ img {
     inset: 0;
     z-index: 1;
 }
+
+/* ==============================================
+   CINEMATIC HERO — Nordic Horizons-style
+   ============================================== */
+
+/* ── Wrapper ── */
+.rkt-hero {
+  position: relative;
+  width: 100%;
+  height: 100svh;
+  min-height: 600px;
+  overflow: hidden;
+  /* sit below the fixed nav */
+}
+
+/* ── Background image + vignette ── */
+.rkt-hero__bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.rkt-hero__bg-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 40%;
+  display: block;
+  /* subtle Ken-Burns pan */
+  animation: rktZoom 18s ease-in-out infinite alternate;
+}
+
+@keyframes rktZoom {
+  from { transform: scale(1);   }
+  to   { transform: scale(1.06); }
+}
+
+.rkt-hero__vignette {
+  position: absolute;
+  inset: 0;
+  /* corners + top glow for nav area, heavy bottom for headline */
+  background:
+    linear-gradient(to bottom,
+      rgba(0,0,0,0.45) 0%,
+      rgba(0,0,0,0.05) 40%,
+      rgba(0,0,0,0.55) 72%,
+      rgba(0,0,0,0.82) 100%
+    );
+}
+
+/* ── Floating location label (left side, mid-height) ── */
+.rkt-hero__label {
+  position: absolute;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  animation: rktFadeUp 1s 0.4s ease-out both;
+}
+
+.rkt-hero__label--left {
+  left: clamp(1.5rem, 4vw, 3.5rem);
+  bottom: clamp(160px, 22%, 260px);
+}
+
+.rkt-hero__label-line {
+  display: block;
+  width: 32px;
+  height: 1px;
+  background: rgba(255,255,255,0.65);
+  flex-shrink: 0;
+}
+
+.rkt-hero__label-text {
+  font-family: 'Inter', sans-serif;
+  font-size: clamp(0.68rem, 1vw, 0.78rem);
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.9);
+  white-space: nowrap;
+}
+
+/* ── Thumbnail card (right side) ── */
+.rkt-hero__thumb {
+  position: absolute;
+  z-index: 10;
+  right: clamp(1.5rem, 4vw, 3.5rem);
+  bottom: clamp(140px, 20%, 240px);
+  width: clamp(140px, 16vw, 220px);
+  animation: rktFadeUp 1s 0.7s ease-out both;
+}
+
+.rkt-hero__thumb-location {
+  display: block;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.68rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.85);
+  margin-bottom: 6px;
+}
+
+.rkt-hero__thumb-img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: 4px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.5);
+  transition: transform 0.5s ease;
+}
+
+.rkt-hero__thumb:hover .rkt-hero__thumb-img {
+  transform: scale(1.04);
+}
+
+/* ── Marquee ticker headline ── */
+.rkt-hero__ticker-wrap {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  overflow: hidden;
+  /* add a little gap from the bottom edge */
+  padding-bottom: clamp(1rem, 3vh, 2rem);
+}
+
+.rkt-hero__ticker {
+  display: flex;
+  white-space: nowrap;
+  animation: rktTicker 22s linear infinite;
+  will-change: transform;
+}
+
+.rkt-hero__ticker span {
+  font-family: 'Cinzel Decorative', serif;
+  font-size: clamp(2.4rem, 6.5vw, 5.5rem);
+  font-weight: 400;
+  color: #ffffff;
+  letter-spacing: -0.01em;
+  line-height: 1;
+  flex-shrink: 0;
+  /* gold dot separator via content already in HTML */
+}
+
+@keyframes rktTicker {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-33.333%); }
+}
+
+/* ── Scroll cue button ── */
+.rkt-hero__scroll-cue {
+  position: absolute;
+  z-index: 10;
+  bottom: clamp(80px, 12%, 120px);
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(255,255,255,0.15);
+  border: 1px solid rgba(255,255,255,0.35);
+  color: #ffffff;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  transition: background 0.25s ease, transform 0.25s ease;
+  animation: rktBounce 2.4s ease-in-out 1.5s infinite;
+}
+
+.rkt-hero__scroll-cue:hover {
+  background: rgba(255,255,255,0.28);
+  transform: translateX(-50%) translateY(2px);
+  animation: none;
+}
+
+@keyframes rktBounce {
+  0%, 100% { transform: translateX(-50%) translateY(0);   }
+  50%       { transform: translateX(-50%) translateY(6px); }
+}
+
+/* ── Shared fade-up entry animation ── */
+@keyframes rktFadeUp {
+  from { opacity: 0; transform: translateY(16px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* =============================================
+   GALLERY GRID — responsive masonry layout
+   ============================================= */
+
+/* Mobile: simple 2-column equal grid */
+.rkt-gallery-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-rows: 180px;
+  gap: 12px;
+}
+
+.rkt-gallery-item {
+  overflow: hidden;
+}
+
+/* All items fill their cell */
+.rkt-gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* On mobile, tall and wide modifiers are disabled */
+.rkt-gallery-item--tall,
+.rkt-gallery-item--wide {
+  grid-row: span 1;
+  grid-column: span 1;
+}
+
+/* Desktop: complex masonry */
+@media (min-width: 768px) {
+  .rkt-gallery-grid {
+    grid-template-columns: repeat(12, 1fr);
+    grid-auto-rows: 200px;
+    gap: 24px;
+  }
+
+  /* col 1: elephant — tall (2 rows), 4 cols */
+  .rkt-gallery-item:nth-child(1) {
+    grid-column: span 4;
+    grid-row: span 2;
+  }
+
+  /* col 2: lagoon — 4 cols, 1 row */
+  .rkt-gallery-item:nth-child(2) {
+    grid-column: span 4;
+    grid-row: span 1;
+  }
+
+  /* col 3: selfie — tall (2 rows), 4 cols */
+  .rkt-gallery-item:nth-child(3) {
+    grid-column: span 4;
+    grid-row: span 2;
+  }
+
+  /* col 2 row 2 left: selfie2 — 3 cols */
+  .rkt-gallery-item:nth-child(4) {
+    grid-column: span 3;
+    grid-row: span 1;
+  }
+
+  /* col 2 row 2 right: anuradhapura — 3 cols */
+  .rkt-gallery-item:nth-child(5) {
+    grid-column: span 3;
+    grid-row: span 1;
+  }
+
+  /* row 3: mirissa beach — 6 cols, but col 3 already ends, so this fills the gap */
+  .rkt-gallery-item:nth-child(6) {
+    grid-column: span 6;
+    grid-row: span 1;
+  }
+}
+
+/* =============================================
+   HERO — MOBILE RESPONSIVE
+   ============================================= */
+
+/* iOS Safari fix: use min-height fallback since 100svh may be unsupported */
+@supports not (height: 100svh) {
+  .rkt-hero {
+    height: 100vh;
+  }
+}
+
+/* On mobile: disable the Ken-Burns zoom (performance) */
+@media (max-width: 640px) {
+  .rkt-hero__bg-img {
+    animation: none;
+    /* Center on the most scenic part of the landscape */
+    object-position: 60% center;
+  }
+
+  /* Move label higher so it clears the ticker */
+  .rkt-hero__label--left {
+    bottom: clamp(130px, 26%, 200px);
+  }
+
+  /* Hide thumbnail on small screens */
+  .rkt-hero__thumb {
+    display: none;
+  }
+
+  /* Smaller ticker font on mobile */
+  .rkt-hero__ticker span {
+    font-size: clamp(1.6rem, 7vw, 2.4rem);
+  }
+
+  /* Push scroll cue up slightly */
+  .rkt-hero__scroll-cue {
+    bottom: clamp(90px, 16%, 130px);
+  }
+}
+
+/* Medium screens: events card smaller */
+@media (min-width: 641px) and (max-width: 1024px) {
+  .rkt-events-card {
+    width: clamp(200px, 28vw, 280px);
+  }
+
+  .rkt-hero__ticker span {
+    font-size: clamp(2rem, 5vw, 3.5rem);
+  }
+}
+
+/* =============================================
+   LABEL STACK (two-line location label)
+   ============================================= */
+
+.rkt-hero__label-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.rkt-hero__label-sub {
+  font-family: 'Inter', sans-serif;
+  font-size: clamp(0.58rem, 0.85vw, 0.68rem);
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.55);
+  white-space: nowrap;
+}
+
+/* =============================================
+   UPCOMING EVENTS CARD
+   ============================================= */
+
+.rkt-events-card {
+  position: absolute;
+  z-index: 10;
+  right: clamp(1.5rem, 4vw, 3.5rem);
+  bottom: clamp(140px, 20%, 240px);
+  width: clamp(220px, 22vw, 300px);
+  background: rgba(10, 8, 6, 0.62);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 14px;
+  overflow: hidden;
+  animation: rktFadeUp 1s 0.7s ease-out both;
+  box-shadow: 0 12px 40px rgba(0,0,0,0.45);
+}
+
+/* Header row */
+.rkt-events-card__header {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  padding: 11px 14px 10px;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--gold-light, #e8c069);
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+.rkt-events-card__header svg {
+  stroke: var(--gold-light, #e8c069);
+  flex-shrink: 0;
+}
+
+/* Events list */
+.rkt-events-card__list {
+  padding: 10px 0 4px;
+}
+
+/* Divider between events */
+.rkt-events-card__divider {
+  height: 1px;
+  background: rgba(255,255,255,0.07);
+  margin: 4px 14px;
+}
+
+/* Single event row */
+.rkt-event {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 14px;
+  transition: background 0.2s ease;
+}
+
+.rkt-event:hover {
+  background: rgba(255,255,255,0.05);
+}
+
+/* Date badge */
+.rkt-event__date {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: rgba(212, 175, 55, 0.18);
+  border: 1px solid rgba(212, 175, 55, 0.3);
+  border-radius: 7px;
+  padding: 5px 7px;
+  min-width: 36px;
+  flex-shrink: 0;
+}
+
+.rkt-event__day {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #D4AF37;
+  line-height: 1;
+}
+
+.rkt-event__month {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.5rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  color: rgba(212, 175, 55, 0.75);
+  text-transform: uppercase;
+  line-height: 1.4;
+}
+
+/* Event info */
+.rkt-event__info {
+  flex: 1;
+  min-width: 0;
+}
+
+.rkt-event__name {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: rgba(255,255,255,0.92);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin: 0 0 3px;
+  line-height: 1.2;
+}
+
+.rkt-event__meta {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.6rem;
+  color: rgba(255,255,255,0.45);
+  margin: 0;
+  line-height: 1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.rkt-event__meta svg {
+  flex-shrink: 0;
+  stroke: rgba(255,255,255,0.35);
+}
+
+/* Emoji badge */
+.rkt-event__badge {
+  font-size: 1.1rem;
+  flex-shrink: 0;
+  line-height: 1;
+}
+
+/* CTA footer */
+.rkt-events-card__cta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  margin: 10px 14px 12px;
+  padding: 8px 14px;
+  background: linear-gradient(135deg, #e8c069, #a9791f);
+  border-radius: 8px;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #141210;
+  text-decoration: none;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.rkt-events-card__cta:hover {
+  opacity: 0.88;
+  transform: translateY(-1px);
+}
+
+.rkt-events-card__cta svg {
+  stroke: #141210;
+}
+
+/* Hide card on small mobile */
+@media (max-width: 640px) {
+  .rkt-events-card {
+    display: none;
+  }
+}
+

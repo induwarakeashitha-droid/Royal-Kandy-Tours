@@ -39,7 +39,7 @@
     </script>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
@@ -109,174 +109,284 @@
     <a href="#gallery">Gallery</a>
   </div>
 
+  <!-- =============================================
+       HERO — Nordic Horizons-style cinematic hero
+       ============================================= -->
+  <section id="home" class="rkt-hero">
 
+    <!-- Full-bleed background image -->
+    <div class="rkt-hero__bg">
+      <img
+        src="assets/kandy-lake-bg.jpg"
+        alt="Lush Sri Lankan highlands at sunrise"
+        class="rkt-hero__bg-img"
+      />
+      <div class="rkt-hero__vignette"></div>
+    </div>
 
-    <!-- Hero Section -->
-    <header id="home" class="relative h-screen min-h-[800px] flex flex-col justify-center items-center text-center overflow-hidden">
-        <div class="absolute inset-0 z-0">
-            <img class="w-full h-full object-cover" src="assets/Sri-Lanka-natural-landscape-view.jpg" alt="Aerial view of lush green tea plantations in Nuwara Eliya, Sri Lanka at sunrise with soft mist." />
-            <div class="absolute inset-0 hero-gradient"></div>
+    <!-- Floating location label — left -->
+    <div class="rkt-hero__label rkt-hero__label--left">
+      <span class="rkt-hero__label-line"></span>
+      <div class="rkt-hero__label-stack">
+        <span class="rkt-hero__label-text">Temple of the Tooth</span>
+        <span class="rkt-hero__label-sub">Kandy, Sri Lanka</span>
+      </div>
+    </div>
+
+    <!-- Upcoming Events card — right -->
+    <div class="rkt-events-card">
+      <div class="rkt-events-card__header">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+        Upcoming Events
+      </div>
+
+      <div class="rkt-events-card__list">
+
+        <!-- Event 1 -->
+        <a class="rkt-event" href="https://visitsrilanka.asia/events/kandy-esala-perahera" target="_blank" rel="noopener">
+          <div class="rkt-event__date">
+            <span class="rkt-event__day">07</span>
+            <span class="rkt-event__month">AUG</span>
+          </div>
+          <div class="rkt-event__info">
+            <p class="rkt-event__name">Kandy Esala Perahera</p>
+            <p class="rkt-event__meta">
+              <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              Temple of the Tooth, Kandy
+            </p>
+          </div>
+          <span class="rkt-event__tag rkt-event__tag--free">Free</span>
+        </a>
+
+        <div class="rkt-events-card__divider"></div>
+
+        <!-- Event 2 -->
+        <a class="rkt-event" href="https://visitsrilanka.asia/events/nallur-kandaswamy-temple-festival" target="_blank" rel="noopener">
+          <div class="rkt-event__date">
+            <span class="rkt-event__day">05</span>
+            <span class="rkt-event__month">AUG</span>
+          </div>
+          <div class="rkt-event__info">
+            <p class="rkt-event__name">Nallur Kandaswamy Festival</p>
+            <p class="rkt-event__meta">
+              <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              Nallur Temple, Jaffna
+            </p>
+          </div>
+          <span class="rkt-event__tag rkt-event__tag--free">Free</span>
+        </a>
+
+        <div class="rkt-events-card__divider"></div>
+
+        <!-- Event 3 -->
+        <a class="rkt-event" href="https://visitsrilanka.asia/events/negombo-fish-market-seafood-festival" target="_blank" rel="noopener">
+          <div class="rkt-event__date">
+            <span class="rkt-event__day">30</span>
+            <span class="rkt-event__month">AUG</span>
+          </div>
+          <div class="rkt-event__info">
+            <p class="rkt-event__name">Negombo Seafood Festival</p>
+            <p class="rkt-event__meta">
+              <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              Negombo Fish Market
+            </p>
+          </div>
+          <span class="rkt-event__tag rkt-event__tag--free">Free</span>
+        </a>
+
+        <div class="rkt-events-card__divider"></div>
+
+        <!-- Event 4 -->
+        <a class="rkt-event" href="https://visitsrilanka.asia/events/ella-ultra-trail-race" target="_blank" rel="noopener">
+          <div class="rkt-event__date">
+            <span class="rkt-event__day">13</span>
+            <span class="rkt-event__month">SEP</span>
+          </div>
+          <div class="rkt-event__info">
+            <p class="rkt-event__name">Ella Ultra Trail Race</p>
+            <p class="rkt-event__meta">
+              <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              Ella, Badulla District
+            </p>
+          </div>
+          <span class="rkt-event__tag">LKR 8,000</span>
+        </a>
+
+      </div>
+
+      <a href="https://visitsrilanka.asia/events" target="_blank" rel="noopener" class="rkt-events-card__cta">
+        View All Events
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg>
+      </a>
+    </div>
+
+    <!-- Scrolling marquee headline -->
+    <div class="rkt-hero__ticker-wrap" aria-hidden="true">
+      <div class="rkt-hero__ticker">
+        <span>Discover Sri Lanka's Untamed Beauty&nbsp;&nbsp;·&nbsp;&nbsp;</span>
+        <span>Discover Sri Lanka's Untamed Beauty&nbsp;&nbsp;·&nbsp;&nbsp;</span>
+        <span>Discover Sri Lanka's Untamed Beauty&nbsp;&nbsp;·&nbsp;&nbsp;</span>
+      </div>
+    </div>
+
+    <!-- Scroll cue -->
+    <button class="rkt-hero__scroll-cue" onclick="document.getElementById('about').scrollIntoView({behavior:'smooth'})">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><polyline points="6 9 12 15 18 9"/></svg>
+    </button>
+
+  </section>
+
+  <!-- =============================================
+       ABOUT US
+       ============================================= -->
+  <section id="about" class="py-16 md:py-32 px-5 md:px-6 bg-pearl">
+    <div class="max-w-7xl mx-auto">
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-8 items-start">
+        <div class="md:col-span-4">
+          <h2 class="serif text-4xl md:text-5xl text-ink mb-4 md:mb-6">About Us</h2>
+          <div class="w-10 md:w-12 h-px bg-gold mb-6 md:mb-8"></div>
         </div>
-
-        <div class="relative z-10 px-4 animate-fadeUp">
-            <span class="block text-xs uppercase tracking-[0.3em] text-white/80 mb-6"></span>
-            <h1 class="text-[8vw] leading-none text-white mb-6">Royal Kandy Tours</h1>
-            <p class="text-lg text-white/90 max-w-xl mx-auto font-light">Explore your dream destination</p>
+        <div class="md:col-span-8 space-y-5 text-base md:text-lg text-muted font-light leading-relaxed">
+          <p>Based in Kandy, Royal Kandy Tours is a private driver-guide service built around one idea: your trip should feel personal, not packaged. Every itinerary is planned by hand, shaped around what you actually want to see.</p>
+          <p>From temple visits and hill country drives to wildlife safaris and coastal getaways, we take care of routes, timing, and local knowledge — so you can simply enjoy the island.</p>
         </div>
+      </div>
 
-        <!-- Search Bar Overlay -->
-        <div class="absolute bottom-12 left-1/2 -translate-x-1/2 w-full max-w-4xl px-6 z-20">
-            <div class="bg-white p-2 rounded-full shadow-lift flex items-center">
-                <input type="text" placeholder="Where would you like to go?" class="flex-grow px-8 py-4 outline-none text-sm bg-transparent">
-                <a href="book.html" class="bg-ink text-white px-8 py-4 rounded-full text-xs uppercase tracking-widest hover:bg-black transition-all">Plan My Trip</a>
-            </div>
+      <div class="mt-16 md:mt-32 relative text-center">
+        <div class="absolute -top-8 left-1/2 -translate-x-1/2 text-gold text-6xl md:text-8xl serif opacity-40">"</div>
+        <blockquote class="serif text-2xl sm:text-3xl md:text-5xl lg:text-6xl text-ink max-w-5xl mx-auto leading-tight px-4">
+          A good driver gets you there. A great guide makes the journey the memory.
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- =============================================
+       FEATURED DESTINATIONS
+       ============================================= -->
+  <section id="destinations" class="py-16 md:py-24 px-5 md:px-6 bg-white">
+    <div class="max-w-7xl mx-auto">
+      <div class="flex justify-between items-end mb-10 md:mb-16">
+        <div>
+          <span class="text-xs uppercase tracking-widest text-muted block mb-3 md:mb-4">Featured Destinations</span>
+          <h2 class="serif text-3xl md:text-5xl text-ink">Where We Take You</h2>
         </div>
+        <a href="destinations.html" class="hidden md:block text-sm text-muted hover:text-ink transition-colors">View All <i class="fa-solid fa-arrow-right ml-2"></i></a>
+      </div>
 
-        <div class="absolute bottom-6 left-1/2 -translate-x-1/2 z-20">
-            <i class="fa-solid fa-chevron-down text-white text-xl animate-bounce"></i>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 md:gap-8">
+        <article class="group cursor-pointer">
+          <div class="relative overflow-hidden rounded-jumbo aspect-[4/5] mb-4 md:mb-6 gold-scrim">
+            <img class="w-full h-full object-cover" src="assets/9arch-view.webp" alt="Misty mountain view of the Nine Arch Bridge in Ella, Sri Lanka." />
+          </div>
+          <span class="text-xs uppercase tracking-widest text-muted block mb-2">Ella</span>
+          <h3 class="serif text-2xl md:text-3xl text-ink group-hover:text-gold transition-colors">The Highlands</h3>
+        </article>
+
+        <article class="group cursor-pointer">
+          <div class="relative overflow-hidden rounded-jumbo aspect-[4/5] mb-4 md:mb-6 gold-scrim">
+            <img class="w-full h-full object-cover" src="assets/kandy-lake-evening-view.webp" alt="Ancient temple complex beside a lake in Kandy, Sri Lanka." />
+          </div>
+          <span class="text-xs uppercase tracking-widest text-muted block mb-2">Kandy</span>
+          <h3 class="serif text-2xl md:text-3xl text-ink group-hover:text-gold transition-colors">Our Home Turf</h3>
+        </article>
+
+        <article class="group cursor-pointer sm:col-span-2 md:col-span-1">
+          <div class="relative overflow-hidden rounded-jumbo aspect-[4/5] mb-4 md:mb-6 gold-scrim">
+            <img class="w-full h-full object-cover" src="assets/galle-lanscape-view.jpg" alt="Colonial Galle Fort lighthouse overlooking the Indian Ocean at dusk." />
+          </div>
+          <span class="text-xs uppercase tracking-widest text-muted block mb-2">Galle</span>
+          <h3 class="serif text-2xl md:text-3xl text-ink group-hover:text-gold transition-colors">Coastal Heritage</h3>
+        </article>
+      </div>
+
+      <div class="mt-8 text-center md:hidden">
+        <a href="destinations.html" class="text-sm text-muted border-b border-muted pb-0.5">View All Destinations</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Review Panel -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/iframe-resizer/4.2.10/iframeResizer.min.js"></script>
+  <iframe onload="iFrameResize(this)" src="https://daa00fd339d24ec38a61b354edfddb25.elf.site/" style="border:none;width:100%;"></iframe>
+
+  <!-- =============================================
+       GALLERY GRID
+       ============================================= -->
+  <section id="gallery" class="py-16 md:py-24 px-5 md:px-6 bg-white">
+    <div class="max-w-7xl mx-auto">
+      <div class="text-center mb-10 md:mb-16">
+        <span class="text-xs uppercase tracking-widest text-muted block mb-3 md:mb-4">Visual Stories</span>
+        <h2 class="serif text-3xl md:text-5xl text-ink">On the Road with Us</h2>
+      </div>
+
+      <div class="rkt-gallery-grid">
+        <div class="rkt-gallery-item rkt-gallery-item--tall rounded-3xl overflow-hidden shadow-soft">
+          <img class="w-full h-full object-cover hover:scale-105 transition-transform duration-700" src="assets/baby-elephant-pinnawala.jpg" alt="Elephant bathing in a river in Udawalawe National Park." />
         </div>
-    </header>
-
-    <!-- About Us Section -->
-    <section id="about" class="py-32 px-6 bg-pearl">
-        <div class="max-w-7xl mx-auto">
-            <div class="grid grid-cols-12 gap-8 items-start">
-                <div class="col-span-12 md:col-span-4">
-                    <h2 class="serif text-5xl text-ink mb-6">About Us</h2>
-                    <div class="w-12 h-[1px] bg-gold mb-8"></div>
-                </div>
-                <div class="col-span-12 md:col-span-8 space-y-6 text-lg text-muted font-light leading-relaxed">
-                    <p>Based in Kandy, Royal Kandy Tours is a private driver-guide service built around one idea: your trip should feel personal, not packaged. Every itinerary is planned by hand, shaped around what you actually want to see.</p>
-                    <p>From temple visits and hill country drives to wildlife safaris and coastal getaways, we take care of routes, timing, and local knowledge — so you can simply enjoy the island.</p>
-                </div>
-            </div>
-
-            <div class="mt-32 relative text-center">
-                <div class="absolute -top-10 left-1/2 -translate-x-1/2 text-gold text-8xl serif opacity-40">"</div>
-                <blockquote class="serif text-4xl md:text-6xl text-ink max-w-5xl mx-auto leading-tight">
-                    A good driver gets you there. A great guide makes the journey the memory.
-                </blockquote>
-            </div>
+        <div class="rkt-gallery-item rounded-3xl overflow-hidden shadow-soft">
+          <img class="w-full h-full object-cover hover:scale-105 transition-transform duration-700" src="assets/Lagoon-tour.jpg" alt="Traditional stilt fishermen on the coast of Weligama." />
         </div>
-    </section>
-
-    <!-- Featured Destinations -->
-    <section id="destinations" class="py-24 px-6 bg-white">
-        <div class="max-w-7xl mx-auto">
-            <div class="flex justify-between items-end mb-16">
-                <div>
-                    <span class="text-xs uppercase tracking-widest text-muted block mb-4">Featured Destinations</span>
-                    <h2 class="serif text-5xl text-ink">Where We Take You</h2>
-                </div>
-                <a href="destinations.html" class="hidden md:block text-sm text-muted hover:text-ink transition-colors">View All <i class="fa-solid fa-arrow-right ml-2"></i></a>
-            </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <article class="group cursor-pointer">
-                    <div class="relative overflow-hidden rounded-jumbo aspect-[4/5] mb-6 gold-scrim">
-                        <img class="w-full h-full object-cover" src="assets/9arch-view.webp" alt="Misty mountain view of the Nine Arch Bridge in Ella, Sri Lanka." />
-                    </div>
-                    <span class="text-xs uppercase tracking-widest text-muted block mb-2">Ella</span>
-                    <h3 class="serif text-3xl text-ink group-hover:text-gold transition-colors">The Highlands</h3>
-                </article>
-
-                <article class="group cursor-pointer">
-                    <div class="relative overflow-hidden rounded-jumbo aspect-[4/5] mb-6 gold-scrim">
-                        <img class="w-full h-full object-cover" src="assets/kandy-lake-evening-view.webp" alt="Ancient temple complex beside a lake in Kandy, Sri Lanka." />
-                    </div>
-                    <span class="text-xs uppercase tracking-widest text-muted block mb-2">Kandy</span>
-                    <h3 class="serif text-3xl text-ink group-hover:text-gold transition-colors">Our Home Turf</h3>
-                </article>
-
-                <article class="group cursor-pointer">
-                    <div class="relative overflow-hidden rounded-jumbo aspect-[4/5] mb-6 gold-scrim">
-                        <img class="w-full h-full object-cover" src="assets/galle-lanscape-view.jpg" alt="Colonial Galle Fort lighthouse overlooking the Indian Ocean at dusk." />
-                    </div>
-                    <span class="text-xs uppercase tracking-widest text-muted block mb-2">Galle</span>
-                    <h3 class="serif text-3xl text-ink group-hover:text-gold transition-colors">Coastal Heritage</h3>
-                </article>
-            </div>
+        <div class="rkt-gallery-item rkt-gallery-item--tall rounded-3xl overflow-hidden shadow-soft">
+          <img class="w-full h-full object-cover hover:scale-105 transition-transform duration-700" src="assets/Selfie.jpg" alt="Waterfall cascading into a jungle pool at Ravana Falls." />
         </div>
-    </section>
-
-    <!-- Review Panel -->
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/iframe-resizer/4.2.10/iframeResizer.min.js"></script>
-<iframe onload="iFrameResize(this)" src="https://daa00fd339d24ec38a61b354edfddb25.elf.site/" style="border:none;width:100%;"></iframe>
-
-
-    <!-- Gallery Grid -->
-    <section id="gallery" class="py-24 px-6 bg-white">
-        <div class="max-w-7xl mx-auto">
-            <div class="text-center mb-16">
-                <span class="text-xs uppercase tracking-widest text-muted block mb-4">Visual Stories</span>
-                <h2 class="serif text-5xl text-ink">On the Road with Us</h2>
-            </div>
-
-            <div class="grid grid-cols-12 gap-6 auto-rows-[200px]">
-                <div class="col-span-12 md:col-span-4 row-span-2 rounded-3xl overflow-hidden shadow-soft">
-                    <img class="w-full h-full object-cover hover:scale-105 transition-transform duration-700" src="assets/baby-elephant-pinnawala.jpg" alt="Elephant bathing in a river in Udawalawe National Park." />
-                </div>
-                <div class="col-span-12 md:col-span-4 row-span-1 rounded-3xl overflow-hidden shadow-soft">
-                    <img class="w-full h-full object-cover hover:scale-105 transition-transform duration-700" src="assets/Lagoon-tour.jpg" alt="Traditional stilt fishermen on the coast of Weligama." />
-                </div>
-                <div class="col-span-12 md:col-span-4 row-span-2 rounded-3xl overflow-hidden shadow-soft">
-                    <img class="w-full h-full object-cover hover:scale-105 transition-transform duration-700" src="assets/Selfie.jpg" alt="Waterfall cascading into a jungle pool at Ravana Falls." />
-                </div>
-                <div class="col-span-12 md:col-span-3 row-span-1 rounded-3xl overflow-hidden shadow-soft">
-                    <img class="w-full h-full object-cover hover:scale-105 transition-transform duration-700" src="assets/selfie2 .jpg" alt="Colorful Sri Lankan spices and tea leaves arranged flat lay." />
-                </div>
-                <div class="col-span-12 md:col-span-3 row-span-1 rounded-3xl overflow-hidden shadow-soft">
-                    <img class="w-full h-full object-cover hover:scale-105 transition-transform duration-700" src="assets/selfie_at_anuradhapura_with_tourist.jpg" alt="Ancient Buddhist statue in Sigiriya rock garden at dawn." />
-                </div>
-                <div class="col-span-12 md:col-span-6 row-span-1 rounded-3xl overflow-hidden shadow-soft">
-                    <img class="w-full h-full object-cover hover:scale-105 transition-transform duration-700" src="assets/sri-lanka-with-mirissa-tropical-beach-bay-fig-trees-southwest-monsoon-season-photo.jpeg" alt="Vibrant temple festival procession with dancers in traditional costume." />
-                </div>
-            </div>
+        <div class="rkt-gallery-item rounded-3xl overflow-hidden shadow-soft">
+          <img class="w-full h-full object-cover hover:scale-105 transition-transform duration-700" src="assets/selfie2 .jpg" alt="Colorful Sri Lankan spices and tea leaves arranged flat lay." />
         </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="bg-pearl pt-24 pb-12 px-6 border-t border-line">
-        <div class="max-w-7xl mx-auto">
-            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
-                <div class="md:col-span-1">
-                    <a href="index.html" class="serif text-3xl font-medium tracking-tight text-ink block mb-6">Royal <span class="text-gold">Kandy</span> Tours</a>
-                    <p class="text-sm text-muted font-light leading-relaxed">Your local driver and guide for authentic, personally-planned journeys across Sri Lanka.</p>
-                </div>
-                <div>
-                    <h4 class="text-xs uppercase tracking-widest text-ink font-semibold mb-6">Explore</h4>
-                    <ul class="space-y-4 text-sm text-muted font-light">
-                        <li><a href="destinations.html" class="hover:text-ink transition-colors">Destinations</a></li>
-                        <li><a href="tours.html" class="hover:text-ink transition-colors">Tour Packages</a></li>
-                        <li><a href="#gallery" class="hover:text-ink transition-colors">Gallery</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h4 class="text-xs uppercase tracking-widest text-ink font-semibold mb-6">Company</h4>
-                    <ul class="space-y-4 text-sm text-muted font-light">
-                        <li><a href="index.html#about" class="hover:text-ink transition-colors">About Us</a></li>
-                        <li><a href="#reviews" class="hover:text-ink transition-colors">Reviews</a></li>
-                        <li><a href="#" class="hover:text-ink transition-colors">Contact</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h4 class="text-xs uppercase tracking-widest text-ink font-semibold mb-6">Follow Us</h4>
-                    <div class="flex space-x-6 text-muted">
-                        <a href="#" class="hover:text-gold transition-colors"><i class="fa-brands fa-instagram text-xl"></i></a>
-                        <a href="#" class="hover:text-gold transition-colors"><i class="fa-brands fa-facebook text-xl"></i></a>
-                        <a href="#" class="hover:text-gold transition-colors"><i class="fa-brands fa-whatsapp text-xl"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="border-t border-line pt-12 flex flex-col md:flex-row justify-between items-center text-xs text-muted font-light">
-                <p>&copy; 2026 Royal Kandy Tours, Kandy, Sri Lanka. All rights reserved.</p>
-                <div class="flex space-x-8 mt-6 md:mt-0">
-                    <a href="#" class="hover:text-ink">Privacy Policy</a>
-                    <a href="#" class="hover:text-ink">Terms of Service</a>
-                </div>
-            </div>
+        <div class="rkt-gallery-item rounded-3xl overflow-hidden shadow-soft">
+          <img class="w-full h-full object-cover hover:scale-105 transition-transform duration-700" src="assets/selfie_at_anuradhapura_with_tourist.jpg" alt="Ancient Buddhist statue in Sigiriya rock garden at dawn." />
         </div>
-    </footer>
+        <div class="rkt-gallery-item rkt-gallery-item--wide rounded-3xl overflow-hidden shadow-soft">
+          <img class="w-full h-full object-cover hover:scale-105 transition-transform duration-700" src="assets/sri-lanka-with-mirissa-tropical-beach-bay-fig-trees-southwest-monsoon-season-photo.jpeg" alt="Vibrant temple festival procession with dancers in traditional costume." />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =============================================
+       FOOTER
+       ============================================= -->
+  <footer class="bg-pearl pt-16 md:pt-24 pb-10 md:pb-12 px-5 md:px-6 border-t border-line">
+    <div class="max-w-7xl mx-auto">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12 mb-12 md:mb-16">
+        <div class="col-span-2 md:col-span-1">
+          <a href="index.html" class="serif text-2xl md:text-3xl font-medium tracking-tight text-ink block mb-4 md:mb-6">Royal <span class="text-gold">Kandy</span> Tours</a>
+          <p class="text-sm text-muted font-light leading-relaxed">Your local driver and guide for authentic, personally-planned journeys across Sri Lanka.</p>
+        </div>
+        <div>
+          <h4 class="text-xs uppercase tracking-widest text-ink font-semibold mb-4 md:mb-6">Explore</h4>
+          <ul class="space-y-3 md:space-y-4 text-sm text-muted font-light">
+            <li><a href="destinations.html" class="hover:text-ink transition-colors">Destinations</a></li>
+            <li><a href="tours.html" class="hover:text-ink transition-colors">Tour Packages</a></li>
+            <li><a href="#gallery" class="hover:text-ink transition-colors">Gallery</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-xs uppercase tracking-widest text-ink font-semibold mb-4 md:mb-6">Company</h4>
+          <ul class="space-y-3 md:space-y-4 text-sm text-muted font-light">
+            <li><a href="index.html#about" class="hover:text-ink transition-colors">About Us</a></li>
+            <li><a href="#reviews" class="hover:text-ink transition-colors">Reviews</a></li>
+            <li><a href="#" class="hover:text-ink transition-colors">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-xs uppercase tracking-widest text-ink font-semibold mb-4 md:mb-6">Follow Us</h4>
+          <div class="flex space-x-5 text-muted">
+            <a href="#" class="hover:text-gold transition-colors"><i class="fa-brands fa-instagram text-xl"></i></a>
+            <a href="#" class="hover:text-gold transition-colors"><i class="fa-brands fa-facebook text-xl"></i></a>
+            <a href="#" class="hover:text-gold transition-colors"><i class="fa-brands fa-whatsapp text-xl"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="border-t border-line pt-8 md:pt-12 flex flex-col md:flex-row justify-between items-center text-xs text-muted font-light gap-4">
+        <p>&copy; 2026 Royal Kandy Tours, Kandy, Sri Lanka. All rights reserved.</p>
+        <div class="flex space-x-6 md:space-x-8">
+          <a href="#" class="hover:text-ink">Privacy Policy</a>
+          <a href="#" class="hover:text-ink">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
 
 </body>
 </html>
