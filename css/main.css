@@ -594,7 +594,44 @@ img {
   inset: 0;
   z-index: 0;
 }
+.rkt-hero__brand {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  text-align: center;
+  pointer-events: none;
+}
 
+.rkt-hero__brand-icon {
+  width: 52px;
+  margin-bottom: 14px;
+}
+
+.rkt-hero__brand-name {
+  margin: 0;
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(1.8rem, 4vw, 3rem);
+  letter-spacing: 0.18em;
+  color: #d4af37;
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.6);
+}
+
+.rkt-hero__brand-tagline {
+  margin-top: 10px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.85rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #f5f0e6;
+}
+
+@media (max-width: 640px) {
+  .rkt-hero__brand {
+    top: 40%;
+  }
+}
 .rkt-hero__bg-img {
   width: 100%;
   height: 100%;
