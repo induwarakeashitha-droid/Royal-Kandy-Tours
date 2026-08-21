@@ -1,0 +1,193 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Royal Kandy Tours | Explore Your Dream Destination</title>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        ink: '#2C2B2A',
+                        muted: '#706E6B',
+                        line: '#EADCC9',
+                        sand: '#F5F2EB',
+                        pearl: '#FAF9F6',
+                        gold: '#D4AF37',
+                    },
+                    fontFamily: {
+                        serif: ['"Cormorant Garamond"', 'serif'],
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    boxShadow: {
+                        soft: '0 4px 24px rgba(0,0,0,0.06)',
+                        lift: '0 8px 32px rgba(0,0,0,0.10)',
+                    },
+                    keyframes: {
+                        fadeUp: {
+                            'from': { opacity: '0', transform: 'translateY(12px)' },
+                            'to': { opacity: '1', transform: 'translateY(0)' },
+                        },
+                    },
+                    animation: {
+                        fadeUp: 'fadeUp 0.8s ease-out both',
+                    },
+                }
+            }
+        }
+    </script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/fontawesome-config.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
+    <script src="js/site.js" defer></script>
+</head>
+<body class="antialiased">
+
+  <!-- STICKY HEADER WRAPPER -->
+  <header class="site-header" id="siteHeader">
+    <!-- TOP UTILITY BAR (LINE 1) -->
+    <div class="topbar">
+      <div class="topbar-inner">
+        <div class="topbar-item email-item">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          <a href="mailto:info@royalkandytours.com">info@royalkandytours.com</a>
+        </div>
+        <div class="divider-dot"></div>
+        <div class="topbar-item">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+          <a href="tel:+94770000000">Call Nalinda</a>
+        </div>
+        <a class="book-pill" href="book.html">
+          <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M8 2v4M16 2v4M3 10h18M5 4h14a2 2 0 012 2v14a2 2 0 01-2 2H5a2 2 0 01-2-2V6a2 2 0 012-2z"/></svg>
+          Book Your Tour
+        </a>
+      </div>
+    </div>
+
+    <!-- MAIN NAV BAR (LINE 2) -->
+    <nav class="navbar" id="navbar">
+      <div class="nav-inner">
+        <a href="#" class="logo">
+          <img src="assets/logo.png" alt="Royal Kandy Tours">
+        </a>
+
+        <ul class="nav-links">
+          <li><a href="#" class="active">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="tours.html">Tours</a></li>
+          <li><a href="destinations.html">Destinations</a></li>
+          <li><a href="#reviews">Reviews</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+        </ul>
+
+        <div class="nav-icons">
+          <button class="menu-toggle" id="menuToggle" aria-label="Open menu">
+            <div class="bars"><span></span><span></span><span></span></div>
+            MENU
+          </button>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- MOBILE DRAWER -->
+  <div class="scrim" id="scrim"></div>
+  <div class="mobile-drawer" id="mobileDrawer">
+    <button class="close-drawer" id="closeDrawer">&times;</button>
+    <img class="drawer-logo" src="assets/logo.png" alt="Royal Kandy Tours">
+    <a href="#" class="active">Home</a>
+    <a href="#about">About Us</a>
+    <a href="tours.html">Tours</a>
+    <a href="destinations.html">Destinations</a>
+    <a href="#reviews">Reviews</a>
+    <a href="#gallery">Gallery</a>
+  </div>
+
+
+  <section class="py-24 md:py-32 px-5 md:px-6 bg-white min-h-[70vh]">
+    <div class="max-w-4xl mx-auto">
+      <div class="mb-12">
+        <span class="text-xs uppercase tracking-widest text-muted block mb-3">Legal</span>
+        <h1 class="serif text-4xl md:text-5xl text-ink mb-6">Cookie Policy</h1>
+        <p class="text-sm text-muted">Last updated: August 2026</p>
+      </div>
+      
+      <div class="prose max-w-none text-muted font-light leading-relaxed space-y-6">
+        <p>At Royal Kandy Tours, we use cookies to ensure that we give you the best experience on our website. This Cookie Policy explains what cookies are, how we use them, and your choices regarding their use.</p>
+        
+        <h3 class="text-xl text-ink font-medium mt-8 mb-4">1. What are cookies?</h3>
+        <p>Cookies are small text files that are placed on your computer or mobile device when you visit a website. They are widely used to make websites work more efficiently and provide information to the owners of the site.</p>
+        
+        <h3 class="text-xl text-ink font-medium mt-8 mb-4">2. How we use cookies</h3>
+        <p>We use cookies for the following purposes:</p>
+        <ul class="list-disc pl-5 space-y-2">
+          <li><strong>Essential Cookies:</strong> These are strictly necessary to provide you with services available through our website and to use some of its features.</li>
+          <li><strong>Performance and Analytics:</strong> These cookies help us understand how visitors interact with our website by collecting and reporting information anonymously.</li>
+          <li><strong>Functionality Cookies:</strong> These allow our website to remember choices you make and provide enhanced, more personal features.</li>
+        </ul>
+        
+        <h3 class="text-xl text-ink font-medium mt-8 mb-4">3. Third-party cookies</h3>
+        <p>In addition to our own cookies, we may also use various third-party cookies to report usage statistics of the website and deliver advertisements on and through the website. For example, we use Elfsight for our reviews widget, which may set its own cookies.</p>
+        
+        <h3 class="text-xl text-ink font-medium mt-8 mb-4">4. Your choices</h3>
+        <p>You can choose to disable cookies through your individual browser options. To know more detailed information about cookie management with specific web browsers, it can be found at the browsers' respective websites.</p>
+        
+        <h3 class="text-xl text-ink font-medium mt-8 mb-4">5. Contact Us</h3>
+        <p>If you have any questions about our use of cookies, please contact us at <a href="mailto:info@royalkandytours.com" class="text-gold hover:underline">info@royalkandytours.com</a>.</p>
+      </div>
+    </div>
+  </section>
+
+       FOOTER
+       ============================================= -->
+  <footer class="bg-pearl pt-16 md:pt-24 pb-10 md:pb-12 px-5 md:px-6 border-t border-line">
+    <div class="max-w-7xl mx-auto">
+      <div class="grid grid-cols-2 md:grid-cols-3 gap-8 md:gap-12 mb-12 md:mb-16">
+        <div class="col-span-2 md:col-span-1">
+          <a href="index.html" class="serif text-2xl md:text-3xl font-medium tracking-tight text-ink block mb-4 md:mb-6">Royal <span class="text-gold">Kandy</span> Tours</a>
+          <p class="text-sm text-muted font-light leading-relaxed">Your local driver and guide for authentic, personally-planned journeys across Sri Lanka.</p>
+        </div>
+        <div>
+          <h4 class="text-xs uppercase tracking-widest text-ink font-semibold mb-4 md:mb-6">Explore</h4>
+          <ul class="space-y-3 md:space-y-4 text-sm text-muted font-light">
+            <li><a href="destinations.html" class="hover:text-ink transition-colors">Destinations</a></li>
+            <li><a href="tours.html" class="hover:text-ink transition-colors">Tour Packages</a></li>
+            <li><a href="#gallery" class="hover:text-ink transition-colors">Gallery</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-xs uppercase tracking-widest text-ink font-semibold mb-4 md:mb-6">Company</h4>
+          <ul class="space-y-3 md:space-y-4 text-sm text-muted font-light">
+            <li><a href="index.html#about" class="hover:text-ink transition-colors">About Us</a></li>
+            <li><a href="#reviews" class="hover:text-ink transition-colors">Reviews</a></li>
+            <li><a href="#" class="hover:text-ink transition-colors">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-xs uppercase tracking-widest text-ink font-semibold mb-4 md:mb-6">Follow Us</h4>
+          <div class="flex space-x-5 text-muted">
+            <a href="#" class="hover:text-gold transition-colors"><i class="fa-brands fa-instagram text-xl"></i></a>
+            <a href="#" class="hover:text-gold transition-colors"><i class="fa-brands fa-facebook text-xl"></i></a>
+            <a href="#" class="hover:text-gold transition-colors"><i class="fa-brands fa-whatsapp text-xl"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="border-t border-line pt-8 md:pt-12 flex flex-col md:flex-row justify-between items-center text-xs text-muted font-light gap-4">
+        <p>&copy; 2026 Royal Kandy Tours, Kandy, Sri Lanka. All rights reserved.</p>
+        <div class="flex space-x-6 md:space-x-8">
+          <a href="#" class="hover:text-ink">Privacy Policy</a>
+          <a href="#" class="hover:text-ink">Terms of Service</a>
+          <a href="cookies.html" class="hover:text-ink">Cookie Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

@@ -530,6 +530,12 @@ img {
     transition: all 0.6s ease;
 }
 
+@media (hover: none), (max-width: 768px) {
+    .gold-scrim img {
+        filter: grayscale(0%);
+    }
+}
+
 .rounded-jumbo {
     border-radius: 2rem;
 }
