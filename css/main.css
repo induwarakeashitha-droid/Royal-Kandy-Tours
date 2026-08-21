@@ -965,14 +965,12 @@ img {
   right: clamp(1.5rem, 4vw, 3.5rem);
   bottom: clamp(140px, 20%, 240px);
   width: clamp(220px, 22vw, 300px);
-  background: rgba(10, 8, 6, 0.62);
-  backdrop-filter: blur(14px);
-  -webkit-backdrop-filter: blur(14px);
-  border: 1px solid rgba(255,255,255,0.12);
+  background: #1a1510;
+  border: 1px solid rgba(212,175,55,0.45);
   border-radius: 14px;
   overflow: hidden;
   animation: rktFadeUp 1s 0.7s ease-out both;
-  box-shadow: 0 12px 40px rgba(0,0,0,0.45);
+  box-shadow: 0 12px 40px rgba(0,0,0,0.6), 0 0 0 1px rgba(212,175,55,0.1);
 }
 
 /* Header row */
@@ -987,7 +985,7 @@ img {
   letter-spacing: 0.14em;
   text-transform: uppercase;
   color: var(--gold-light, #e8c069);
-  border-bottom: 1px solid rgba(255,255,255,0.08);
+  border-bottom: 1px solid rgba(212,175,55,0.25);
 }
 
 .rkt-events-card__header svg {
