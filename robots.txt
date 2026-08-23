@@ -1,0 +1,7 @@
+# https://www.robotstxt.org/robotstxt.html
+User-agent: *
+Allow: /
+Disallow: /404.html
+
+# XML Sitemap
+Sitemap: https://www.royalkandytours.com/sitemap.xml
