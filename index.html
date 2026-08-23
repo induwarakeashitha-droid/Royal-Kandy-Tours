@@ -229,13 +229,76 @@
           "@id": "https://www.royalkandytours.com/#website",
           "url": "https://www.royalkandytours.com",
           "name": "Royal Kandy Tours",
+          "alternateName": [
+            "Royal Kandy",
+            "RoyalKandyTours"
+          ],
+          "description": "Private Sri Lanka Tours & Chauffeur Guide with Nalinda",
           "publisher": {
             "@id": "https://www.royalkandytours.com/#organization"
           },
-          "inLanguage": [
-            "en-GB",
-            "en-US",
-            "en"
+          "inLanguage": "en-GB",
+          "potentialAction": {
+            "@type": "SearchAction",
+            "target": {
+              "@type": "EntryPoint",
+              "urlTemplate": "https://www.royalkandytours.com/tours.html?q={search_term_string}"
+            },
+            "query-input": "required name=search_term_string"
+          }
+        },
+        {
+          "@type": "FAQPage",
+          "@id": "https://www.royalkandytours.com/#faq",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Is it safe and comfortable to hire a private driver in Sri Lanka?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, touring Sri Lanka with a private English-speaking chauffeur guide like Nalinda is the safest, most comfortable, and flexible way to explore. You receive private air-conditioned transportation, personalized itineraries, and 24/7 local guidance."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is included in Royal Kandy Tours packages?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "All packages include a dedicated private air-conditioned vehicle, fuel, highway tolls, parking fees, driver accommodation, driver meals, airport transfers, and unlimited travel assistance."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can we customize our Sri Lanka tour itinerary?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, every tour can be 100% customized to your preferences, whether you wish to explore cultural heritage sites, tea plantations, wildlife safaris in Yala, or southern beaches."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do airport pick-ups and drop-offs work?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Your chauffeur guide will personally welcome you at Colombo Bandaranaike International Airport (CMB) with a personalized name board and transfer you directly to your hotel."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What currencies and payment methods are accepted?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "We accept payments in EUR (€), GBP (£), USD ($), CHF, AUD, and LKR via bank transfer or cash upon arrival in Sri Lanka."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is the best time of year to visit Sri Lanka?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Sri Lanka is a year-round destination. The south/west coasts and central highlands (Kandy, Ella, Galle) peak from November to April, while the east coast shines from May to September."
+              }
+            }
           ]
         }
       ]
@@ -268,17 +331,18 @@
     <!-- MAIN NAV BAR (LINE 2) -->
     <nav class="navbar" id="navbar">
       <div class="nav-inner">
-        <a href="#" class="logo">
+        <a href="index.html" class="logo">
           <img src="assets/logo.png" alt="Royal Kandy Tours">
         </a>
 
         <ul class="nav-links">
-          <li><a href="#" class="active">Home</a></li>
+          <li><a href="index.html" class="active">Home</a></li>
           <li><a href="#about">About Us</a></li>
           <li><a href="tours.html">Tours</a></li>
           <li><a href="destinations.html">Destinations</a></li>
           <li><a href="#reviews">Reviews</a></li>
           <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#faq">FAQ</a></li>
         </ul>
 
         <div class="nav-icons">
@@ -295,12 +359,13 @@
   <div class="scrim" id="scrim"></div>
   <div class="mobile-drawer" id="mobileDrawer">
     <button class="close-drawer" id="closeDrawer">&times;</button>
-    <a href="#" class="active">Home</a>
+    <a href="index.html" class="active">Home</a>
     <a href="#about">About Us</a>
     <a href="tours.html">Tours</a>
     <a href="destinations.html">Destinations</a>
     <a href="#reviews">Reviews</a>
     <a href="#gallery">Gallery</a>
+    <a href="#faq">FAQ</a>
   </div>
 
   <!-- =============================================
@@ -516,6 +581,109 @@
         <div class="rkt-gallery-item rkt-gallery-item--wide rounded-3xl overflow-hidden shadow-soft">
           <img class="w-full h-full object-cover hover:scale-105 transition-transform duration-700" src="assets/sri-lanka-with-mirissa-tropical-beach-bay-fig-trees-southwest-monsoon-season-photo.jpeg" alt="Vibrant temple festival procession with dancers in traditional costume." />
         </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =============================================
+       FAQ SECTION (Tailored for European & International Guests)
+       ============================================= -->
+  <section id="faq" class="py-16 md:py-24 px-5 md:px-6 bg-pearl border-t border-line">
+    <div class="max-w-4xl mx-auto">
+      <div class="text-center mb-12 md:mb-16">
+        <span class="text-xs uppercase tracking-widest text-gold font-semibold block mb-3 md:mb-4">Common Questions</span>
+        <h2 class="serif text-3xl md:text-5xl text-ink mb-4">Frequently Asked Questions</h2>
+        <p class="text-muted font-light max-w-xl mx-auto text-sm md:text-base leading-relaxed">Everything you need to know about booking private chauffeur-guided tours across Sri Lanka.</p>
+      </div>
+
+      <div class="space-y-4">
+        <!-- FAQ Item 1 -->
+        <details class="group bg-white rounded-2xl border border-line p-6 shadow-sm transition-all duration-200 open:shadow-soft">
+          <summary class="flex justify-between items-center cursor-pointer list-none font-medium text-ink text-base md:text-lg">
+            <span>Is it safe and comfortable to hire a private driver in Sri Lanka?</span>
+            <span class="text-gold ml-4 transition-transform duration-300 group-open:rotate-180 flex-shrink-0">
+              <i class="fa-solid fa-chevron-down text-sm"></i>
+            </span>
+          </summary>
+          <div class="mt-4 pt-4 border-t border-line text-sm md:text-base text-muted font-light leading-relaxed">
+            <p>Yes, touring Sri Lanka with a private English-speaking chauffeur guide like Nalinda is the safest, most comfortable, and stress-free way to travel. You have private air-conditioned vehicle transportation, dedicated local navigation expertise, and total flexibility to stop at scenic viewpoints whenever you wish.</p>
+          </div>
+        </details>
+
+        <!-- FAQ Item 2 -->
+        <details class="group bg-white rounded-2xl border border-line p-6 shadow-sm transition-all duration-200 open:shadow-soft">
+          <summary class="flex justify-between items-center cursor-pointer list-none font-medium text-ink text-base md:text-lg">
+            <span>What is included in Royal Kandy Tours packages?</span>
+            <span class="text-gold ml-4 transition-transform duration-300 group-open:rotate-180 flex-shrink-0">
+              <i class="fa-solid fa-chevron-down text-sm"></i>
+            </span>
+          </summary>
+          <div class="mt-4 pt-4 border-t border-line text-sm md:text-base text-muted font-light leading-relaxed">
+            <p>Our comprehensive tour packages include your private air-conditioned vehicle (sedan or spacious van), all fuel, expressway toll fees, parking charges, driver-guide accommodation, meals for the driver, airport transfers, and 24/7 personal travel assistance throughout your stay.</p>
+          </div>
+        </details>
+
+        <!-- FAQ Item 3 -->
+        <details class="group bg-white rounded-2xl border border-line p-6 shadow-sm transition-all duration-200 open:shadow-soft">
+          <summary class="flex justify-between items-center cursor-pointer list-none font-medium text-ink text-base md:text-lg">
+            <span>Can we customize our Sri Lanka tour itinerary?</span>
+            <span class="text-gold ml-4 transition-transform duration-300 group-open:rotate-180 flex-shrink-0">
+              <i class="fa-solid fa-chevron-down text-sm"></i>
+            </span>
+          </summary>
+          <div class="mt-4 pt-4 border-t border-line text-sm md:text-base text-muted font-light leading-relaxed">
+            <p>100% yes! Every itinerary can be fully customized around your flight schedule, interests, budget, and travel pace. Whether you wish to add whale watching in Mirissa, explore ancient tea factories in Nuwara Eliya, or embark on a Yala safari, we tailor the journey specifically for you.</p>
+          </div>
+        </details>
+
+        <!-- FAQ Item 4 -->
+        <details class="group bg-white rounded-2xl border border-line p-6 shadow-sm transition-all duration-200 open:shadow-soft">
+          <summary class="flex justify-between items-center cursor-pointer list-none font-medium text-ink text-base md:text-lg">
+            <span>How do airport pick-ups and drop-offs work?</span>
+            <span class="text-gold ml-4 transition-transform duration-300 group-open:rotate-180 flex-shrink-0">
+              <i class="fa-solid fa-chevron-down text-sm"></i>
+            </span>
+          </summary>
+          <div class="mt-4 pt-4 border-t border-line text-sm md:text-base text-muted font-light leading-relaxed">
+            <p>Nalinda will personally meet you at Bandaranaike International Airport (CMB) in Colombo holding a personalized name board at the arrival gate. We handle all luggage and transfer you directly to your first hotel in absolute comfort.</p>
+          </div>
+        </details>
+
+        <!-- FAQ Item 5 -->
+        <details class="group bg-white rounded-2xl border border-line p-6 shadow-sm transition-all duration-200 open:shadow-soft">
+          <summary class="flex justify-between items-center cursor-pointer list-none font-medium text-ink text-base md:text-lg">
+            <span>What currencies and payment methods are accepted?</span>
+            <span class="text-gold ml-4 transition-transform duration-300 group-open:rotate-180 flex-shrink-0">
+              <i class="fa-solid fa-chevron-down text-sm"></i>
+            </span>
+          </summary>
+          <div class="mt-4 pt-4 border-t border-line text-sm md:text-base text-muted font-light leading-relaxed">
+            <p>We accept multiple currencies including EUR (€), GBP (£), USD ($), CHF, AUD, and LKR. You can pay securely upon arrival in Sri Lanka or via international bank transfer with clear transparent pricing and no hidden fees.</p>
+          </div>
+        </details>
+
+        <!-- FAQ Item 6 -->
+        <details class="group bg-white rounded-2xl border border-line p-6 shadow-sm transition-all duration-200 open:shadow-soft">
+          <summary class="flex justify-between items-center cursor-pointer list-none font-medium text-ink text-base md:text-lg">
+            <span>What is the best time of year to visit Sri Lanka?</span>
+            <span class="text-gold ml-4 transition-transform duration-300 group-open:rotate-180 flex-shrink-0">
+              <i class="fa-solid fa-chevron-down text-sm"></i>
+            </span>
+          </summary>
+          <div class="mt-4 pt-4 border-t border-line text-sm md:text-base text-muted font-light leading-relaxed">
+            <p>Sri Lanka is a year-round tropical destination! The south and west coasts (Galle, Mirissa, Bentota) and central highlands (Kandy, Ella) are sunniest between November and April. Meanwhile, the cultural triangle and eastern coast beaches peak from May to September.</p>
+          </div>
+        </details>
+      </div>
+
+      <!-- FAQ CTA -->
+      <div class="mt-12 text-center bg-white rounded-2xl border border-line p-8">
+        <h3 class="serif text-xl md:text-2xl text-ink mb-2">Have a question not listed here?</h3>
+        <p class="text-sm text-muted mb-6 font-light">Chat directly with Nalinda on WhatsApp for immediate itinerary help and quotes.</p>
+        <a href="https://wa.me/94770266988" target="_blank" class="inline-flex items-center gap-3 px-8 py-3.5 rounded-full bg-gold text-white text-xs uppercase tracking-widest font-semibold hover:bg-ink transition-all shadow-md">
+          <i class="fa-brands fa-whatsapp text-base"></i>
+          Chat on WhatsApp
+        </a>
       </div>
     </div>
   </section>

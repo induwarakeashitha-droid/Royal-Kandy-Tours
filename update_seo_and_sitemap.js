@@ -85,10 +85,74 @@ const seoData = {
           "@id": `${BASE_URL}/#website`,
           "url": BASE_URL,
           "name": "Royal Kandy Tours",
+          "alternateName": ["Royal Kandy", "RoyalKandyTours"],
+          "description": "Private Sri Lanka Tours & Chauffeur Guide with Nalinda",
           "publisher": {
             "@id": `${BASE_URL}/#organization`
           },
-          "inLanguage": ["en-GB", "en-US", "en"]
+          "inLanguage": "en-GB",
+          "potentialAction": {
+            "@type": "SearchAction",
+            "target": {
+              "@type": "EntryPoint",
+              "urlTemplate": `${BASE_URL}/tours.html?q={search_term_string}`
+            },
+            "query-input": "required name=search_term_string"
+          }
+        },
+        {
+          "@type": "FAQPage",
+          "@id": `${BASE_URL}/#faq`,
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Is it safe and comfortable to hire a private driver in Sri Lanka?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, touring Sri Lanka with a private English-speaking chauffeur guide like Nalinda is the safest, most comfortable, and flexible way to explore. You receive private air-conditioned transportation, personalized itineraries, and 24/7 local guidance."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is included in Royal Kandy Tours packages?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "All packages include a dedicated private air-conditioned vehicle, fuel, highway tolls, parking fees, driver accommodation, driver meals, airport transfers, and unlimited travel assistance."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can we customize our Sri Lanka tour itinerary?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, every tour can be 100% customized to your preferences, whether you wish to explore cultural heritage sites, tea plantations, wildlife safaris in Yala, or southern beaches."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do airport pick-ups and drop-offs work?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Your chauffeur guide will personally welcome you at Colombo Bandaranaike International Airport (CMB) with a personalized name board and transfer you directly to your hotel."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What currencies and payment methods are accepted?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "We accept payments in EUR (€), GBP (£), USD ($), CHF, AUD, and LKR via bank transfer or cash upon arrival in Sri Lanka."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is the best time of year to visit Sri Lanka?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Sri Lanka is a year-round destination. The south/west coasts and central highlands (Kandy, Ella, Galle) peak from November to April, while the east coast shines from May to September."
+              }
+            }
+          ]
         }
       ]
     }
@@ -175,6 +239,7 @@ const seoData = {
           "@type": "TouristTrip",
           "@id": `${BASE_URL}/tour-detail.html#trip`,
           "name": "The Royal Ceylon Heritage Tour (10 Days)",
+          "image": `${BASE_URL}/assets/10day-private-tour.avif`,
           "description": "10 days through the best of Sri Lanka: Sigiriya, Kandy, Nuwara Eliya, Ella scenic train, Yala safari, Mirissa beach, and Galle Fort with dedicated private driver-guide.",
           "touristType": ["Cultural tourism", "Nature tourism", "Wildlife tourism", "Beach vacation", "European holidaymakers"],
           "provider": {
@@ -249,6 +314,7 @@ const seoData = {
           "@type": "TouristTrip",
           "@id": `${BASE_URL}/tour-7-day-highlights.html#trip`,
           "name": "7-Day Highlights Tour",
+          "image": `${BASE_URL}/assets/selfie-at-nine-arch.avif`,
           "description": "7 days exploring Sri Lanka's ancient wonders and misty tea hills — Sigiriya, Dambulla, Kandy, Nuwara Eliya, and Ella with a private guide.",
           "touristType": ["Cultural tourism", "Nature tourism", "Scenic train ride"],
           "provider": {
@@ -306,6 +372,7 @@ const seoData = {
           "@type": "TouristTrip",
           "@id": `${BASE_URL}/tour-5-day-round.html#trip`,
           "name": "5-Day Cultural & Wildlife Round Tour",
+          "image": `${BASE_URL}/assets/selfie-with-chinese-tourists.avif`,
           "description": "5 days exploring Sigiriya Rock Fortress, Polonnaruwa, Minneriya elephant safari, Kandy Temple, and Pinnawala on a private chauffeur tour.",
           "touristType": ["Cultural tourism", "Wildlife safari", "Ancient ruins"],
           "provider": {
