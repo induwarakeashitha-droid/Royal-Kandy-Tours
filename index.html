@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
@@ -46,6 +46,28 @@
     <script src="js/fontawesome-config.js" defer></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
     <script src="js/site.js" defer></script>
+
+    <!-- Schema.org ImageGallery Structured Data for SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ImageGallery",
+      "name": "Royal Kandy Tours — Sri Lanka Travel Photo Gallery",
+      "description": "Authentic travel photography and guest memories from private guided tours across Sri Lanka with chauffeur-guide Nalinda, including Sigiriya, Kandy, Yala National Park, Habarana, and Ella.",
+      "url": "https://www.royalkandytours.com/#gallery",
+      "provider": {
+        "@type": "TravelAgency",
+        "name": "Royal Kandy Tours",
+        "url": "https://www.royalkandytours.com",
+        "telephone": "+94770266988",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Kandy",
+          "addressCountry": "LK"
+        }
+      }
+    }
+    </script>
 </head>
 <body class="antialiased">
 
@@ -61,7 +83,7 @@
         <div class="divider-dot"></div>
         <div class="topbar-item">
           <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
-          <a href="tel:+94770266988">Call Nalinda</a>
+          <a href="tel:+94770266988">Call 24*7: +94 77 026 6988</a>
         </div>
         <a class="book-pill" href="book.html">
           <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M8 2v4M16 2v4M3 10h18M5 4h14a2 2 0 012 2v14a2 2 0 01-2 2H5a2 2 0 01-2-2V6a2 2 0 012-2z"/></svg>
@@ -100,6 +122,7 @@
   <div class="scrim" id="scrim"></div>
   <div class="mobile-drawer" id="mobileDrawer">
     <button class="close-drawer" id="closeDrawer">&times;</button>
+    <img class="drawer-logo" src="assets/logo.png" alt="Royal Kandy Tours">
     <a href="#" class="active">Home</a>
     <a href="#about">About Us</a>
     <a href="tours.html">Tours</a>
@@ -120,68 +143,12 @@
         alt="Lush Sri Lankan highlands at sunrise"
         class="rkt-hero__bg-img"
       />
+      <div class="rkt-hero__brand">
+  <img src="assets/rkt-crown-icon.svg" alt="Royal Kandy Tours" class="rkt-hero__brand-icon" />
+  <h1 class="rkt-hero__brand-name">ROYAL KANDY TOURS</h1>
+  <p class="rkt-hero__brand-tagline">Explore Your Dream Destination</p>
+</div>
       <div class="rkt-hero__vignette"></div>
-    </div>
-
-    <!-- Royal brand overlay -->
-    <div style="
-      position: absolute;
-      top: 50%;
-      left: 0;
-      right: 0;
-      transform: translateY(-55%);
-      z-index: 10;
-      text-align: center;
-      pointer-events: none;
-      padding: 0 1.5rem;
-      animation: rktFadeUp 1.2s ease-out both;
-    ">
-      <!-- Gold divider top -->
-      <div style="display:flex;align-items:center;justify-content:center;gap:12px;margin-bottom:18px;">
-        <div style="width:60px;height:1px;background:linear-gradient(to right,transparent,rgba(212,175,55,0.8));"></div>
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="#D4AF37" style="opacity:0.9;flex-shrink:0;"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 17l-6.2 4.3 2.4-7.4L2 9.4h7.6z"/></svg>
-        <div style="width:60px;height:1px;background:linear-gradient(to left,transparent,rgba(212,175,55,0.8));"></div>
-      </div>
-
-      <!-- Tagline -->
-      <p style="
-        font-family:'Inter',sans-serif;
-        font-size:clamp(0.55rem,1.1vw,0.7rem);
-        letter-spacing:0.35em;
-        text-transform:uppercase;
-        color:rgba(255,255,255,0.7);
-        margin-bottom:14px;
-      ">Est. Sri Lanka &bull; Private Tours</p>
-
-      <!-- Main title -->
-      <h1 style="
-        font-family:'Cinzel Decorative',serif;
-        font-size:clamp(1.6rem,5vw,4rem);
-        font-weight:400;
-        letter-spacing:0.12em;
-        color:#ffffff;
-        text-shadow:0 2px 24px rgba(0,0,0,0.55);
-        line-height:1.15;
-        margin:0 0 6px;
-      ">Royal <span style="color:#D4AF37;">Kandy</span> Tours</h1>
-
-      <!-- Subtitle -->
-      <p style="
-        font-family:'Cormorant Garamond',serif;
-        font-size:clamp(1rem,2vw,1.4rem);
-        font-weight:300;
-        font-style:italic;
-        letter-spacing:0.1em;
-        color:rgba(255,255,255,0.75);
-        margin-top:8px;
-      ">Explore Your Dream Destination</p>
-
-      <!-- Gold divider bottom -->
-      <div style="display:flex;align-items:center;justify-content:center;gap:12px;margin-top:18px;">
-        <div style="width:40px;height:1px;background:linear-gradient(to right,transparent,rgba(212,175,55,0.6));"></div>
-        <div style="width:5px;height:5px;background:#D4AF37;border-radius:50%;opacity:0.8;"></div>
-        <div style="width:40px;height:1px;background:linear-gradient(to left,transparent,rgba(212,175,55,0.6));"></div>
-      </div>
     </div>
 
     <!-- Floating location label — left -->
@@ -368,15 +335,15 @@
 
   
   <!-- Review Panel -->
-  <section id="reviews">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/iframe-resizer/4.2.10/iframeResizer.min.js"></script>
-    <iframe
-      onload="iFrameResize(this)"
-      src="https://daa00fd339d24ec38a61b354edfddb25.elf.site/"
-      style="border:none;width:100%;"
-      title="Customer Reviews"
-    ></iframe>
-  </section>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/iframe-resizer/4.2.10/iframeResizer.min.js"></script>
+  <iframe
+    onload="iFrameResize(this)"
+    src="https://daa00fd339d24ec38a61b354edfddb25.elf.site/"
+    style="border:none;width:100%;"
+    title="Customer Reviews"
+  ></iframe>
+
+</section>
   <!-- =============================================
        GALLERY GRID
        ============================================= -->
@@ -387,25 +354,138 @@
         <h2 class="serif text-3xl md:text-5xl text-ink">On the Road with Us</h2>
       </div>
 
-      <div class="rkt-gallery-grid">
-        <div class="rkt-gallery-item rkt-gallery-item--tall rounded-3xl overflow-hidden shadow-soft">
-          <img class="w-full h-full object-cover hover:scale-105 transition-transform duration-700" src="assets/baby-elephant-pinnawala.jpg" alt="Elephant bathing in a river in Udawalawe National Park." />
+      <div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 md:gap-5 auto-rows-[190px] md:auto-rows-[230px] [grid-auto-flow:dense]" style="grid-auto-flow: dense;">
+        
+        <!-- Photo 1 (Wide Feature) -->
+        <div class="col-span-1 md:col-span-2 row-span-1 rounded-2xl md:rounded-3xl overflow-hidden shadow-soft">
+          <img class="w-full h-full object-cover hover:scale-105 transition-transform duration-700" src="assets/gallery/nalinda-with-toursist-at-sigiriya.jpg" alt="Private tour guide Nalinda with tourists at Sigiriya Rock Fortress in Sri Lanka" title="Sigiriya Rock Fortress Guided Tour with Nalinda" loading="lazy" decoding="async" />
         </div>
-        <div class="rkt-gallery-item rounded-3xl overflow-hidden shadow-soft">
-          <img class="w-full h-full object-cover hover:scale-105 transition-transform duration-700" src="assets/Lagoon-tour.jpg" alt="Traditional stilt fishermen on the coast of Weligama." />
+
+        <!-- Photo 2 (Tall Feature) -->
+        <div class="col-span-1 row-span-1 md:row-span-2 rounded-2xl md:rounded-3xl overflow-hidden shadow-soft">
+          <img class="w-full h-full object-cover hover:scale-105 transition-transform duration-700" src="assets/gallery/asian-tourists-with-royal-kandy-tours.jpg" alt="Asian tourists enjoying private holiday sightseeing with Royal Kandy Tours" title="Private Holiday Sightseeing Tour in Sri Lanka" loading="lazy" decoding="async" />
         </div>
-        <div class="rkt-gallery-item rkt-gallery-item--tall rounded-3xl overflow-hidden shadow-soft">
-          <img class="w-full h-full object-cover hover:scale-105 transition-transform duration-700" src="assets/Selfie.jpg" alt="Waterfall cascading into a jungle pool at Ravana Falls." />
+
+        <!-- Photo 3 -->
+        <div class="col-span-1 row-span-1 rounded-2xl md:rounded-3xl overflow-hidden shadow-soft">
+          <img class="w-full h-full object-cover hover:scale-105 transition-transform duration-700" src="assets/gallery/ancient-srilankan-food.jpg" alt="Authentic traditional Sri Lankan village food served in clay pots" title="Traditional Sri Lankan Culinary Experience" loading="lazy" decoding="async" />
         </div>
-        <div class="rkt-gallery-item rounded-3xl overflow-hidden shadow-soft">
-          <img class="w-full h-full object-cover hover:scale-105 transition-transform duration-700" src="assets/selfie2 .jpg" alt="Colorful Sri Lankan spices and tea leaves arranged flat lay." />
+
+        <!-- Photo 4 -->
+        <div class="col-span-1 row-span-1 rounded-2xl md:rounded-3xl overflow-hidden shadow-soft">
+          <img class="w-full h-full object-cover hover:scale-105 transition-transform duration-700" src="assets/gallery/elephants-at-lake.jpg" alt="Herd of wild Asian elephants by the lake in Minneriya National Park, Sri Lanka" title="Wild Elephants at the Lake" loading="lazy" decoding="async" />
         </div>
-        <div class="rkt-gallery-item rounded-3xl overflow-hidden shadow-soft">
-          <img class="w-full h-full object-cover hover:scale-105 transition-transform duration-700" src="assets/selfie_at_anuradhapura_with_tourist.jpg" alt="Ancient Buddhist statue in Sigiriya rock garden at dawn." />
+
+        <!-- Photo 5 -->
+        <div class="col-span-1 row-span-1 rounded-2xl md:rounded-3xl overflow-hidden shadow-soft">
+          <img class="w-full h-full object-cover hover:scale-105 transition-transform duration-700" src="assets/gallery/habarana-jeep-saffari.jpg" alt="4x4 jeep wildlife safari adventure in Habarana, Sri Lanka" title="Habarana 4x4 Wildlife Safari Adventure" loading="lazy" decoding="async" />
         </div>
-        <div class="rkt-gallery-item rkt-gallery-item--wide rounded-3xl overflow-hidden shadow-soft">
-          <img class="w-full h-full object-cover hover:scale-105 transition-transform duration-700" src="assets/sri-lanka-with-mirissa-tropical-beach-bay-fig-trees-southwest-monsoon-season-photo.jpeg" alt="Vibrant temple festival procession with dancers in traditional costume." />
+
+        <!-- Photo 6 (Wide Feature) -->
+        <div class="col-span-1 md:col-span-2 row-span-1 rounded-2xl md:rounded-3xl overflow-hidden shadow-soft">
+          <img class="w-full h-full object-cover hover:scale-105 transition-transform duration-700" src="assets/gallery/sigiriya-europeans.jpg" alt="European tourists exploring the ancient Sigiriya Lion Rock citadel" title="Sigiriya Lion Rock UNESCO Heritage Tour" loading="lazy" decoding="async" />
         </div>
+
+        <!-- Photo 7 (Tall Feature) -->
+        <div class="col-span-1 row-span-1 md:row-span-2 rounded-2xl md:rounded-3xl overflow-hidden shadow-soft">
+          <img class="w-full h-full object-cover hover:scale-105 transition-transform duration-700" src="assets/gallery/yala-safari-portrait-of-tourists.jpg" alt="Happy safari tourists in open-top jeep at Yala National Park, Sri Lanka" title="Yala National Park Safari Portrait" loading="lazy" decoding="async" />
+        </div>
+
+        <!-- Photo 8 -->
+        <div class="col-span-1 row-span-1 rounded-2xl md:rounded-3xl overflow-hidden shadow-soft">
+          <img class="w-full h-full object-cover hover:scale-105 transition-transform duration-700" src="assets/gallery/tourists-at-kandy.jpg" alt="Tourists exploring scenic viewpoints and cultural attractions in Kandy" title="Kandy Cultural City Sightseeing Tour" loading="lazy" decoding="async" />
+        </div>
+
+        <!-- Photo 9 -->
+        <div class="col-span-1 row-span-1 rounded-2xl md:rounded-3xl overflow-hidden shadow-soft">
+          <img class="w-full h-full object-cover hover:scale-105 transition-transform duration-700" src="assets/gallery/ancient-village-tour-srilanka.jpg" alt="Traditional Sri Lankan village tour showcasing rural culture and local life" title="Rural Sri Lankan Village Tour Experience" loading="lazy" decoding="async" />
+        </div>
+
+        <!-- Photo 10 (Wide Feature) -->
+        <div class="col-span-1 md:col-span-2 row-span-1 rounded-2xl md:rounded-3xl overflow-hidden shadow-soft">
+          <img class="w-full h-full object-cover hover:scale-105 transition-transform duration-700" src="assets/gallery/wildlife-safari-at-sri-lanka.jpg" alt="Safari jeep watching wildlife in Sri Lanka's national park reserve" title="Sri Lanka Wildlife Game Drive Tour" loading="lazy" decoding="async" />
+        </div>
+
+        <!-- Photo 11 -->
+        <div class="col-span-1 row-span-1 rounded-2xl md:rounded-3xl overflow-hidden shadow-soft">
+          <img class="w-full h-full object-cover hover:scale-105 transition-transform duration-700" src="assets/gallery/dry-coasstal-forest-elephant-vibes.jpg" alt="Wild elephant roaming peacefully in coastal nature reserve in Sri Lanka" title="Coastal Forest Elephant Safari" loading="lazy" decoding="async" />
+        </div>
+
+        <!-- Photo 12 (Tall Feature) -->
+        <div class="col-span-1 row-span-1 md:row-span-2 rounded-2xl md:rounded-3xl overflow-hidden shadow-soft">
+          <img class="w-full h-full object-cover hover:scale-105 transition-transform duration-700" src="assets/gallery/happy-tourists-with-nalinda.jpg" alt="Happy travelers posing with personal chauffeur-guide Nalinda during Sri Lanka tour" title="Chauffeur Guide Nalinda with Travelers" loading="lazy" decoding="async" />
+        </div>
+
+        <!-- Photo 13 -->
+        <div class="col-span-1 row-span-1 rounded-2xl md:rounded-3xl overflow-hidden shadow-soft">
+          <img class="w-full h-full object-cover hover:scale-105 transition-transform duration-700" src="assets/gallery/chinese-toursists-on-sri-lanka.jpg" alt="Chinese tourists enjoying personalized tour itinerary in Sri Lanka" title="Custom Private Tour in Sri Lanka" loading="lazy" decoding="async" />
+        </div>
+
+        <!-- Photo 14 -->
+        <div class="col-span-1 row-span-1 rounded-2xl md:rounded-3xl overflow-hidden shadow-soft">
+          <img class="w-full h-full object-cover hover:scale-105 transition-transform duration-700" src="assets/gallery/yala-safari-high-resolution-selfie.jpg" alt="Selfie of travelers on open jeep safari in Yala National Park" title="Yala Safari Jeep Adventure Selfie" loading="lazy" decoding="async" />
+        </div>
+
+        <!-- Photo 15 (Wide Feature) -->
+        <div class="col-span-1 md:col-span-2 row-span-1 rounded-2xl md:rounded-3xl overflow-hidden shadow-soft">
+          <img class="w-full h-full object-cover hover:scale-105 transition-transform duration-700" src="assets/gallery/royal-kandy-tours-with-europians.jpg" alt="European guests with Royal Kandy Tours private guide exploring top Sri Lanka destinations" title="Sightseeing with Royal Kandy Tours Guide" loading="lazy" decoding="async" />
+        </div>
+
+        <!-- Photo 16 -->
+        <div class="col-span-1 row-span-1 rounded-2xl md:rounded-3xl overflow-hidden shadow-soft">
+          <img class="w-full h-full object-cover hover:scale-105 transition-transform duration-700" src="assets/gallery/nalinda-with-tourists.jpg" alt="Nalinda with happy tourists during scenic hill country road trip" title="Scenic Road Trip with Chauffeur Nalinda" loading="lazy" decoding="async" />
+        </div>
+
+        <!-- Photo 17 -->
+        <div class="col-span-1 row-span-1 rounded-2xl md:rounded-3xl overflow-hidden shadow-soft">
+          <img class="w-full h-full object-cover hover:scale-105 transition-transform duration-700" src="assets/gallery/selfie-of-two-europians-exploring-sri-lanka.jpg" alt="Two European tourists smiling during their vacation tour in Sri Lanka" title="Sri Lanka Vacation Travel Memories" loading="lazy" decoding="async" />
+        </div>
+
+        <!-- Photo 18 -->
+        <div class="col-span-1 row-span-1 rounded-2xl md:rounded-3xl overflow-hidden shadow-soft">
+          <img class="w-full h-full object-cover hover:scale-105 transition-transform duration-700" src="assets/gallery/selfie-with-tourist-guide-nalaka-with-tourists-at-sigiriya.jpg" alt="Tour guide and international travelers smiling in front of Sigiriya Rock" title="Sigiriya Rock Tour Memories" loading="lazy" decoding="async" />
+        </div>
+
+        <!-- Photo 19 -->
+        <div class="col-span-1 row-span-1 rounded-2xl md:rounded-3xl overflow-hidden shadow-soft">
+          <img class="w-full h-full object-cover hover:scale-105 transition-transform duration-700" src="assets/gallery/sellfoe-with-nalinda.jpg" alt="Memorable selfie with private driver Nalinda during Sri Lanka tour" title="Tour Guide Selfie with Nalinda" loading="lazy" decoding="async" />
+        </div>
+
+        <!-- Photo 20 -->
+        <div class="col-span-1 row-span-1 rounded-2xl md:rounded-3xl overflow-hidden shadow-soft">
+          <img class="w-full h-full object-cover hover:scale-105 transition-transform duration-700" src="assets/gallery/ancient-tourist-at-sri-lanka.jpg" alt="Tourists exploring historical ruins and ancient temples in Sri Lanka" title="Ancient Heritage and Historical Sites Tour" loading="lazy" decoding="async" />
+        </div>
+
+        <!-- Photo 21 (Tall Feature) -->
+        <div class="col-span-1 row-span-1 md:row-span-2 rounded-2xl md:rounded-3xl overflow-hidden shadow-soft">
+          <img class="w-full h-full object-cover hover:scale-105 transition-transform duration-700" src="assets/baby-elephant-pinnawala.jpg" alt="Baby elephant bathing at Pinnawala Elephant Orphanage in Sri Lanka" title="Pinnawala Elephant Orphanage Experience" loading="lazy" decoding="async" />
+        </div>
+
+        <!-- Photo 22 -->
+        <div class="col-span-1 row-span-1 rounded-2xl md:rounded-3xl overflow-hidden shadow-soft">
+          <img class="w-full h-full object-cover hover:scale-105 transition-transform duration-700" src="assets/Lagoon-tour.jpg" alt="Scenic boat safari through mangrove forests on Madu River Lagoon" title="Madu River Lagoon Boat Safari" loading="lazy" decoding="async" />
+        </div>
+
+        <!-- Photo 23 -->
+        <div class="col-span-1 row-span-1 rounded-2xl md:rounded-3xl overflow-hidden shadow-soft">
+          <img class="w-full h-full object-cover hover:scale-105 transition-transform duration-700" src="assets/Selfie.jpg" alt="Travelers taking selfie at scenic mountain waterfall in Ella, Sri Lanka" title="Ella Highlands Waterfall Tour" loading="lazy" decoding="async" />
+        </div>
+
+        <!-- Photo 24 -->
+        <div class="col-span-1 row-span-1 rounded-2xl md:rounded-3xl overflow-hidden shadow-soft">
+          <img class="w-full h-full object-cover hover:scale-105 transition-transform duration-700" src="assets/selfie2 .jpg" alt="Smiling tourists enjoying their private chauffeured tour in Sri Lanka" title="Sri Lanka Private Chauffeured Tour" loading="lazy" decoding="async" />
+        </div>
+
+        <!-- Photo 25 -->
+        <div class="col-span-1 row-span-1 rounded-2xl md:rounded-3xl overflow-hidden shadow-soft">
+          <img class="w-full h-full object-cover hover:scale-105 transition-transform duration-700" src="assets/selfie_at_anuradhapura_with_tourist.jpg" alt="Tourists visiting ancient sacred stupas in Anuradhapura with private guide" title="Anuradhapura Sacred City Excursion" loading="lazy" decoding="async" />
+        </div>
+
+        <!-- Photo 26 (Wide Feature) -->
+        <div class="col-span-1 md:col-span-2 row-span-1 rounded-2xl md:rounded-3xl overflow-hidden shadow-soft">
+          <img class="w-full h-full object-cover hover:scale-105 transition-transform duration-700" src="assets/sri-lanka-with-mirissa-tropical-beach-bay-fig-trees-southwest-monsoon-season-photo.jpeg" alt="Tropical palm-fringed sandy beach bay at Mirissa on the southern coast of Sri Lanka" title="Mirissa Tropical Beach Coastal Tour" loading="lazy" decoding="async" />
+        </div>
+
       </div>
     </div>
   </section>
