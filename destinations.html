@@ -2,35 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <link rel="icon" type="image/png" href="assets/logo.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/favicon-192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Destinations | Royal Kandy Tours</title>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        ink: '#2C2B2A',
-                        muted: '#706E6B',
-                        line: '#EADCC9',
-                        sand: '#F5F2EB',
-                        pearl: '#FAF9F6',
-                        gold: '#D4AF37',
-                    },
-                    fontFamily: {
-                        serif: ['"Cormorant Garamond"', 'serif'],
-                        sans: ['Inter', 'sans-serif'],
-                    },
-                }
-            }
-        }
-    </script>
-    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
-    <script src="js/fontawesome-config.js" defer></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
     <script src="js/site.js" defer></script>
 
     <!-- SEO & Social Sharing -->
@@ -48,6 +27,7 @@
     <meta name="twitter:title" content="Destinations | Royal Kandy Tours">
     <meta name="twitter:description" content="Discover the best of Sri Lanka — from the ancient city of Sigiriya to the misty highlands of Ella and the colonial charm of Galle.">
     <meta name="twitter:image" content="https://www.royalkandytours.com/assets/Ella-9arch-landscapejpg.jpg">
+    <link rel="stylesheet" href="css/tailwind.css">
 </head>
 <body class="antialiased">
 
@@ -76,7 +56,7 @@
     <nav class="navbar" id="navbar">
       <div class="nav-inner">
         <a href="index.html" class="logo">
-          <img src="assets/logo.png" alt="Royal Kandy Tours">
+          <img src="assets/logo-royal-kandy-tours.png" alt="Royal Kandy Tours" width="520" height="264">
         </a>
 
         <ul class="nav-links">
@@ -101,7 +81,7 @@
   <!-- MOBILE DRAWER -->
   <div class="scrim" id="scrim"></div>
   <div class="mobile-drawer" id="mobileDrawer">
-    <button class="close-drawer" id="closeDrawer">&times;</button>
+    <button type="button" class="close-drawer" id="closeDrawer" aria-label="Close menu">&times;</button>
 
     <a href="index.html">Home</a>
     <a href="index.html#about">About Us</a>
@@ -122,19 +102,19 @@
 
     <!-- Filters -->
     <div class="sticky top-[73px] z-40 bg-white border-b border-line px-6 py-4">
-        <div class="max-w-7xl mx-auto flex flex-wrap gap-4 items-center justify-center">
-            <button class="px-6 py-2 rounded-full border border-gold bg-gold text-white text-xs uppercase tracking-widest">All</button>
-            <button class="px-6 py-2 rounded-full border border-line text-muted text-xs uppercase tracking-widest hover:border-gold transition-colors">Coastal</button>
-            <button class="px-6 py-2 rounded-full border border-line text-muted text-xs uppercase tracking-widest hover:border-gold transition-colors">Cultural Triangle</button>
-            <button class="px-6 py-2 rounded-full border border-line text-muted text-xs uppercase tracking-widest hover:border-gold transition-colors">Highlands</button>
-            <button class="px-6 py-2 rounded-full border border-line text-muted text-xs uppercase tracking-widest hover:border-gold transition-colors">Wildlife</button>
+        <div id="destinationFilters" class="max-w-7xl mx-auto flex flex-wrap gap-4 items-center justify-center">
+            <button type="button" data-filter="" aria-pressed="true" class="px-6 py-2 rounded-full border border-gold bg-gold text-white text-xs uppercase tracking-widest transition-colors">All</button>
+            <button type="button" data-filter="coastal" aria-pressed="false" class="px-6 py-2 rounded-full border border-line text-muted text-xs uppercase tracking-widest hover:border-gold transition-colors">Coastal</button>
+            <button type="button" data-filter="cultural" aria-pressed="false" class="px-6 py-2 rounded-full border border-line text-muted text-xs uppercase tracking-widest hover:border-gold transition-colors">Cultural Triangle</button>
+            <button type="button" data-filter="highlands" aria-pressed="false" class="px-6 py-2 rounded-full border border-line text-muted text-xs uppercase tracking-widest hover:border-gold transition-colors">Highlands</button>
+            <button type="button" data-filter="wildlife" aria-pressed="false" class="px-6 py-2 rounded-full border border-line text-muted text-xs uppercase tracking-widest hover:border-gold transition-colors">Wildlife</button>
         </div>
     </div>
 
     <!-- Destination Grid -->
     <section class="py-16 px-6">
         <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
-            <a href="destination-detail.html" class="destination-card group block">
+            <a href="destination-detail.html" data-category="highlands" class="destination-card group block">
                 <div class="relative aspect-[4/5] overflow-hidden rounded-2xl mb-6 gold-scrim shadow-sm">
                     <img class="w-full h-full object-cover transition-transform duration-700" src="assets/ella-ninearch.jpg" alt="Ella destination with lush tea plantations." />
                 </div>
@@ -147,7 +127,7 @@
                 </div>
             </a>
 
-            <a href="destination-kandy.html" class="destination-card group block">
+            <a href="destination-kandy.html" data-category="cultural highlands" class="destination-card group block">
                 <div class="relative aspect-[4/5] overflow-hidden rounded-2xl mb-6 gold-scrim shadow-sm">
                     <img class="w-full h-full object-cover transition-transform duration-700" src="assets/kandy-lake.jpg" alt="Kandy destination with a lakeside temple." />
                 </div>
@@ -160,7 +140,7 @@
                 </div>
             </a>
 
-            <a href="destination-galle.html" class="destination-card group block">
+            <a href="destination-galle.html" data-category="coastal" class="destination-card group block">
                 <div class="relative aspect-[4/5] overflow-hidden rounded-2xl mb-6 gold-scrim shadow-sm">
                     <img class="w-full h-full object-cover transition-transform duration-700" src="assets/Lighthouse-Fort-Galle-Sri-Lanka.jpg" alt="Galle Fort lighthouse by the ocean." />
                 </div>
@@ -173,7 +153,7 @@
                 </div>
             </a>
 
-            <a href="destination-dambulla.html" class="destination-card group block">
+            <a href="destination-dambulla.html" data-category="cultural" class="destination-card group block">
                 <div class="relative aspect-[4/5] overflow-hidden rounded-2xl mb-6 gold-scrim shadow-sm">
                     <img class="w-full h-full object-cover transition-transform duration-700" src="assets/Dambulla-Cave-Temple.jpg" alt="Dambulla cave temple in Sri Lanka." />
                 </div>
@@ -186,7 +166,7 @@
                 </div>
             </a>
 
-            <a href="destination-mirissa.html" class="destination-card group block">
+            <a href="destination-mirissa.html" data-category="coastal wildlife" class="destination-card group block">
                 <div class="relative aspect-[4/5] overflow-hidden rounded-2xl mb-6 gold-scrim shadow-sm">
                     <img class="w-full h-full object-cover transition-transform duration-700" src="assets/mirissa-coconuttreehill-srilanka.jpg" alt="Mirissa beach coastline in Sri Lanka." />
                 </div>
@@ -199,7 +179,7 @@
                 </div>
             </a>
 
-            <a href="destination-anuradhapura.html" class="destination-card group block">
+            <a href="destination-anuradhapura.html" data-category="cultural" class="destination-card group block">
                 <div class="relative aspect-[4/5] overflow-hidden rounded-2xl mb-6 gold-scrim shadow-sm">
                     <img class="w-full h-full object-cover transition-transform duration-700" src="assets/Anuradhapura-Sri-Lanka-Cultural-Triangle.jpeg" alt="Ruwanwelisaya stupa in Anuradhapura." />
                 </div>
@@ -235,13 +215,12 @@
                     <ul class="space-y-4 text-sm text-muted font-light">
                         <li><a href="index.html#about" class="hover:text-ink transition-colors">About Us</a></li>
                         <li><a href="index.html#reviews" class="hover:text-ink transition-colors">Reviews</a></li>
-                        <li><a href="#" class="hover:text-ink transition-colors">Contact</a></li>
+                        <li><a href="https://wa.me/94770266988" target="_blank" rel="noopener noreferrer" class="hover:text-ink transition-colors">Contact</a></li>
                     </ul>
                 </div>
                 <div>
                     <h4 class="text-xs uppercase tracking-widest text-ink font-semibold mb-6">Follow Us</h4>
                     <div class="flex justify-center md:justify-start space-x-6 text-muted">
-                        <a href="#" class="hover:text-gold transition-colors"><i class="fa-brands fa-instagram text-xl"></i></a>
                         <a href="https://web.facebook.com/people/Royal-Kandy-Tours/100054545675804/?_rdc=1&_rdr#" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="hover:text-gold transition-colors"><i class="fa-brands fa-facebook text-xl"></i></a>
                         <a href="https://wa.me/94770266988" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" class="hover:text-gold transition-colors"><i class="fa-brands fa-whatsapp text-xl"></i></a>
                     </div>
@@ -250,13 +229,39 @@
             <div class="border-t border-line pt-12 flex flex-col md:flex-row justify-between items-center text-xs text-muted font-light">
                 <p>&copy; 2026 Royal Kandy Tours, Kandy, Sri Lanka. All rights reserved.</p>
                 <div class="flex space-x-8 mt-6 md:mt-0">
-                    <a href="#" class="hover:text-ink">Privacy Policy</a>
-                    <a href="#" class="hover:text-ink">Terms of Service</a>
+                    <a href="privacy.html" class="hover:text-ink">Privacy Policy</a>
+                    <a href="terms.html" class="hover:text-ink">Terms of Service</a>
           <a href="cookies.html" class="hover:text-ink">Cookie Policy</a>
                 </div>
             </div>
         </div>
     </footer>
+
+    <script>
+        // Destination category filter
+        (() => {
+            const buttons = document.querySelectorAll('#destinationFilters button');
+            const cards = document.querySelectorAll('.destination-card');
+            const activeClasses = ['border-gold', 'bg-gold', 'text-white'];
+            const inactiveClasses = ['border-line', 'text-muted', 'hover:border-gold'];
+
+            buttons.forEach(button => {
+                button.addEventListener('click', () => {
+                    const filter = button.dataset.filter;
+                    buttons.forEach(b => {
+                        const isActive = b === button;
+                        b.classList.remove(...(isActive ? inactiveClasses : activeClasses));
+                        b.classList.add(...(isActive ? activeClasses : inactiveClasses));
+                        b.setAttribute('aria-pressed', isActive);
+                    });
+                    cards.forEach(card => {
+                        const matches = !filter || card.dataset.category.split(' ').includes(filter);
+                        card.classList.toggle('hidden', !matches);
+                    });
+                });
+            });
+        })();
+    </script>
 
 </body>
 </html>

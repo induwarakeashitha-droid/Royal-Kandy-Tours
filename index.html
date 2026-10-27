@@ -2,6 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/favicon-192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Royal Kandy Tours | Private Sri Lanka Tours & Chauffeur Guide</title>
     <meta name="description" content="Explore Sri Lanka with Nalinda — your personal driver and guide. Private customized tours to Sigiriya, Kandy, Ella, Yala safari, and beautiful beaches.">
@@ -19,47 +22,11 @@
     <meta name="twitter:title" content="Royal Kandy Tours | Private Sri Lanka Tours & Chauffeur Guide">
     <meta name="twitter:description" content="Explore Sri Lanka with Nalinda — your personal driver and guide. Private customized tours to Sigiriya, Kandy, Ella, Yala safari, and beautiful beaches.">
     <meta name="twitter:image" content="https://www.royalkandytours.com/assets/kandy-lake-bg.jpg">
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        ink: '#2C2B2A',
-                        muted: '#706E6B',
-                        line: '#EADCC9',
-                        sand: '#F5F2EB',
-                        pearl: '#FAF9F6',
-                        gold: '#D4AF37',
-                    },
-                    fontFamily: {
-                        serif: ['"Cormorant Garamond"', 'serif'],
-                        sans: ['Inter', 'sans-serif'],
-                    },
-                    boxShadow: {
-                        soft: '0 4px 24px rgba(0,0,0,0.06)',
-                        lift: '0 8px 32px rgba(0,0,0,0.10)',
-                    },
-                    keyframes: {
-                        fadeUp: {
-                            'from': { opacity: '0', transform: 'translateY(12px)' },
-                            'to': { opacity: '1', transform: 'translateY(0)' },
-                        },
-                    },
-                    animation: {
-                        fadeUp: 'fadeUp 0.8s ease-out both',
-                    },
-                }
-            }
-        }
-    </script>
-    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
-    <script src="js/fontawesome-config.js" defer></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
     <script src="js/site.js" defer></script>
 
     <!-- Schema.org ImageGallery Structured Data for SEO -->
@@ -83,6 +50,7 @@
       }
     }
     </script>
+    <link rel="stylesheet" href="css/tailwind.css">
 </head>
 <body class="antialiased">
 
@@ -100,7 +68,7 @@
         <div class="divider-dot"></div>
         <div class="topbar-item">
           <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
-          <a href="tel:+94770266988">Call 24*7: +94 77 026 6988</a>
+          <a href="tel:+94770266988">Call 24/7: +94 77 026 6988</a>
         </div>
         <a class="book-pill" href="book.html">
           <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M8 2v4M16 2v4M3 10h18M5 4h14a2 2 0 012 2v14a2 2 0 01-2 2H5a2 2 0 01-2-2V6a2 2 0 012-2z"/></svg>
@@ -113,7 +81,7 @@
     <nav class="navbar" id="navbar">
       <div class="nav-inner">
         <a href="#" class="logo">
-          <img src="assets/logo.png" alt="Royal Kandy Tours">
+          <img src="assets/logo-royal-kandy-tours.png" alt="Royal Kandy Tours" width="520" height="264">
         </a>
 
         <ul class="nav-links">
@@ -138,8 +106,8 @@
   <!-- MOBILE DRAWER -->
   <div class="scrim" id="scrim"></div>
   <div class="mobile-drawer" id="mobileDrawer">
-    <button class="close-drawer" id="closeDrawer">&times;</button>
-    <img class="drawer-logo" src="assets/logo.png" alt="Royal Kandy Tours">
+    <button type="button" class="close-drawer" id="closeDrawer" aria-label="Close menu">&times;</button>
+    <img class="drawer-logo" src="assets/logo-royal-kandy-tours.png" alt="Royal Kandy Tours" width="520" height="264">
     <a href="#" class="active">Home</a>
     <a href="#about">About Us</a>
     <a href="tours.html">Tours</a>
@@ -157,13 +125,17 @@
     <div class="rkt-hero__bg">
       <img
         src="assets/kandy-lake-bg.jpg"
-        alt="Lush Sri Lankan highlands at sunrise"
+        alt="Temple of the Sacred Tooth Relic beside Kandy Lake, Sri Lanka"
         class="rkt-hero__bg-img"
       />
       <div class="rkt-hero__brand">
-  <img src="assets/rkt-crown-icon.svg" alt="Royal Kandy Tours" class="rkt-hero__brand-icon" />
+  <img src="assets/logo-emblem.png" alt="" class="rkt-hero__brand-icon" width="463" height="240" />
   <h1 class="rkt-hero__brand-name">ROYAL KANDY TOURS</h1>
   <p class="rkt-hero__brand-tagline">Explore Your Dream Destination</p>
+  <div class="rkt-hero__actions">
+    <a href="tours.html" class="rkt-hero__btn rkt-hero__btn--ghost">Explore Tours</a>
+    <a href="book.html" class="rkt-hero__btn rkt-hero__btn--gold">Book Your Tour</a>
+  </div>
 </div>
       <div class="rkt-hero__vignette"></div>
     </div>
@@ -178,91 +150,158 @@
     </div>
 
     <!-- Upcoming Events card — right -->
-    <div class="rkt-events-card">
+    <aside class="rkt-events-card" aria-labelledby="rktEventsTitle">
       <div class="rkt-events-card__header">
-        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
-        Upcoming Events
+        <span class="rkt-events-card__eyebrow">Sri Lanka · 2026 – 27</span>
+        <p class="rkt-events-card__title" id="rktEventsTitle">Upcoming Events</p>
+        <span class="rkt-events-card__ornament" aria-hidden="true"><i></i><b></b><i></i></span>
       </div>
 
-      <div class="rkt-events-card__list">
+      <!-- 2026 dates are from the official gazette; 2027 Poya dates are provisional.
+           Past events hide themselves and the next four are shown (see script at the end of the page). -->
+      <ol class="rkt-events-card__list" id="rktEvents">
+        <li class="rkt-event" data-date="2026-11-08">
+          <a href="https://wa.me/94770266988?text=Hi%20Nalinda%2C%20I'd%20love%20to%20plan%20a%20Sri%20Lanka%20trip%20around%20Deepavali%20(8%20Nov%202026)." target="_blank" rel="noopener noreferrer" aria-label="Plan a trip around Deepavali, 8 Nov 2026">
+            <time class="rkt-event__date" datetime="2026-11-08">
+              <span class="rkt-event__day">08</span>
+              <span class="rkt-event__month">Nov</span>
+            </time>
+            <span class="rkt-event__info">
+              <span class="rkt-event__top">
+                <span class="rkt-event__name">Deepavali</span>
+                <span class="rkt-event__when"></span>
+              </span>
+              <span class="rkt-event__meta">Festival of Lights · Colombo &amp; Jaffna</span>
+            </span>
+          </a>
+        </li>
+        <li class="rkt-event" data-date="2026-11-24">
+          <a href="https://wa.me/94770266988?text=Hi%20Nalinda%2C%20I'd%20love%20to%20plan%20a%20Sri%20Lanka%20trip%20around%20Il%20Full%20Moon%20Poya%20(24%20Nov%202026)." target="_blank" rel="noopener noreferrer" aria-label="Plan a trip around Il Full Moon Poya, 24 Nov 2026">
+            <time class="rkt-event__date" datetime="2026-11-24">
+              <span class="rkt-event__day">24</span>
+              <span class="rkt-event__month">Nov</span>
+            </time>
+            <span class="rkt-event__info">
+              <span class="rkt-event__top">
+                <span class="rkt-event__name">Il Full Moon Poya</span>
+                <span class="rkt-event__when"></span>
+              </span>
+              <span class="rkt-event__meta">Temple rituals islandwide</span>
+            </span>
+          </a>
+        </li>
+        <li class="rkt-event" data-date="2026-12-23">
+          <a href="https://wa.me/94770266988?text=Hi%20Nalinda%2C%20I'd%20love%20to%20plan%20a%20Sri%20Lanka%20trip%20around%20Unduvap%20Poya%20(23%20Dec%202026)." target="_blank" rel="noopener noreferrer" aria-label="Plan a trip around Unduvap Poya, 23 Dec 2026">
+            <time class="rkt-event__date" datetime="2026-12-23">
+              <span class="rkt-event__day">23</span>
+              <span class="rkt-event__month">Dec</span>
+            </time>
+            <span class="rkt-event__info">
+              <span class="rkt-event__top">
+                <span class="rkt-event__name">Unduvap Poya</span>
+                <span class="rkt-event__when"></span>
+              </span>
+              <span class="rkt-event__meta">Adam’s Peak season opens · Sri Pada</span>
+            </span>
+          </a>
+        </li>
+        <li class="rkt-event" data-date="2026-12-25">
+          <a href="https://wa.me/94770266988?text=Hi%20Nalinda%2C%20I'd%20love%20to%20plan%20a%20Sri%20Lanka%20trip%20around%20Christmas%20(25%20Dec%202026)." target="_blank" rel="noopener noreferrer" aria-label="Plan a trip around Christmas, 25 Dec 2026">
+            <time class="rkt-event__date" datetime="2026-12-25">
+              <span class="rkt-event__day">25</span>
+              <span class="rkt-event__month">Dec</span>
+            </time>
+            <span class="rkt-event__info">
+              <span class="rkt-event__top">
+                <span class="rkt-event__name">Christmas</span>
+                <span class="rkt-event__when"></span>
+              </span>
+              <span class="rkt-event__meta">Festive Colombo &amp; Negombo</span>
+            </span>
+          </a>
+        </li>
+        <li class="rkt-event" data-date="2027-01-15" hidden>
+          <a href="https://wa.me/94770266988?text=Hi%20Nalinda%2C%20I'd%20love%20to%20plan%20a%20Sri%20Lanka%20trip%20around%20Thai%20Pongal%20(15%20Jan%202027)." target="_blank" rel="noopener noreferrer" aria-label="Plan a trip around Thai Pongal, 15 Jan 2027">
+            <time class="rkt-event__date" datetime="2027-01-15">
+              <span class="rkt-event__day">15</span>
+              <span class="rkt-event__month">Jan</span>
+            </time>
+            <span class="rkt-event__info">
+              <span class="rkt-event__top">
+                <span class="rkt-event__name">Thai Pongal</span>
+                <span class="rkt-event__when"></span>
+              </span>
+              <span class="rkt-event__meta">Harvest festival · Jaffna &amp; Colombo</span>
+            </span>
+          </a>
+        </li>
+        <li class="rkt-event" data-date="2027-01-22" hidden>
+          <a href="https://wa.me/94770266988?text=Hi%20Nalinda%2C%20I'd%20love%20to%20plan%20a%20Sri%20Lanka%20trip%20around%20Duruthu%20Perahera%20(22%20Jan%202027)." target="_blank" rel="noopener noreferrer" aria-label="Plan a trip around Duruthu Perahera, 22 Jan 2027">
+            <time class="rkt-event__date" datetime="2027-01-22">
+              <span class="rkt-event__day">22</span>
+              <span class="rkt-event__month">Jan</span>
+            </time>
+            <span class="rkt-event__info">
+              <span class="rkt-event__top">
+                <span class="rkt-event__name">Duruthu Perahera</span>
+                <span class="rkt-event__when"></span>
+              </span>
+              <span class="rkt-event__meta">Duruthu Poya · Kelaniya Temple</span>
+            </span>
+          </a>
+        </li>
+        <li class="rkt-event" data-date="2027-02-04" hidden>
+          <a href="https://wa.me/94770266988?text=Hi%20Nalinda%2C%20I'd%20love%20to%20plan%20a%20Sri%20Lanka%20trip%20around%20Independence%20Day%20(4%20Feb%202027)." target="_blank" rel="noopener noreferrer" aria-label="Plan a trip around Independence Day, 4 Feb 2027">
+            <time class="rkt-event__date" datetime="2027-02-04">
+              <span class="rkt-event__day">04</span>
+              <span class="rkt-event__month">Feb</span>
+            </time>
+            <span class="rkt-event__info">
+              <span class="rkt-event__top">
+                <span class="rkt-event__name">Independence Day</span>
+                <span class="rkt-event__when"></span>
+              </span>
+              <span class="rkt-event__meta">National celebrations · Colombo</span>
+            </span>
+          </a>
+        </li>
+        <li class="rkt-event" data-date="2027-02-20" hidden>
+          <a href="https://wa.me/94770266988?text=Hi%20Nalinda%2C%20I'd%20love%20to%20plan%20a%20Sri%20Lanka%20trip%20around%20Navam%20Perahera%20(20%20Feb%202027)." target="_blank" rel="noopener noreferrer" aria-label="Plan a trip around Navam Perahera, 20 Feb 2027">
+            <time class="rkt-event__date" datetime="2027-02-20">
+              <span class="rkt-event__day">20</span>
+              <span class="rkt-event__month">Feb</span>
+            </time>
+            <span class="rkt-event__info">
+              <span class="rkt-event__top">
+                <span class="rkt-event__name">Navam Perahera</span>
+                <span class="rkt-event__when"></span>
+              </span>
+              <span class="rkt-event__meta">Navam Poya · Gangaramaya, Colombo</span>
+            </span>
+          </a>
+        </li>
+        <li class="rkt-event" data-date="2027-03-06" hidden>
+          <a href="https://wa.me/94770266988?text=Hi%20Nalinda%2C%20I'd%20love%20to%20plan%20a%20Sri%20Lanka%20trip%20around%20Maha%20Shivaratri%20(6%20Mar%202027)." target="_blank" rel="noopener noreferrer" aria-label="Plan a trip around Maha Shivaratri, 6 Mar 2027">
+            <time class="rkt-event__date" datetime="2027-03-06">
+              <span class="rkt-event__day">06</span>
+              <span class="rkt-event__month">Mar</span>
+            </time>
+            <span class="rkt-event__info">
+              <span class="rkt-event__top">
+                <span class="rkt-event__name">Maha Shivaratri</span>
+                <span class="rkt-event__when"></span>
+              </span>
+              <span class="rkt-event__meta">Koneswaram &amp; Munneswaram Kovils</span>
+            </span>
+          </a>
+        </li>
+      </ol>
 
-        <!-- Event 1 -->
-        <a class="rkt-event" href="https://visitsrilanka.asia/events/kandy-esala-perahera" target="_blank" rel="noopener nofollow">
-          <div class="rkt-event__date">
-            <span class="rkt-event__day">07</span>
-            <span class="rkt-event__month">AUG</span>
-          </div>
-          <div class="rkt-event__info">
-            <p class="rkt-event__name">Kandy Esala Perahera</p>
-            <p class="rkt-event__meta">
-              <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
-              Temple of the Tooth, Kandy
-            </p>
-          </div>
-          <span class="rkt-event__tag rkt-event__tag--free">Free</span>
-        </a>
-
-        <div class="rkt-events-card__divider"></div>
-
-        <!-- Event 2 -->
-        <a class="rkt-event" href="https://visitsrilanka.asia/events/nallur-kandaswamy-temple-festival" target="_blank" rel="noopener nofollow">
-          <div class="rkt-event__date">
-            <span class="rkt-event__day">05</span>
-            <span class="rkt-event__month">AUG</span>
-          </div>
-          <div class="rkt-event__info">
-            <p class="rkt-event__name">Nallur Kandaswamy Festival</p>
-            <p class="rkt-event__meta">
-              <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
-              Nallur Temple, Jaffna
-            </p>
-          </div>
-          <span class="rkt-event__tag rkt-event__tag--free">Free</span>
-        </a>
-
-        <div class="rkt-events-card__divider"></div>
-
-        <!-- Event 3 -->
-        <a class="rkt-event" href="https://visitsrilanka.asia/events/negombo-fish-market-seafood-festival" target="_blank" rel="noopener nofollow">
-          <div class="rkt-event__date">
-            <span class="rkt-event__day">30</span>
-            <span class="rkt-event__month">AUG</span>
-          </div>
-          <div class="rkt-event__info">
-            <p class="rkt-event__name">Negombo Seafood Festival</p>
-            <p class="rkt-event__meta">
-              <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
-              Negombo Fish Market
-            </p>
-          </div>
-          <span class="rkt-event__tag rkt-event__tag--free">Free</span>
-        </a>
-
-        <div class="rkt-events-card__divider"></div>
-
-        <!-- Event 4 -->
-        <a class="rkt-event" href="https://visitsrilanka.asia/events/ella-ultra-trail-race" target="_blank" rel="noopener nofollow">
-          <div class="rkt-event__date">
-            <span class="rkt-event__day">13</span>
-            <span class="rkt-event__month">SEP</span>
-          </div>
-          <div class="rkt-event__info">
-            <p class="rkt-event__name">Ella Ultra Trail Race</p>
-            <p class="rkt-event__meta">
-              <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
-              Ella, Badulla District
-            </p>
-          </div>
-          <span class="rkt-event__tag">LKR 8,000</span>
-        </a>
-
-      </div>
-
-      <a href="https://visitsrilanka.asia/events" target="_blank" rel="noopener nofollow" class="rkt-events-card__cta">
-        View All Events
+      <a href="book.html" class="rkt-events-card__cta">
+        Plan Your Journey
         <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg>
       </a>
-    </div>
+    </aside>
 
     <!-- Scrolling marquee headline -->
     <div class="rkt-hero__ticker-wrap" aria-hidden="true">
@@ -274,7 +313,7 @@
     </div>
 
     <!-- Scroll cue -->
-    <button class="rkt-hero__scroll-cue" onclick="document.getElementById('about').scrollIntoView({behavior:'smooth'})">
+    <button type="button" class="rkt-hero__scroll-cue" aria-label="Scroll to About Us" onclick="document.getElementById('about').scrollIntoView({behavior:'smooth'})">
       <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><polyline points="6 9 12 15 18 9"/></svg>
     </button>
 
@@ -319,29 +358,29 @@
       </div>
 
       <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 md:gap-8">
-        <article class="group cursor-pointer">
+        <a href="destination-detail.html" class="group block">
           <div class="relative overflow-hidden rounded-jumbo aspect-[4/5] mb-4 md:mb-6 gold-scrim">
             <img class="w-full h-full object-cover" src="assets/9arch-view.webp" alt="Misty mountain view of the Nine Arch Bridge in Ella, Sri Lanka." />
           </div>
           <span class="text-xs uppercase tracking-widest text-muted block mb-2">Ella</span>
           <h3 class="serif text-2xl md:text-3xl text-ink group-hover:text-gold transition-colors">The Highlands</h3>
-        </article>
+        </a>
 
-        <article class="group cursor-pointer">
+        <a href="destination-kandy.html" class="group block">
           <div class="relative overflow-hidden rounded-jumbo aspect-[4/5] mb-4 md:mb-6 gold-scrim">
             <img class="w-full h-full object-cover" src="assets/kandy-lake-evening-view.webp" alt="Ancient temple complex beside a lake in Kandy, Sri Lanka." />
           </div>
           <span class="text-xs uppercase tracking-widest text-muted block mb-2">Kandy</span>
           <h3 class="serif text-2xl md:text-3xl text-ink group-hover:text-gold transition-colors">Our Home Turf</h3>
-        </article>
+        </a>
 
-        <article class="group cursor-pointer sm:col-span-2 md:col-span-1">
+        <a href="destination-galle.html" class="group block sm:col-span-2 md:col-span-1">
           <div class="relative overflow-hidden rounded-jumbo aspect-[4/5] mb-4 md:mb-6 gold-scrim">
             <img class="w-full h-full object-cover" src="assets/galle-lanscape-view.jpg" alt="Colonial Galle Fort lighthouse overlooking the Indian Ocean at dusk." />
           </div>
           <span class="text-xs uppercase tracking-widest text-muted block mb-2">Galle</span>
           <h3 class="serif text-2xl md:text-3xl text-ink group-hover:text-gold transition-colors">Coastal Heritage</h3>
-        </article>
+        </a>
       </div>
 
       <div class="mt-8 text-center md:hidden">
@@ -350,17 +389,102 @@
     </div>
   </section>
 
-  
-  <!-- Review Panel -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/iframe-resizer/4.2.10/iframeResizer.min.js"></script>
-  <iframe
-    onload="iFrameResize(this)"
-    src="https://daa00fd339d24ec38a61b354edfddb25.elf.site/"
-    style="border:none;width:100%;"
-    title="Customer Reviews"
-  ></iframe>
 
-</section>
+  <!-- =============================================
+       SIGNATURE TOURS
+       ============================================= -->
+  <section id="tours" class="py-16 md:py-24 px-5 md:px-6 bg-pearl">
+    <div class="max-w-7xl mx-auto">
+      <div class="flex justify-between items-end mb-10 md:mb-16">
+        <div>
+          <span class="text-xs uppercase tracking-widest text-muted block mb-3 md:mb-4">Signature Journeys</span>
+          <h2 class="serif text-3xl md:text-5xl text-ink">Our Tour Packages</h2>
+        </div>
+        <a href="tours.html" class="hidden md:block text-sm text-muted hover:text-ink transition-colors">View All Tours <i class="fa-solid fa-arrow-right ml-2"></i></a>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
+        <article class="group flex flex-col bg-white rounded-3xl overflow-hidden border border-line shadow-soft hover:shadow-lift transition-shadow duration-500">
+          <a href="tour-detail.html" class="block relative aspect-[4/3] overflow-hidden">
+            <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="assets/10day-private-tour.avif" alt="Infinity pool overlooking the Sri Lankan countryside" loading="lazy" decoding="async" />
+            <span class="absolute top-4 left-4 bg-white/90 px-3 py-1 rounded-full text-[10px] uppercase tracking-widest font-bold text-gold">Most Popular</span>
+          </a>
+          <div class="flex flex-col flex-1 p-6 md:p-8">
+            <span class="text-xs uppercase tracking-widest text-muted mb-2">10 Days</span>
+            <h3 class="serif text-2xl md:text-3xl text-ink mb-3"><a href="tour-detail.html" class="hover:text-gold transition-colors">The Royal Ceylon Heritage Tour</a></h3>
+            <p class="text-sm text-muted font-light leading-relaxed mb-6">Climb Sigiriya, visit sacred Kandy, ride through tea country to Ella, go on a Yala safari and unwind on the south coast.</p>
+            <div class="mt-auto flex items-end justify-between gap-4 pt-6 border-t border-line">
+              <div>
+                <p class="text-[10px] uppercase tracking-widest text-muted">Starting from</p>
+                <p class="text-xl font-bold text-ink">$860 <span class="text-xs font-light text-muted">/ 3 person</span></p>
+              </div>
+              <a href="book.html?tour=The+Royal+Ceylon+Heritage+Tour" class="px-5 py-3 rounded-full bg-gold text-white text-[10px] uppercase tracking-widest font-bold hover:bg-ink transition-colors">Book Now</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="group flex flex-col bg-white rounded-3xl overflow-hidden border border-line shadow-soft hover:shadow-lift transition-shadow duration-500">
+          <a href="tour-7-day-highlights.html" class="block relative aspect-[4/3] overflow-hidden">
+            <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="assets/selfie-at-nine-arch.avif" alt="Travellers at the Nine Arch Bridge in Ella" loading="lazy" decoding="async" />
+          </a>
+          <div class="flex flex-col flex-1 p-6 md:p-8">
+            <span class="text-xs uppercase tracking-widest text-muted mb-2">7 Days</span>
+            <h3 class="serif text-2xl md:text-3xl text-ink mb-3"><a href="tour-7-day-highlights.html" class="hover:text-gold transition-colors">7-Day Highlights Tour</a></h3>
+            <p class="text-sm text-muted font-light leading-relaxed mb-6">Ancient kingdoms, sacred temples and village life across Sigiriya, Kandy and Ella with a private guide.</p>
+            <div class="mt-auto flex items-end justify-between gap-4 pt-6 border-t border-line">
+              <div>
+                <p class="text-[10px] uppercase tracking-widest text-muted">Starting from</p>
+                <p class="text-xl font-bold text-ink">$700 <span class="text-xs font-light text-muted">/ 3 person</span></p>
+              </div>
+              <a href="book.html?tour=7-Day+Highlights+Tour" class="px-5 py-3 rounded-full bg-gold text-white text-[10px] uppercase tracking-widest font-bold hover:bg-ink transition-colors">Book Now</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="group flex flex-col bg-white rounded-3xl overflow-hidden border border-line shadow-soft hover:shadow-lift transition-shadow duration-500">
+          <a href="tour-5-day-round.html" class="block relative aspect-[4/3] overflow-hidden">
+            <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="assets/selfie-with-chinese-tourists.avif" alt="Guests on a private round tour of Sri Lanka" loading="lazy" decoding="async" />
+          </a>
+          <div class="flex flex-col flex-1 p-6 md:p-8">
+            <span class="text-xs uppercase tracking-widest text-muted mb-2">5 Days</span>
+            <h3 class="serif text-2xl md:text-3xl text-ink mb-3"><a href="tour-5-day-round.html" class="hover:text-gold transition-colors">5-Days Round Tour</a></h3>
+            <p class="text-sm text-muted font-light leading-relaxed mb-6">Sigiriya, Polonnaruwa, a Minneriya safari, Kandy and Pinnawala, with airport transfers included.</p>
+            <div class="mt-auto flex items-end justify-between gap-4 pt-6 border-t border-line">
+              <div>
+                <p class="text-[10px] uppercase tracking-widest text-muted">Starting from</p>
+                <p class="text-xl font-bold text-ink">$500 <span class="text-xs font-light text-muted">/ 3 person</span></p>
+              </div>
+              <a href="book.html?tour=5-Days+Round+Tour" class="px-5 py-3 rounded-full bg-gold text-white text-[10px] uppercase tracking-widest font-bold hover:bg-ink transition-colors">Book Now</a>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="mt-8 text-center md:hidden">
+        <a href="tours.html" class="text-sm text-muted border-b border-muted pb-0.5">View All Tours</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- =============================================
+       REVIEWS
+       ============================================= -->
+  <section id="reviews" class="py-16 md:py-24 px-5 md:px-6 bg-white">
+    <div class="max-w-7xl mx-auto">
+      <div class="text-center mb-10 md:mb-12">
+        <span class="text-xs uppercase tracking-widest text-muted block mb-3 md:mb-4">Guest Stories</span>
+        <h2 class="serif text-3xl md:text-5xl text-ink">What Our Travellers Say</h2>
+      </div>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/iframe-resizer/4.2.10/iframeResizer.min.js"></script>
+      <iframe
+        onload="iFrameResize(this)"
+        src="https://daa00fd339d24ec38a61b354edfddb25.elf.site/"
+        style="border:none;width:100%;"
+        title="Customer Reviews"
+      ></iframe>
+    </div>
+  </section>
+
   <!-- =============================================
        GALLERY GRID
        ============================================= -->
@@ -530,13 +654,12 @@
           <ul class="space-y-3 md:space-y-4 text-sm text-muted font-light">
             <li><a href="index.html#about" class="hover:text-ink transition-colors">About Us</a></li>
             <li><a href="#reviews" class="hover:text-ink transition-colors">Reviews</a></li>
-            <li><a href="#" class="hover:text-ink transition-colors">Contact</a></li>
+            <li><a href="https://wa.me/94770266988" target="_blank" rel="noopener noreferrer" class="hover:text-ink transition-colors">Contact</a></li>
           </ul>
         </div>
         <div>
           <h3 class="text-xs uppercase tracking-widest text-ink font-semibold mb-4 md:mb-6">Follow Us</h3>
           <div class="flex space-x-5 text-muted">
-            <a href="#" class="hover:text-gold transition-colors"><i class="fa-brands fa-instagram text-xl"></i></a>
             <a href="https://web.facebook.com/people/Royal-Kandy-Tours/100054545675804/?_rdc=1&_rdr#" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="hover:text-gold transition-colors"><i class="fa-brands fa-facebook text-xl"></i></a>
             <a href="https://wa.me/94770266988" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" class="hover:text-gold transition-colors"><i class="fa-brands fa-whatsapp text-xl"></i></a>
           </div>
@@ -545,13 +668,40 @@
       <div class="border-t border-line pt-8 md:pt-12 flex flex-col md:flex-row justify-between items-center text-xs text-muted font-light gap-4">
         <p>&copy; 2026 Royal Kandy Tours, Kandy, Sri Lanka. All rights reserved.</p>
         <div class="flex space-x-6 md:space-x-8">
-          <a href="#" class="hover:text-ink">Privacy Policy</a>
-          <a href="#" class="hover:text-ink">Terms of Service</a>
+          <a href="privacy.html" class="hover:text-ink">Privacy Policy</a>
+          <a href="terms.html" class="hover:text-ink">Terms of Service</a>
           <a href="cookies.html" class="hover:text-ink">Cookie Policy</a>
         </div>
       </div>
     </div>
   </footer>
+
+  <script>
+    // Upcoming events: hide past dates, show the next four with a countdown
+    (() => {
+      const list = document.getElementById('rktEvents');
+      if (!list) return;
+      const today = new Date();
+      today.setHours(0, 0, 0, 0);
+      let shown = 0;
+      list.querySelectorAll('.rkt-event').forEach(item => {
+        const [y, m, d] = item.dataset.date.split('-').map(Number);
+        const days = Math.round((new Date(y, m - 1, d) - today) / 864e5);
+        const show = days >= 0 && shown < 4;
+        item.hidden = !show;
+        if (!show) return;
+        shown++;
+        const when = days === 0 ? 'Today'
+          : days === 1 ? 'Tomorrow'
+          : days < 14 ? `In ${days} days`
+          : days < 60 ? `In ${Math.round(days / 7)} weeks`
+          : `In ${Math.round(days / 30)} months`;
+        item.querySelector('.rkt-event__when').textContent = when;
+        item.classList.toggle('is-soon', days <= 1);
+      });
+      if (!shown) list.closest('.rkt-events-card').hidden = true;
+    })();
+  </script>
 
 </body>
 </html>

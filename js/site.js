@@ -1,7 +1,3 @@
-window.FontAwesomeConfig = {
-  autoReplaceSvg: 'nest'
-};
-
 document.addEventListener('DOMContentLoaded', () => {
   const currentPath = window.location.pathname.split('/').pop().toLowerCase();
   const normalizedPath = currentPath || 'index.html';

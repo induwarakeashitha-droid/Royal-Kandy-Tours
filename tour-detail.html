@@ -2,35 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <link rel="icon" type="image/png" href="assets/logo.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/favicon-192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Royal Ceylon Heritage Tour (10 Days) | Royal Kandy Tours</title>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        ink: '#2C2B2A',
-                        muted: '#706E6B',
-                        line: '#EADCC9',
-                        sand: '#F5F2EB',
-                        pearl: '#FAF9F6',
-                        gold: '#D4AF37',
-                    },
-                    fontFamily: {
-                        serif: ['"Cormorant Garamond"', 'serif'],
-                        sans: ['Inter', 'sans-serif'],
-                    },
-                }
-            }
-        }
-    </script>
-    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
-    <script src="js/fontawesome-config.js" defer></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
     <script src="js/site.js" defer></script>
 
     <!-- SEO & Social Sharing -->
@@ -48,6 +27,7 @@
     <meta name="twitter:title" content="The Royal Ceylon Heritage Tour | Royal Kandy Tours">
     <meta name="twitter:description" content="10 days through the best of Sri Lanka — Sigiriya, Kandy, Ella, Yala safari, Mirissa beaches and Galle Fort. Private tour for 3 people.">
     <meta name="twitter:image" content="https://www.royalkandytours.com/assets/10day-private-tour.avif">
+    <link rel="stylesheet" href="css/tailwind.css">
 </head>
 <body class="antialiased bg-pearl text-ink font-sans">
 
@@ -76,7 +56,7 @@
     <nav class="navbar" id="navbar">
       <div class="nav-inner">
         <a href="index.html" class="logo">
-          <img src="assets/logo.png" alt="Royal Kandy Tours">
+          <img src="assets/logo-royal-kandy-tours.png" alt="Royal Kandy Tours" width="520" height="264">
         </a>
 
         <ul class="nav-links">
@@ -101,7 +81,7 @@
   <!-- MOBILE DRAWER -->
   <div class="scrim" id="scrim"></div>
   <div class="mobile-drawer" id="mobileDrawer">
-    <button class="close-drawer" id="closeDrawer">&times;</button>
+    <button type="button" class="close-drawer" id="closeDrawer" aria-label="Close menu">&times;</button>
 
     <a href="index.html">Home</a>
     <a href="index.html#about">About Us</a>
@@ -164,8 +144,8 @@
               <span class="serif text-xl font-bold text-ink">Luxury AC Sedan/Van</span>
           </div>
           <div class="border-r border-line last:border-r-0 pr-4">
-              <span class="block text-[10px] uppercase tracking-widest text-muted font-semibold">Meals Included</span>
-              <span class="serif text-xl font-bold text-ink">Daily Breakfast & Dinner</span>
+              <span class="block text-[10px] uppercase tracking-widest text-muted font-semibold">Airport Transfers</span>
+              <span class="serif text-xl font-bold text-ink">Pickup &amp; Drop-off</span>
           </div>
           <div class="border-r border-line last:border-r-0 pr-4">
               <span class="block text-[10px] uppercase tracking-widest text-muted font-semibold">Guide</span>
@@ -173,7 +153,7 @@
           </div>
           <div>
               <span class="block text-[10px] uppercase tracking-widest text-muted font-semibold">Price From</span>
-              <span class="serif text-xl font-bold text-gold">$860 <span class="text-xs font-normal text-muted">/ person</span></span>
+              <span class="serif text-xl font-bold text-gold">$860 <span class="text-xs font-normal text-muted">/ 3 person</span></span>
           </div>
       </div>
   </section>
@@ -271,9 +251,6 @@
                               <div class="md:col-span-8 space-y-4 text-sm text-muted font-light leading-relaxed">
                                   <p>Welcome to Sri Lanka! Meet your private chauffeur-guide Nalinda upon arrival at Bandaranaike International Airport (CMB). Board your air-conditioned vehicle and journey through lush coconut groves to the heart of the Cultural Triangle in Sigiriya.</p>
                                   <p>Check in to your luxury eco-resort, unwind by the pool, and enjoy a traditional Sri Lankan welcome dinner.</p>
-                                  <div class="flex items-center space-x-6 text-xs text-ink pt-2 font-medium">
-                                      <span><i class="fa-solid fa-utensils text-gold mr-1"></i> Meals: Dinner</span>
-                                  </div>
                               </div>
                               <div class="md:col-span-4 h-40 rounded-2xl overflow-hidden">
                                   <img src="assets/Anuradhapura-Sri-Lanka-Cultural-Triangle.jpeg" alt="Sigiriya rock fortress landscape" class="w-full h-full object-cover">
@@ -294,9 +271,6 @@
                               <div class="md:col-span-8 space-y-4 text-sm text-muted font-light leading-relaxed">
                                   <p>Ascend the iconic 5th-century Sigiriya Rock Fortress (Lion Rock) in the cool morning air. Marvel at ancient frescoes, mirror walls, and the summit palace ruins overlooking 360-degree jungle canopy.</p>
                                   <p>In the afternoon, experience an authentic village safari: ride a bullock cart, cross a lotus lake on a wooden catamaran, and participate in a live traditional cooking demonstration with local hosts.</p>
-                                  <div class="flex items-center space-x-6 text-xs text-ink pt-2 font-medium">
-                                      <span><i class="fa-solid fa-utensils text-gold mr-1"></i> Meals: Breakfast, Village Lunch, Dinner</span>
-                                  </div>
                               </div>
                               <div class="md:col-span-4 h-40 rounded-2xl overflow-hidden">
                                   <img src="assets/Sri-Lanka-natural-landscape-view.jpg" alt="Sigiriya village safari and nature" class="w-full h-full object-cover">
@@ -317,9 +291,6 @@
                               <div class="md:col-span-8 space-y-4 text-sm text-muted font-light leading-relaxed">
                                   <p>Explore the UNESCO-listed Dambulla Cave Temple complex, housing over 150 serene Buddha statues and magnificent ancient ceiling murals carved into solid granite caves.</p>
                                   <p>Continue drive southwards to Kandy, stopping at a spice garden in Matale to learn about Sri Lankan cinnamon, cardamom, and herbal medicine. Evening check-in at a hillside location overlooking Kandy Lake.</p>
-                                  <div class="flex items-center space-x-6 text-xs text-ink pt-2 font-medium">
-                                      <span><i class="fa-solid fa-utensils text-gold mr-1"></i> Meals: Breakfast, Dinner</span>
-                                  </div>
                               </div>
                               <div class="md:col-span-4 h-40 rounded-2xl overflow-hidden">
                                   <img src="assets/Dambulla-Cave-Temple.jpg" alt="Dambulla cave temple view" class="w-full h-full object-cover">
@@ -340,9 +311,6 @@
                               <div class="md:col-span-8 space-y-4 text-sm text-muted font-light leading-relaxed">
                                   <p>Discover the last royal capital of Sri Lanka. Stroll around Kandy Lake, visit the Royal Botanical Gardens of Peradeniya featuring giant palm avenues and orchid houses.</p>
                                   <p>In the evening, attend the traditional Kandyan Cultural Dance performance followed by a evening ceremony at the sacred Temple of the Sacred Tooth Relic (Sri Dalada Maligawa).</p>
-                                  <div class="flex items-center space-x-6 text-xs text-ink pt-2 font-medium">
-                                      <span><i class="fa-solid fa-utensils text-gold mr-1"></i> Meals: Breakfast, Dinner</span>
-                                  </div>
                               </div>
                               <div class="md:col-span-4 h-40 rounded-2xl overflow-hidden">
                                   <img src="assets/kandy-lake.jpg" alt="Kandy lake view" class="w-full h-full object-cover">
@@ -363,9 +331,6 @@
                               <div class="md:col-span-8 space-y-4 text-sm text-muted font-light leading-relaxed">
                                   <p>Board the famous mountain blue train from Peradeniya / Nuwara Eliya to Ella. Ride through rolling emerald tea estates, mist-covered valleys, and cascading waterfalls — renowned as one of the world's most scenic train rides.</p>
                                   <p>Your driver will pick you up at Ella station and check into your mountain view suite overlooking Ella Gap.</p>
-                                  <div class="flex items-center space-x-6 text-xs text-ink pt-2 font-medium">
-                                      <span><i class="fa-solid fa-utensils text-gold mr-1"></i> Meals: Breakfast, Dinner</span>
-                                  </div>
                               </div>
                               <div class="md:col-span-4 h-40 rounded-2xl overflow-hidden">
                                   <img src="assets/selfie-at-nine-arch.avif" alt="Scenic train journey to Ella" class="w-full h-full object-cover">
@@ -386,9 +351,6 @@
                               <div class="md:col-span-8 space-y-4 text-sm text-muted font-light leading-relaxed">
                                   <p>Wake up to crisp mountain air. Walk through tea fields to the iconic Nine Arch Bridge in time to watch the train pass across the colonial stone viaduct.</p>
                                   <p>Take an easy afternoon hike up Little Adam's Peak for 360-degree views of Ella Gap, followed by relaxing at a panoramic mountain café or zip-lining experience.</p>
-                                  <div class="flex items-center space-x-6 text-xs text-ink pt-2 font-medium">
-                                      <span><i class="fa-solid fa-utensils text-gold mr-1"></i> Meals: Breakfast, Dinner</span>
-                                  </div>
                               </div>
                               <div class="md:col-span-4 h-40 rounded-2xl overflow-hidden">
                                   <img src="assets/Ella-9arch-landscapejpg.jpg" alt="Nine arch bridge in Ella" class="w-full h-full object-cover">
@@ -409,9 +371,6 @@
                               <div class="md:col-span-8 space-y-4 text-sm text-muted font-light leading-relaxed">
                                   <p>Descend from the central highlands through Ravana Waterfalls toward the southern dry zone. Arrive in Yala by afternoon.</p>
                                   <p>Embark on an exciting 4x4 private jeep safari inside Yala National Park — home to one of the world's highest density of leopards, Asian wild elephants, sloth bears, and crocodiles.</p>
-                                  <div class="flex items-center space-x-6 text-xs text-ink pt-2 font-medium">
-                                      <span><i class="fa-solid fa-utensils text-gold mr-1"></i> Meals: Breakfast, Safari Snacks, Dinner</span>
-                                  </div>
                               </div>
                               <div class="md:col-span-4 h-40 rounded-2xl overflow-hidden">
                                   <img src="at_yala_safari.jpg" alt="Yala safari leopard and wildlife" class="w-full h-full object-cover">
@@ -432,9 +391,6 @@
                               <div class="md:col-span-8 space-y-4 text-sm text-muted font-light leading-relaxed">
                                   <p>Drive along the scenic southern shoreline to the tropical paradise of Mirissa. Check in to your beach resort.</p>
                                   <p>Spend the afternoon relaxing on golden sands, watching stilt fishermen in Weligama, and catching sunset at the famous Coconut Tree Hill vantage point.</p>
-                                  <div class="flex items-center space-x-6 text-xs text-ink pt-2 font-medium">
-                                      <span><i class="fa-solid fa-utensils text-gold mr-1"></i> Meals: Breakfast, Dinner</span>
-                                  </div>
                               </div>
                               <div class="md:col-span-4 h-40 rounded-2xl overflow-hidden">
                                   <img src="assets/mirissa-coconuttreehill-srilanka.jpg" alt="Mirissa coconut tree hill" class="w-full h-full object-cover">
@@ -455,9 +411,6 @@
                               <div class="md:col-span-8 space-y-4 text-sm text-muted font-light leading-relaxed">
                                   <p>Optional early morning catamaran excursion to spot Blue Whales and playful dolphins off the coast of Mirissa.</p>
                                   <p>Later, explore UNESCO World Heritage Galle Fort. Walk cobblestone streets lined with Dutch-colonial villas, artisan boutiques, lighthouse views, and sunset watchpoints over the Indian Ocean.</p>
-                                  <div class="flex items-center space-x-6 text-xs text-ink pt-2 font-medium">
-                                      <span><i class="fa-solid fa-utensils text-gold mr-1"></i> Meals: Breakfast, Farewell Dinner</span>
-                                  </div>
                               </div>
                               <div class="md:col-span-4 h-40 rounded-2xl overflow-hidden">
                                   <img src="assets/Lighthouse-Fort-Galle-Sri-Lanka.jpg" alt="Galle Fort Lighthouse" class="w-full h-full object-cover">
@@ -480,7 +433,6 @@
                                   <p>Transfer to Colombo International Airport (CMB) with memories to last a lifetime. Safe travels!</p>
                                   <div class="flex items-center space-x-6 text-xs text-ink pt-2 font-medium">
                                       <span><i class="fa-solid fa-plane text-gold mr-1"></i> Departure Transfer Included</span>
-                                      <span><i class="fa-solid fa-utensils text-gold mr-1"></i> Meals: Breakfast</span>
                                   </div>
                               </div>
                               <div class="md:col-span-4 h-40 rounded-2xl overflow-hidden">
@@ -494,7 +446,7 @@
 
               <!-- INCLUSIONS & EXCLUSIONS -->
               <div class="bg-white rounded-3xl p-8 md:p-10 border border-line shadow-sm">
-                  <h3 class="serif text-3xl text-ink mb-8">What's Included & Excluded</h3>
+                  <h3 class="serif text-3xl text-ink mb-8">What's Included &amp; Excluded</h3>
                   <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                       <!-- INCLUDED -->
                       <div class="space-y-4">
@@ -502,13 +454,11 @@
                               <i class="fa-solid fa-circle-check mr-2"></i> What's Included
                           </h4>
                           <ul class="space-y-3 text-sm text-muted font-light">
-                              <li class="flex items-start"><i class="fa-solid fa-check text-emerald-600 mt-1 mr-3 text-xs"></i> Daily breakfast & luxury dinners (Half Board)</li>
-                              <li class="flex items-start"><i class="fa-solid fa-check text-emerald-600 mt-1 mr-3 text-xs"></i> Private AC luxury vehicle with unlimited mileage</li>
+                              <li class="flex items-start"><i class="fa-solid fa-check text-emerald-600 mt-1 mr-3 text-xs"></i> Private AC vehicle with unlimited mileage</li>
                               <li class="flex items-start"><i class="fa-solid fa-check text-emerald-600 mt-1 mr-3 text-xs"></i> Dedicated English-speaking chauffeur-guide (Nalinda)</li>
-                              <li class="flex items-start"><i class="fa-solid fa-check text-emerald-600 mt-1 mr-3 text-xs"></i> Kandy to Ella Scenic Train Reserved Tickets</li>
-                              <li class="flex items-start"><i class="fa-solid fa-check text-emerald-600 mt-1 mr-3 text-xs"></i> Yala National Park 4x4 Private Jeep Safari + Permits</li>
-                              <li class="flex items-start"><i class="fa-solid fa-check text-emerald-600 mt-1 mr-3 text-xs"></i> All highway tolls, fuel, parking & driver lodging</li>
-                              <li class="flex items-start"><i class="fa-solid fa-check text-emerald-600 mt-1 mr-3 text-xs"></i> Airport pickup & drop-off transfers</li>
+                              <li class="flex items-start"><i class="fa-solid fa-check text-emerald-600 mt-1 mr-3 text-xs"></i> Driver &amp; guide accommodation</li>
+                              <li class="flex items-start"><i class="fa-solid fa-check text-emerald-600 mt-1 mr-3 text-xs"></i> Fuel, highway tolls &amp; parking</li>
+                              <li class="flex items-start"><i class="fa-solid fa-check text-emerald-600 mt-1 mr-3 text-xs"></i> Airport pickup &amp; drop-off transfers</li>
                           </ul>
                       </div>
 
@@ -518,11 +468,14 @@
                               <i class="fa-solid fa-circle-xmark mr-2"></i> What's Excluded
                           </h4>
                           <ul class="space-y-3 text-sm text-muted font-light">
-                              <li class="flex items-start"><i class="fa-solid fa-xmark text-rose-500 mt-1 mr-3 text-xs"></i> International airfare tickets & visa fees</li>
-                              <li class="flex items-start"><i class="fa-solid fa-xmark text-rose-500 mt-1 mr-3 text-xs"></i> Lunches (unless specified in village tour)</li>
-                              <li class="flex items-start"><i class="fa-solid fa-xmark text-rose-500 mt-1 mr-3 text-xs"></i> Optional whale watching boat trip in Mirissa</li>
-                              <li class="flex items-start"><i class="fa-solid fa-xmark text-rose-500 mt-1 mr-3 text-xs"></i> Personal expenses, souvenirs & alcoholic drinks</li>
-                              <li class="flex items-start"><i class="fa-solid fa-xmark text-rose-500 mt-1 mr-3 text-xs"></i> Gratuities / Tipping for guide & staff</li>
+                              <li class="flex items-start"><i class="fa-solid fa-xmark text-rose-500 mt-1 mr-3 text-xs"></i> Hotel accommodation</li>
+                              <li class="flex items-start"><i class="fa-solid fa-xmark text-rose-500 mt-1 mr-3 text-xs"></i> Meals (breakfast, lunch &amp; dinner)</li>
+                              <li class="flex items-start"><i class="fa-solid fa-xmark text-rose-500 mt-1 mr-3 text-xs"></i> Entrance tickets to sites &amp; train tickets</li>
+                              <li class="flex items-start"><i class="fa-solid fa-xmark text-rose-500 mt-1 mr-3 text-xs"></i> Safari jeeps &amp; national park fees</li>
+                              <li class="flex items-start"><i class="fa-solid fa-xmark text-rose-500 mt-1 mr-3 text-xs"></i> Optional activities (e.g. whale watching)</li>
+                              <li class="flex items-start"><i class="fa-solid fa-xmark text-rose-500 mt-1 mr-3 text-xs"></i> International airfare &amp; visa fees</li>
+                              <li class="flex items-start"><i class="fa-solid fa-xmark text-rose-500 mt-1 mr-3 text-xs"></i> Personal expenses, souvenirs &amp; drinks</li>
+                              <li class="flex items-start"><i class="fa-solid fa-xmark text-rose-500 mt-1 mr-3 text-xs"></i> Gratuities / tips for your guide</li>
                           </ul>
                       </div>
                   </div>
@@ -560,7 +513,7 @@
                               <span class="text-xs uppercase tracking-widest text-muted font-medium block mb-1">Starting Price</span>
                               <div class="flex items-baseline space-x-1">
                                   <span class="serif text-4xl font-bold text-ink">$860</span>
-                                  <span class="text-xs text-muted font-light">/ for 3 people</span>
+                                  <span class="text-xs text-muted font-light">/ 3 person</span>
                               </div>
                           </div>
                           <span class="bg-emerald-50 text-emerald-700 text-[10px] font-bold uppercase tracking-wider px-3 py-1 rounded-full">Best Value</span>
@@ -622,7 +575,7 @@
                           <div>
                               <h5 class="text-sm font-medium text-ink group-hover:text-gold transition-colors">7-Day Highlights Tour</h5>
                               <p class="text-xs text-muted">Sigiriya, Kandy & Ella</p>
-                              <span class="text-xs font-bold text-gold">$700 / person</span>
+                              <span class="text-xs font-bold text-gold">$700 / 3 person</span>
                           </div>
                       </a>
 
@@ -633,7 +586,7 @@
                           <div>
                               <h5 class="text-sm font-medium text-ink group-hover:text-gold transition-colors">5-Days Round Tour</h5>
                               <p class="text-xs text-muted">Cultural Triangle & Safari</p>
-                              <span class="text-xs font-bold text-gold">$500 / person</span>
+                              <span class="text-xs font-bold text-gold">$500 / 3 person</span>
                           </div>
                       </a>
                   </div>
@@ -671,7 +624,6 @@
               <div>
                   <h4 class="text-xs uppercase tracking-widest text-ink font-semibold mb-6">Follow Us</h4>
                   <div class="flex justify-center md:justify-start space-x-6 text-muted">
-                      <a href="#" class="hover:text-gold transition-colors"><i class="fa-brands fa-instagram text-xl"></i></a>
                       <a href="https://web.facebook.com/people/Royal-Kandy-Tours/100054545675804/?_rdc=1&_rdr#" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="hover:text-gold transition-colors"><i class="fa-brands fa-facebook text-xl"></i></a>
                       <a href="https://wa.me/94770266988" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" class="hover:text-gold transition-colors"><i class="fa-brands fa-whatsapp text-xl"></i></a>
                   </div>
@@ -680,8 +632,8 @@
           <div class="border-t border-line pt-12 flex flex-col md:flex-row justify-between items-center text-xs text-muted font-light">
               <p>&copy; 2026 Royal Kandy Tours, Kandy, Sri Lanka. All rights reserved.</p>
               <div class="flex space-x-8 mt-6 md:mt-0">
-                  <a href="#" class="hover:text-ink">Privacy Policy</a>
-                  <a href="#" class="hover:text-ink">Terms of Service</a>
+                  <a href="privacy.html" class="hover:text-ink">Privacy Policy</a>
+                  <a href="terms.html" class="hover:text-ink">Terms of Service</a>
           <a href="cookies.html" class="hover:text-ink">Cookie Policy</a>
               </div>
           </div>

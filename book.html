@@ -2,35 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <link rel="icon" type="image/png" href="assets/logo.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/favicon-192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Book Your Tour | Royal Kandy Tours</title>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        ink: '#2C2B2A',
-                        muted: '#706E6B',
-                        line: '#EADCC9',
-                        sand: '#F5F2EB',
-                        pearl: '#FAF9F6',
-                        gold: '#D4AF37',
-                    },
-                    fontFamily: {
-                        serif: ['"Cormorant Garamond"', 'serif'],
-                        sans: ['Inter', 'sans-serif'],
-                    },
-                }
-            }
-        }
-    </script>
-    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
-    <script src="js/fontawesome-config.js" defer></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
     <script src="js/site.js" defer></script>
     <style>
         /* ---- Booking-specific styles ---- */
@@ -183,6 +162,7 @@
     <meta name="twitter:title" content="Book Your Tour | Royal Kandy Tours">
     <meta name="twitter:description" content="Ready to explore Sri Lanka? Book your private tour with Royal Kandy Tours in just a few steps and chat directly with Nalinda on WhatsApp.">
     <meta name="twitter:image" content="https://www.royalkandytours.com/assets/kandy-lake-bg.jpg">
+    <link rel="stylesheet" href="css/tailwind.css">
 </head>
 <body class="antialiased booking-page">
 
@@ -208,7 +188,7 @@
     <nav class="navbar" id="navbar">
       <div class="nav-inner">
         <a href="index.html" class="logo">
-          <img src="assets/logo.png" alt="Royal Kandy Tours">
+          <img src="assets/logo-royal-kandy-tours.png" alt="Royal Kandy Tours" width="520" height="264">
         </a>
         <ul class="nav-links">
           <li><a href="index.html">Home</a></li>
@@ -231,7 +211,7 @@
   <!-- MOBILE DRAWER -->
   <div class="scrim" id="scrim"></div>
   <div class="mobile-drawer" id="mobileDrawer">
-    <button class="close-drawer" id="closeDrawer">&times;</button>
+    <button type="button" class="close-drawer" id="closeDrawer" aria-label="Close menu">&times;</button>
 
     <a href="index.html">Home</a>
     <a href="index.html#about">About Us</a>
@@ -293,7 +273,7 @@
               <div class="space-y-4" id="tourCards">
 
                 <label class="tour-card block cursor-pointer" for="tour1">
-                  <input class="hidden" type="radio" name="tour" id="tour1" value="The Royal Ceylon Heritage Tour" data-days="10" data-price="$860 / for 3 people">
+                  <input class="hidden" type="radio" name="tour" id="tour1" value="The Royal Ceylon Heritage Tour" data-days="10" data-price="$860 / 3 person">
                   <div class="flex gap-4 p-5">
                     <div class="w-24 h-20 rounded-xl overflow-hidden flex-shrink-0">
                       <img class="w-full h-full object-cover" src="assets/10day-private-tour.avif" alt="The Royal Ceylon Heritage Tour">
@@ -306,14 +286,14 @@
                       <p class="text-xs text-muted font-light mb-2">Sigiriya · Kandy · Ella · Yala · Mirissa · Galle</p>
                       <div class="flex items-center gap-4">
                         <span class="text-xs text-muted"><i class="fa-regular fa-clock mr-1"></i>10 Days</span>
-                        <span class="text-xs text-gold font-medium">From $860 / for 3 people</span>
+                        <span class="text-xs text-gold font-medium">From $860 / 3 person</span>
                       </div>
                     </div>
                   </div>
                 </label>
 
                 <label class="tour-card block cursor-pointer" for="tour2">
-                  <input class="hidden" type="radio" name="tour" id="tour2" value="7-Day Highlights Tour: Sigiriya, Kandy &amp; Ella" data-days="7" data-price="$700 / for 3 people">
+                  <input class="hidden" type="radio" name="tour" id="tour2" value="7-Day Highlights Tour: Sigiriya, Kandy &amp; Ella" data-days="7" data-price="$700 / 3 person">
                   <div class="flex gap-4 p-5">
                     <div class="w-24 h-20 rounded-xl overflow-hidden flex-shrink-0">
                       <img class="w-full h-full object-cover" src="assets/selfie-at-nine-arch.avif" alt="7-Day Highlights Tour">
@@ -326,14 +306,14 @@
                       <p class="text-xs text-muted font-light mb-2">Sigiriya · Dambulla · Kandy · Nuwara Eliya · Ella</p>
                       <div class="flex items-center gap-4">
                         <span class="text-xs text-muted"><i class="fa-regular fa-clock mr-1"></i>7 Days</span>
-                        <span class="text-xs text-gold font-medium">From $700 / for 3 people</span>
+                        <span class="text-xs text-gold font-medium">From $700 / 3 person</span>
                       </div>
                     </div>
                   </div>
                 </label>
 
                 <label class="tour-card block cursor-pointer" for="tour3">
-                  <input class="hidden" type="radio" name="tour" id="tour3" value="5-Days Round Tour" data-days="5" data-price="$500 / for 3 people">
+                  <input class="hidden" type="radio" name="tour" id="tour3" value="5-Days Round Tour" data-days="5" data-price="$500 / 3 person">
                   <div class="flex gap-4 p-5">
                     <div class="w-24 h-20 rounded-xl overflow-hidden flex-shrink-0">
                       <img class="w-full h-full object-cover" src="assets/selfie-with-chinese-tourists.avif" alt="5-Days Round Tour">
@@ -346,7 +326,7 @@
                       <p class="text-xs text-muted font-light mb-2">Sigiriya · Polonnaruwa · Minneriya · Kandy · Pinnawala</p>
                       <div class="flex items-center gap-4">
                         <span class="text-xs text-muted"><i class="fa-regular fa-clock mr-1"></i>5 Days</span>
-                        <span class="text-xs text-gold font-medium">From $500 / for 3 people</span>
+                        <span class="text-xs text-gold font-medium">From $500 / 3 person</span>
                       </div>
                     </div>
                   </div>
@@ -400,6 +380,7 @@
                   <input class="form-input" type="date" id="endDate" name="endDate">
                 </div>
               </div>
+              <p class="text-xs text-red-400 -mt-6 mb-8 hidden" id="dateError"></p>
 
               <!-- Flexibility -->
               <div class="mb-8">
@@ -590,6 +571,7 @@
                   <label class="exp-chip" id="contact3"><input type="radio" name="contactPref" value="Any" class="hidden"><i class="fa-solid fa-check-double text-xs"></i> Any</label>
                 </div>
               </div>
+              <p class="text-xs text-red-400 mb-6 hidden" id="detailsError"></p>
 
               <!-- Privacy note -->
               <div class="bg-sand rounded-xl p-4 flex gap-3 items-start">
@@ -658,7 +640,7 @@
               <!-- Terms checkbox -->
               <label class="flex items-start gap-3 cursor-pointer">
                 <input type="checkbox" id="termsCheck" class="mt-1 accent-gold w-4 h-4 flex-shrink-0">
-                <span class="text-xs text-muted font-light leading-relaxed">I agree to be contacted by Royal Kandy Tours regarding this enquiry and I understand that this is a booking request, not a confirmed reservation.</span>
+                <span class="text-xs text-muted font-light leading-relaxed">I agree to be contacted by Royal Kandy Tours regarding this enquiry and I understand that this is a booking request, not a confirmed reservation. I have read the <a href="terms.html" target="_blank" class="text-gold hover:underline">Terms of Service</a> and <a href="privacy.html" target="_blank" class="text-gold hover:underline">Privacy Policy</a>.</span>
               </label>
               <p class="text-xs text-red-400 mt-2 hidden" id="termsError">Please accept to continue.</p>
             </div>
@@ -679,7 +661,7 @@
               </div>
               <h2 class="serif text-4xl text-ink mb-3">Request Sent!</h2>
               <p class="text-muted font-light mb-2 leading-relaxed max-w-md mx-auto">Thank you for choosing Royal Kandy Tours. Nalinda will personally review your itinerary and reply within <strong class="text-ink font-medium">24 hours</strong>.</p>
-              <p class="text-sm text-muted font-light mb-8">A confirmation has been sent to <span class="text-ink font-medium" id="successEmail">your email</span>.</p>
+              <p class="text-sm text-muted font-light mb-8">Your request has opened in WhatsApp. Please press <strong class="text-ink font-medium">Send</strong> there so it reaches Nalinda.</p>
               <div class="flex flex-col sm:flex-row gap-4 justify-center">
                 <a href="tours.html" class="btn-outline">Browse More Tours</a>
                 <a href="index.html" class="btn-gold"><i class="fa-solid fa-home text-xs"></i> Return Home</a>
@@ -785,13 +767,12 @@
           <ul class="space-y-4 text-sm text-muted font-light">
             <li><a href="index.html#about" class="hover:text-ink transition-colors">About Us</a></li>
             <li><a href="index.html#reviews" class="hover:text-ink transition-colors">Reviews</a></li>
-            <li><a href="#" class="hover:text-ink transition-colors">Contact</a></li>
+            <li><a href="https://wa.me/94770266988" target="_blank" rel="noopener noreferrer" class="hover:text-ink transition-colors">Contact</a></li>
           </ul>
         </div>
         <div>
           <h4 class="text-xs uppercase tracking-widest text-ink font-semibold mb-6">Follow Us</h4>
           <div class="flex justify-center md:justify-start space-x-6 text-muted">
-            <a href="#" class="hover:text-gold transition-colors"><i class="fa-brands fa-instagram text-xl"></i></a>
             <a href="https://web.facebook.com/people/Royal-Kandy-Tours/100054545675804/?_rdc=1&_rdr#" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="hover:text-gold transition-colors"><i class="fa-brands fa-facebook text-xl"></i></a>
             <a href="https://wa.me/94770266988" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" class="hover:text-gold transition-colors"><i class="fa-brands fa-whatsapp text-xl"></i></a>
           </div>
@@ -800,8 +781,8 @@
       <div class="border-t border-line pt-12 flex flex-col md:flex-row justify-between items-center text-xs text-muted font-light">
         <p>&copy; 2026 Royal Kandy Tours, Kandy, Sri Lanka. All rights reserved.</p>
         <div class="flex space-x-8 mt-6 md:mt-0">
-          <a href="#" class="hover:text-ink">Privacy Policy</a>
-          <a href="#" class="hover:text-ink">Terms of Service</a>
+          <a href="privacy.html" class="hover:text-ink">Privacy Policy</a>
+          <a href="terms.html" class="hover:text-ink">Terms of Service</a>
           <a href="cookies.html" class="hover:text-ink">Cookie Policy</a>
         </div>
       </div>
@@ -882,17 +863,39 @@
       window.scrollTo({ top: 0, behavior: 'smooth' });
     }
 
-    function nextStep(from) {
-      if (from === 1) {
-        const chosen = document.querySelector('#tourCards input[type="radio"]:checked');
-        if (!chosen) {
-          document.getElementById('tourError').classList.remove('hidden');
-          return;
-        }
-        document.getElementById('tourError').classList.add('hidden');
-      }
-      goToStep(from + 1);
+    function showError(id, message) {
+      const el = document.getElementById(id);
+      el.textContent = message;
+      el.classList.toggle('hidden', !message);
+      return !message;
     }
+
+    function validateDates() {
+      const start = document.getElementById('startDate').value;
+      const end = document.getElementById('endDate').value;
+      if (!start || !end) return showError('dateError', 'Please choose your arrival and departure dates.');
+      if (end < start) return showError('dateError', 'Departure date must be on or after your arrival date.');
+      return showError('dateError', '');
+    }
+
+    function validateDetails() {
+      const firstName = document.getElementById('firstName').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const phone = document.getElementById('phone').value.trim();
+      if (!firstName) return showError('detailsError', 'Please enter your first name.');
+      if (!email && !phone) return showError('detailsError', 'Please enter an email address or phone number so we can reach you.');
+      if (email && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) return showError('detailsError', 'Please enter a valid email address.');
+      return showError('detailsError', '');
+    }
+
+    // Arrival can't be in the past; departure can't be before arrival
+    const startDateInput = document.getElementById('startDate');
+    const endDateInput = document.getElementById('endDate');
+    startDateInput.min = new Date().toISOString().split('T')[0];
+    endDateInput.min = startDateInput.min;
+    startDateInput.addEventListener('change', () => {
+      endDateInput.min = startDateInput.value || startDateInput.min;
+    });
 
     function prevStep(from) { goToStep(from - 1); }
 
@@ -931,8 +934,6 @@
       document.getElementById('sSpecial').textContent = sr || 'None';
     }
 
-    // Override nextStep for step 4 to also build summary
-    const _origNext = nextStep;
     function nextStep(from) {
       if (from === 1) {
         const chosen = document.querySelector('#tourCards input[type="radio"]:checked');
@@ -942,7 +943,9 @@
         }
         document.getElementById('tourError').classList.add('hidden');
       }
+      if (from === 2 && !validateDates()) return;
       if (from === 4) {
+        if (!validateDetails()) return;
         buildSummary();
       }
       goToStep(from + 1);
@@ -1005,7 +1008,6 @@
         const waUrl = `https://wa.me/94770266988?text=${encodeURIComponent(msg)}`;
         window.open(waUrl, '_blank');
 
-        document.getElementById('successEmail').textContent = emailInput !== '—' ? emailInput : 'you';
         document.querySelectorAll('.form-panel').forEach(p => p.classList.remove('active'));
         document.getElementById('panelSuccess').classList.add('active');
 

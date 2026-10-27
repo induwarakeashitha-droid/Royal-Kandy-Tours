@@ -2,50 +2,16 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <link rel="icon" type="image/png" href="assets/logo.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/favicon-192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Royal Kandy Tours | Explore Your Dream Destination</title>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        ink: '#2C2B2A',
-                        muted: '#706E6B',
-                        line: '#EADCC9',
-                        sand: '#F5F2EB',
-                        pearl: '#FAF9F6',
-                        gold: '#D4AF37',
-                    },
-                    fontFamily: {
-                        serif: ['"Cormorant Garamond"', 'serif'],
-                        sans: ['Inter', 'sans-serif'],
-                    },
-                    boxShadow: {
-                        soft: '0 4px 24px rgba(0,0,0,0.06)',
-                        lift: '0 8px 32px rgba(0,0,0,0.10)',
-                    },
-                    keyframes: {
-                        fadeUp: {
-                            'from': { opacity: '0', transform: 'translateY(12px)' },
-                            'to': { opacity: '1', transform: 'translateY(0)' },
-                        },
-                    },
-                    animation: {
-                        fadeUp: 'fadeUp 0.8s ease-out both',
-                    },
-                }
-            }
-        }
-    </script>
-    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
-    <script src="js/fontawesome-config.js" defer></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
     <script src="js/site.js" defer></script>
 
     <!-- SEO & Social Sharing -->
@@ -63,6 +29,7 @@
     <meta name="twitter:title" content="404 — Page Not Found | Royal Kandy Tours">
     <meta name="twitter:description" content="Looks like you wandered off the path. Head back and explore Sri Lanka with Royal Kandy Tours.">
     <meta name="twitter:image" content="https://www.royalkandytours.com/assets/kandy-lake-bg.jpg">
+    <link rel="stylesheet" href="css/tailwind.css">
 </head>
 <body class="antialiased">
 
@@ -90,17 +57,17 @@
     <!-- MAIN NAV BAR (LINE 2) -->
     <nav class="navbar" id="navbar">
       <div class="nav-inner">
-        <a href="#" class="logo">
-          <img src="assets/logo.png" alt="Royal Kandy Tours">
+        <a href="index.html" class="logo">
+          <img src="assets/logo-royal-kandy-tours.png" alt="Royal Kandy Tours" width="520" height="264">
         </a>
 
         <ul class="nav-links">
-          <li><a href="#" class="active">Home</a></li>
-          <li><a href="#about">About Us</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#about">About Us</a></li>
           <li><a href="tours.html">Tours</a></li>
           <li><a href="destinations.html">Destinations</a></li>
           <li><a href="index.html#reviews">Reviews</a></li>
-          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="index.html#gallery">Gallery</a></li>
         </ul>
 
         <div class="nav-icons">
@@ -116,13 +83,13 @@
   <!-- MOBILE DRAWER -->
   <div class="scrim" id="scrim"></div>
   <div class="mobile-drawer" id="mobileDrawer">
-    <button class="close-drawer" id="closeDrawer">&times;</button>
-    <a href="#" class="active">Home</a>
-    <a href="#about">About Us</a>
+    <button type="button" class="close-drawer" id="closeDrawer" aria-label="Close menu">&times;</button>
+    <a href="index.html">Home</a>
+    <a href="index.html#about">About Us</a>
     <a href="tours.html">Tours</a>
     <a href="destinations.html">Destinations</a>
     <a href="index.html#reviews">Reviews</a>
-    <a href="#gallery">Gallery</a>
+    <a href="index.html#gallery">Gallery</a>
   </div>
 
 
@@ -137,6 +104,7 @@
     </div>
   </section>
 
+  <!-- =============================================
        FOOTER
        ============================================= -->
   <footer class="bg-pearl pt-16 md:pt-24 pb-10 md:pb-12 px-5 md:px-6 border-t border-line">
@@ -151,7 +119,7 @@
           <ul class="space-y-3 md:space-y-4 text-sm text-muted font-light">
             <li><a href="destinations.html" class="hover:text-ink transition-colors">Destinations</a></li>
             <li><a href="tours.html" class="hover:text-ink transition-colors">Tour Packages</a></li>
-            <li><a href="#gallery" class="hover:text-ink transition-colors">Gallery</a></li>
+            <li><a href="index.html#gallery" class="hover:text-ink transition-colors">Gallery</a></li>
           </ul>
         </div>
         <div>
@@ -159,13 +127,12 @@
           <ul class="space-y-3 md:space-y-4 text-sm text-muted font-light">
             <li><a href="index.html#about" class="hover:text-ink transition-colors">About Us</a></li>
             <li><a href="index.html#reviews" class="hover:text-ink transition-colors">Reviews</a></li>
-            <li><a href="#" class="hover:text-ink transition-colors">Contact</a></li>
+            <li><a href="https://wa.me/94770266988" target="_blank" rel="noopener noreferrer" class="hover:text-ink transition-colors">Contact</a></li>
           </ul>
         </div>
         <div>
           <h4 class="text-xs uppercase tracking-widest text-ink font-semibold mb-4 md:mb-6">Follow Us</h4>
           <div class="flex space-x-5 text-muted">
-            <a href="#" class="hover:text-gold transition-colors"><i class="fa-brands fa-instagram text-xl"></i></a>
             <a href="https://web.facebook.com/people/Royal-Kandy-Tours/100054545675804/?_rdc=1&_rdr#" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="hover:text-gold transition-colors"><i class="fa-brands fa-facebook text-xl"></i></a>
             <a href="https://wa.me/94770266988" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" class="hover:text-gold transition-colors"><i class="fa-brands fa-whatsapp text-xl"></i></a>
           </div>
@@ -174,8 +141,8 @@
       <div class="border-t border-line pt-8 md:pt-12 flex flex-col md:flex-row justify-between items-center text-xs text-muted font-light gap-4">
         <p>&copy; 2026 Royal Kandy Tours, Kandy, Sri Lanka. All rights reserved.</p>
         <div class="flex space-x-6 md:space-x-8">
-          <a href="#" class="hover:text-ink">Privacy Policy</a>
-          <a href="#" class="hover:text-ink">Terms of Service</a>
+          <a href="privacy.html" class="hover:text-ink">Privacy Policy</a>
+          <a href="terms.html" class="hover:text-ink">Terms of Service</a>
           <a href="cookies.html" class="hover:text-ink">Cookie Policy</a>
         </div>
       </div>

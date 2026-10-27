@@ -2,35 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <link rel="icon" type="image/png" href="assets/logo.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/favicon-192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>5-Days Round Tour: Sigiriya, Minneriya & Kandy | Royal Kandy Tours</title>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        ink: '#2C2B2A',
-                        muted: '#706E6B',
-                        line: '#EADCC9',
-                        sand: '#F5F2EB',
-                        pearl: '#FAF9F6',
-                        gold: '#D4AF37',
-                    },
-                    fontFamily: {
-                        serif: ['"Cormorant Garamond"', 'serif'],
-                        sans: ['Inter', 'sans-serif'],
-                    },
-                }
-            }
-        }
-    </script>
-    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
-    <script src="js/fontawesome-config.js" defer></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
     <script src="js/site.js" defer></script>
 
     <!-- SEO & Social Sharing -->
@@ -48,6 +27,7 @@
     <meta name="twitter:title" content="5-Day Round Tour | Royal Kandy Tours">
     <meta name="twitter:description" content="5 days exploring Sigiriya, Polonnaruwa, Minneriya Safari, Kandy and Pinnawala on a private tour with airport transfers.">
     <meta name="twitter:image" content="https://www.royalkandytours.com/assets/selfie-with-chinese-tourists.avif">
+    <link rel="stylesheet" href="css/tailwind.css">
 </head>
 <body class="antialiased bg-pearl text-ink font-sans">
 
@@ -76,7 +56,7 @@
     <nav class="navbar" id="navbar">
       <div class="nav-inner">
         <a href="index.html" class="logo">
-          <img src="assets/logo.png" alt="Royal Kandy Tours">
+          <img src="assets/logo-royal-kandy-tours.png" alt="Royal Kandy Tours" width="520" height="264">
         </a>
 
         <ul class="nav-links">
@@ -101,7 +81,7 @@
   <!-- MOBILE DRAWER -->
   <div class="scrim" id="scrim"></div>
   <div class="mobile-drawer" id="mobileDrawer">
-    <button class="close-drawer" id="closeDrawer">&times;</button>
+    <button type="button" class="close-drawer" id="closeDrawer" aria-label="Close menu">&times;</button>
 
     <a href="index.html">Home</a>
     <a href="index.html#about">About Us</a>
@@ -164,8 +144,8 @@
               <span class="serif text-xl font-bold text-ink">Luxury AC Vehicle</span>
           </div>
           <div class="border-r border-line last:border-r-0 pr-4">
-              <span class="block text-[10px] uppercase tracking-widest text-muted font-semibold">Meals Included</span>
-              <span class="serif text-xl font-bold text-ink">Daily Breakfast & Dinner</span>
+              <span class="block text-[10px] uppercase tracking-widest text-muted font-semibold">Airport Transfers</span>
+              <span class="serif text-xl font-bold text-ink">Pickup &amp; Drop-off</span>
           </div>
           <div class="border-r border-line last:border-r-0 pr-4">
               <span class="block text-[10px] uppercase tracking-widest text-muted font-semibold">Guide</span>
@@ -173,7 +153,7 @@
           </div>
           <div>
               <span class="block text-[10px] uppercase tracking-widest text-muted font-semibold">Price From</span>
-              <span class="serif text-xl font-bold text-gold">$500 <span class="text-xs font-normal text-muted">/ person</span></span>
+              <span class="serif text-xl font-bold text-gold">$500 <span class="text-xs font-normal text-muted">/ 3 person</span></span>
           </div>
       </div>
   </section>
@@ -268,9 +248,6 @@
                           <div class="grid grid-cols-1 md:grid-cols-12 gap-6">
                               <div class="md:col-span-8 space-y-3 text-sm text-muted font-light leading-relaxed">
                                   <p>Warm welcome by Nalinda at Colombo Airport. Travel directly to Sigiriya in your private air-conditioned vehicle. Evening relaxation.</p>
-                                  <div class="flex items-center space-x-6 text-xs text-ink pt-2 font-medium">
-                                      <span><i class="fa-solid fa-utensils text-gold mr-1"></i> Meals: Dinner</span>
-                                  </div>
                               </div>
                               <div class="md:col-span-4 h-36 rounded-2xl overflow-hidden">
                                   <img src="assets/Anuradhapura-Sri-Lanka-Cultural-Triangle.jpeg" alt="Sigiriya" class="w-full h-full object-cover">
@@ -290,9 +267,6 @@
                           <div class="grid grid-cols-1 md:grid-cols-12 gap-6">
                               <div class="md:col-span-8 space-y-3 text-sm text-muted font-light leading-relaxed">
                                   <p>Climb the famous Sigiriya Rock Fortress in the morning. Later explore the medieval capital of Polonnaruwa, seeing the colossal Gal Vihara rock-carved Buddha statues.</p>
-                                  <div class="flex items-center space-x-6 text-xs text-ink pt-2 font-medium">
-                                      <span><i class="fa-solid fa-utensils text-gold mr-1"></i> Meals: Breakfast, Dinner</span>
-                                  </div>
                               </div>
                               <div class="md:col-span-4 h-36 rounded-2xl overflow-hidden">
                                   <img src="assets/Sri-Lanka-natural-landscape-view.jpg" alt="Polonnaruwa ruins" class="w-full h-full object-cover">
@@ -312,9 +286,6 @@
                           <div class="grid grid-cols-1 md:grid-cols-12 gap-6">
                               <div class="md:col-span-8 space-y-3 text-sm text-muted font-light leading-relaxed">
                                   <p>Visit Dambulla Golden Cave Temple. In the afternoon, jump into a 4x4 open jeep for an unforgettable safari in Minneriya National Park to spot herds of wild elephants gathering by the lake reservoir.</p>
-                                  <div class="flex items-center space-x-6 text-xs text-ink pt-2 font-medium">
-                                      <span><i class="fa-solid fa-utensils text-gold mr-1"></i> Meals: Breakfast, Dinner</span>
-                                  </div>
                               </div>
                               <div class="md:col-span-4 h-36 rounded-2xl overflow-hidden">
                                   <img src="assets/baby-elephant-pinnawala.jpg" alt="Wild elephant safari" class="w-full h-full object-cover">
@@ -334,9 +305,6 @@
                           <div class="grid grid-cols-1 md:grid-cols-12 gap-6">
                               <div class="md:col-span-8 space-y-3 text-sm text-muted font-light leading-relaxed">
                                   <p>Scenic drive to Kandy via Matale spice gardens. Visit the Temple of the Sacred Tooth Relic, stroll along Kandy Lake, and enjoy an evening Kandyan cultural show.</p>
-                                  <div class="flex items-center space-x-6 text-xs text-ink pt-2 font-medium">
-                                      <span><i class="fa-solid fa-utensils text-gold mr-1"></i> Meals: Breakfast, Dinner</span>
-                                  </div>
                               </div>
                               <div class="md:col-span-4 h-36 rounded-2xl overflow-hidden">
                                   <img src="assets/kandy-lake.jpg" alt="Kandy Temple of Tooth" class="w-full h-full object-cover">
@@ -358,7 +326,6 @@
                                   <p>Morning tour of Royal Botanical Gardens of Peradeniya and stop at Pinnawala Elephant Sanctuary to watch elephants river bathing. Direct transfer to Colombo Airport for your departure flight.</p>
                                   <div class="flex items-center space-x-6 text-xs text-ink pt-2 font-medium">
                                       <span><i class="fa-solid fa-plane text-gold mr-1"></i> Airport Drop-off Included</span>
-                                      <span><i class="fa-solid fa-utensils text-gold mr-1"></i> Meals: Breakfast</span>
                                   </div>
                               </div>
                               <div class="md:col-span-4 h-36 rounded-2xl overflow-hidden">
@@ -370,16 +337,40 @@
                   </div>
               </div>
 
-              <!-- INCLUSIONS -->
-              <div class="bg-white rounded-3xl p-8 border border-line shadow-sm">
-                  <h3 class="serif text-3xl text-ink mb-6">What's Included</h3>
-                  <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm text-muted font-light">
-                      <div class="flex items-center space-x-3"><i class="fa-solid fa-circle-check text-emerald-600"></i> <span>4 Nights Hotel Accommodation</span></div>
-                      <div class="flex items-center space-x-3"><i class="fa-solid fa-circle-check text-emerald-600"></i> <span>Daily Breakfast & Dinners</span></div>
-                      <div class="flex items-center space-x-3"><i class="fa-solid fa-circle-check text-emerald-600"></i> <span>Private AC Vehicle & Unlimited Mileage</span></div>
-                      <div class="flex items-center space-x-3"><i class="fa-solid fa-circle-check text-emerald-600"></i> <span>Dedicated Chauffeur-Guide (Nalinda)</span></div>
-                      <div class="flex items-center space-x-3"><i class="fa-solid fa-circle-check text-emerald-600"></i> <span>Minneriya 4x4 Jeep Safari</span></div>
-                      <div class="flex items-center space-x-3"><i class="fa-solid fa-circle-check text-emerald-600"></i> <span>Airport Pickup & Drop-off Transfers</span></div>
+              <!-- INCLUSIONS & EXCLUSIONS -->
+              <div class="bg-white rounded-3xl p-8 md:p-10 border border-line shadow-sm">
+                  <h3 class="serif text-3xl text-ink mb-8">What's Included &amp; Excluded</h3>
+                  <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                      <!-- INCLUDED -->
+                      <div class="space-y-4">
+                          <h4 class="text-xs font-bold uppercase tracking-widest text-emerald-700 bg-emerald-50 px-4 py-2 rounded-full inline-block">
+                              <i class="fa-solid fa-circle-check mr-2"></i> What's Included
+                          </h4>
+                          <ul class="space-y-3 text-sm text-muted font-light">
+                              <li class="flex items-start"><i class="fa-solid fa-check text-emerald-600 mt-1 mr-3 text-xs"></i> Private AC vehicle with unlimited mileage</li>
+                              <li class="flex items-start"><i class="fa-solid fa-check text-emerald-600 mt-1 mr-3 text-xs"></i> Dedicated English-speaking chauffeur-guide (Nalinda)</li>
+                              <li class="flex items-start"><i class="fa-solid fa-check text-emerald-600 mt-1 mr-3 text-xs"></i> Driver &amp; guide accommodation</li>
+                              <li class="flex items-start"><i class="fa-solid fa-check text-emerald-600 mt-1 mr-3 text-xs"></i> Fuel, highway tolls &amp; parking</li>
+                              <li class="flex items-start"><i class="fa-solid fa-check text-emerald-600 mt-1 mr-3 text-xs"></i> Airport pickup &amp; drop-off transfers</li>
+                          </ul>
+                      </div>
+
+                      <!-- EXCLUDED -->
+                      <div class="space-y-4">
+                          <h4 class="text-xs font-bold uppercase tracking-widest text-rose-700 bg-rose-50 px-4 py-2 rounded-full inline-block">
+                              <i class="fa-solid fa-circle-xmark mr-2"></i> What's Excluded
+                          </h4>
+                          <ul class="space-y-3 text-sm text-muted font-light">
+                              <li class="flex items-start"><i class="fa-solid fa-xmark text-rose-500 mt-1 mr-3 text-xs"></i> Hotel accommodation</li>
+                              <li class="flex items-start"><i class="fa-solid fa-xmark text-rose-500 mt-1 mr-3 text-xs"></i> Meals (breakfast, lunch &amp; dinner)</li>
+                              <li class="flex items-start"><i class="fa-solid fa-xmark text-rose-500 mt-1 mr-3 text-xs"></i> Entrance tickets to sites &amp; train tickets</li>
+                              <li class="flex items-start"><i class="fa-solid fa-xmark text-rose-500 mt-1 mr-3 text-xs"></i> Safari jeeps &amp; national park fees</li>
+                              <li class="flex items-start"><i class="fa-solid fa-xmark text-rose-500 mt-1 mr-3 text-xs"></i> Optional activities (e.g. whale watching)</li>
+                              <li class="flex items-start"><i class="fa-solid fa-xmark text-rose-500 mt-1 mr-3 text-xs"></i> International airfare &amp; visa fees</li>
+                              <li class="flex items-start"><i class="fa-solid fa-xmark text-rose-500 mt-1 mr-3 text-xs"></i> Personal expenses, souvenirs &amp; drinks</li>
+                              <li class="flex items-start"><i class="fa-solid fa-xmark text-rose-500 mt-1 mr-3 text-xs"></i> Gratuities / tips for your guide</li>
+                          </ul>
+                      </div>
                   </div>
               </div>
 
@@ -395,7 +386,7 @@
                               <span class="text-xs uppercase tracking-widest text-muted font-medium block mb-1">Starting Price</span>
                               <div class="flex items-baseline space-x-1">
                                   <span class="serif text-4xl font-bold text-ink">$500</span>
-                                  <span class="text-xs text-muted font-light">/ for 3 people</span>
+                                  <span class="text-xs text-muted font-light">/ 3 person</span>
                               </div>
                           </div>
                           <span class="bg-emerald-50 text-emerald-700 text-[10px] font-bold uppercase tracking-wider px-3 py-1 rounded-full">Great Value</span>
@@ -447,7 +438,7 @@
                           <div>
                               <h5 class="text-sm font-medium text-ink group-hover:text-gold transition-colors">10-Day Royal Ceylon</h5>
                               <p class="text-xs text-muted">Complete Island Expedition</p>
-                              <span class="text-xs font-bold text-gold">$860 / person</span>
+                              <span class="text-xs font-bold text-gold">$860 / 3 person</span>
                           </div>
                       </a>
 
@@ -458,7 +449,7 @@
                           <div>
                               <h5 class="text-sm font-medium text-ink group-hover:text-gold transition-colors">7-Day Highlights Tour</h5>
                               <p class="text-xs text-muted">Sigiriya, Kandy & Ella</p>
-                              <span class="text-xs font-bold text-gold">$700 / person</span>
+                              <span class="text-xs font-bold text-gold">$700 / 3 person</span>
                           </div>
                       </a>
                   </div>
@@ -496,7 +487,6 @@
               <div>
                   <h4 class="text-xs uppercase tracking-widest text-ink font-semibold mb-6">Follow Us</h4>
                   <div class="flex justify-center md:justify-start space-x-6 text-muted">
-                      <a href="#" class="hover:text-gold transition-colors"><i class="fa-brands fa-instagram text-xl"></i></a>
                       <a href="https://web.facebook.com/people/Royal-Kandy-Tours/100054545675804/?_rdc=1&_rdr#" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="hover:text-gold transition-colors"><i class="fa-brands fa-facebook text-xl"></i></a>
                       <a href="https://wa.me/94770266988" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" class="hover:text-gold transition-colors"><i class="fa-brands fa-whatsapp text-xl"></i></a>
                   </div>
@@ -505,8 +495,8 @@
           <div class="border-t border-line pt-12 flex flex-col md:flex-row justify-between items-center text-xs text-muted font-light">
               <p>&copy; 2026 Royal Kandy Tours, Kandy, Sri Lanka. All rights reserved.</p>
               <div class="flex space-x-8 mt-6 md:mt-0">
-                  <a href="#" class="hover:text-ink">Privacy Policy</a>
-                  <a href="#" class="hover:text-ink">Terms of Service</a>
+                  <a href="privacy.html" class="hover:text-ink">Privacy Policy</a>
+                  <a href="terms.html" class="hover:text-ink">Terms of Service</a>
           <a href="cookies.html" class="hover:text-ink">Cookie Policy</a>
               </div>
           </div>
