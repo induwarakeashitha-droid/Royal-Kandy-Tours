@@ -206,9 +206,8 @@
     transition:transform 0.4s ease;
     padding:2.2rem 2rem;
     display:flex;flex-direction:column;gap:1.6rem;
-    box-shadow:-10px 0 30px rgba(0,0,0,0.12);
   }
-  .mobile-drawer.open{transform:translateX(0);}
+  .mobile-drawer.open{transform:translateX(0);box-shadow:-10px 0 30px rgba(0,0,0,0.12);}
   .mobile-drawer .drawer-logo{
     align-self:center;
     width:min(200px,100%);
@@ -609,6 +608,7 @@ img {
   position: absolute;
   top: 45%;
   left: 50%;
+  width: min(92vw, 900px);
   transform: translate(-50%, -50%);
   z-index: 2;
   text-align: center;
@@ -618,7 +618,7 @@ img {
 .rkt-hero__brand-icon {
   width: clamp(120px, 14vw, 180px);
   height: auto;
-  margin-bottom: 14px;
+  margin: 0 auto 14px;
   filter: drop-shadow(0 2px 12px rgba(0, 0, 0, 0.6));
 }
 
@@ -974,12 +974,8 @@ img {
   }
 }
 
-/* Medium screens: events card smaller */
+/* Medium screens */
 @media (min-width: 641px) and (max-width: 1024px) {
-  .rkt-events-card {
-    width: clamp(250px, 30vw, 290px);
-  }
-
   .rkt-hero__ticker span {
     font-size: clamp(2rem, 5vw, 3.5rem);
   }
@@ -1005,232 +1001,4 @@ img {
   white-space: nowrap;
 }
 
-/* =============================================
-   UPCOMING EVENTS CARD
-   Solid pearl card in the site palette:
-   pearl #FAF9F6, sand #F5F2EB, line #EADCC9,
-   ink #2C2B2A, muted #706E6B, gold #D4AF37
-   ============================================= */
-
-.rkt-events-card {
-  position: absolute;
-  z-index: 10;
-  right: clamp(1.5rem, 4vw, 3.5rem);
-  bottom: clamp(140px, 20%, 240px);
-  width: clamp(250px, 23vw, 320px);
-  padding: 20px 8px 10px;
-  background: #FAF9F6;
-  border: 1px solid #EADCC9;
-  border-radius: 24px;
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.10);
-  animation: rktFadeUp 1s 0.7s ease-out both;
-}
-
-/* Header */
-.rkt-events-card__header {
-  text-align: center;
-  padding: 0 16px 12px;
-}
-
-.rkt-events-card__eyebrow {
-  display: block;
-  font-family: 'Inter', sans-serif;
-  font-size: 0.58rem;
-  font-weight: 600;
-  letter-spacing: 0.3em;
-  text-transform: uppercase;
-  color: #D4AF37;
-}
-
-.rkt-events-card__title {
-  margin: 4px 0 0;
-  font-family: 'Cormorant Garamond', serif;
-  font-weight: 500;
-  font-size: 1.75rem;
-  line-height: 1.1;
-  color: #2C2B2A;
-}
-
-.rkt-events-card__ornament {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-  margin-top: 10px;
-}
-
-.rkt-events-card__ornament i {
-  display: block;
-  width: 48px;
-  height: 1px;
-  background: #EADCC9;
-}
-
-.rkt-events-card__ornament b {
-  width: 5px;
-  height: 5px;
-  background: #D4AF37;
-  transform: rotate(45deg);
-}
-
-/* Events list */
-.rkt-events-card__list {
-  list-style: none;
-  margin: 0;
-  padding: 0 4px;
-}
-
-.rkt-event[hidden] {
-  display: none;
-}
-
-/* Divider between visible events */
-.rkt-event:not([hidden]) ~ .rkt-event:not([hidden]) {
-  border-top: 1px solid #EADCC9;
-}
-
-.rkt-event a {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  padding: 10px 12px;
-  border-radius: 14px;
-  transition: background 0.25s ease;
-}
-
-.rkt-event a:hover,
-.rkt-event a:focus-visible {
-  background: #F5F2EB;
-}
-
-/* Date */
-.rkt-event__date {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  min-width: 34px;
-  padding-right: 12px;
-  border-right: 1px solid #EADCC9;
-  flex-shrink: 0;
-}
-
-.rkt-event__day {
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 1.65rem;
-  font-weight: 600;
-  line-height: 1;
-  color: #D4AF37;
-}
-
-.rkt-event__month {
-  margin-top: 3px;
-  font-family: 'Inter', sans-serif;
-  font-size: 0.55rem;
-  font-weight: 600;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
-  color: #706E6B;
-}
-
-/* Event info */
-.rkt-event__info {
-  flex: 1;
-  min-width: 0;
-  display: flex;
-  flex-direction: column;
-  gap: 3px;
-}
-
-.rkt-event__top {
-  display: flex;
-  align-items: baseline;
-  justify-content: space-between;
-  gap: 8px;
-}
-
-.rkt-event__name {
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 1.1rem;
-  font-weight: 600;
-  line-height: 1.15;
-  color: #2C2B2A;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  transition: color 0.25s ease;
-}
-
-.rkt-event a:hover .rkt-event__name,
-.rkt-event a:focus-visible .rkt-event__name {
-  color: #D4AF37;
-}
-
-.rkt-event__when {
-  flex-shrink: 0;
-  font-family: 'Inter', sans-serif;
-  font-size: 0.5rem;
-  font-weight: 600;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: #D4AF37;
-  white-space: nowrap;
-}
-
-.rkt-event__when:empty {
-  display: none;
-}
-
-/* Today / tomorrow */
-.rkt-event.is-soon .rkt-event__when {
-  padding: 3px 7px;
-  border-radius: 999px;
-  background: #D4AF37;
-  color: #ffffff;
-}
-
-.rkt-event__meta {
-  font-family: 'Inter', sans-serif;
-  font-size: 0.62rem;
-  font-weight: 300;
-  color: #706E6B;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-/* CTA footer — matches the site's gold "Book Now" buttons */
-.rkt-events-card__cta {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-  margin: 10px 10px 6px;
-  padding: 12px 14px;
-  border-radius: 999px;
-  font-family: 'Inter', sans-serif;
-  font-size: 0.62rem;
-  font-weight: 700;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  color: #ffffff;
-  text-decoration: none;
-  background: #D4AF37;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-  transition: background 0.3s ease;
-}
-
-.rkt-events-card__cta:hover {
-  background: #2C2B2A;
-}
-
-.rkt-events-card__cta svg {
-  stroke: currentColor;
-}
-
-/* Hide card on small mobile */
-@media (max-width: 640px) {
-  .rkt-events-card {
-    display: none;
-  }
-}
 
