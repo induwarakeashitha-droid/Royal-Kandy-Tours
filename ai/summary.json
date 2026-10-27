@@ -1,0 +1,21 @@
+{
+  "name": "Royal Kandy Tours",
+  "description": "Private driver-guide tours of Sri Lanka, based in Kandy. Every itinerary is planned by hand with chauffeur-guide Nalinda, travelling in a private air-conditioned vehicle.",
+  "url": "https://www.royalkandytours.com",
+  "type": "TravelAgency",
+  "location": "Kandy, Sri Lanka",
+  "areaServed": "Sri Lanka",
+  "languages": ["en"],
+  "contact": {
+    "phone": "+94770266988",
+    "whatsapp": "https://wa.me/94770266988",
+    "email": "info@royalkandytours.com"
+  },
+  "keyPages": {
+    "tours": "https://www.royalkandytours.com/tours.html",
+    "destinations": "https://www.royalkandytours.com/destinations.html",
+    "booking": "https://www.royalkandytours.com/book.html"
+  },
+  "llms": "https://www.royalkandytours.com/llms.txt",
+  "lastModified": "2026-10-27"
+}

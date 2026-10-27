@@ -1,0 +1,15 @@
+# ai.txt — Royal Kandy Tours (https://www.royalkandytours.com)
+# Preferences for AI systems. Crawler access rules are in /robots.txt.
+
+User-Agent: *
+Allow: /
+
+# Plain-text site summary for AI assistants
+Summary: https://www.royalkandytours.com/llms.txt
+
+# Machine-readable details
+Site-Summary: https://www.royalkandytours.com/ai/summary.json
+FAQ: https://www.royalkandytours.com/ai/faq.json
+Services: https://www.royalkandytours.com/ai/service.json
+
+Contact: info@royalkandytours.com

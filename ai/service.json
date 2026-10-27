@@ -1,0 +1,55 @@
+{
+  "name": "Royal Kandy Tours",
+  "service": "Private chauffeur-guided tours of Sri Lanka",
+  "provider": {
+    "location": "Kandy, Sri Lanka",
+    "guide": "Nalinda, English-speaking chauffeur-guide"
+  },
+  "currency": "USD",
+  "priceBasis": "Starting price for a private tour for 3 people",
+  "packages": [
+    {
+      "name": "The Royal Ceylon Heritage Tour",
+      "durationDays": 10,
+      "priceFrom": 860,
+      "highlights": ["Sigiriya", "Dambulla", "Kandy", "Ella train", "Yala safari", "Mirissa", "Galle Fort"],
+      "url": "https://www.royalkandytours.com/tour-detail.html"
+    },
+    {
+      "name": "7-Day Highlights Tour",
+      "durationDays": 7,
+      "priceFrom": 700,
+      "highlights": ["Sigiriya", "Dambulla", "Kandy", "Kandy-Ella train", "Nine Arch Bridge", "Little Adam's Peak", "Nuwara Eliya"],
+      "url": "https://www.royalkandytours.com/tour-7-day-highlights.html"
+    },
+    {
+      "name": "5-Days Round Tour",
+      "durationDays": 5,
+      "priceFrom": 500,
+      "highlights": ["Sigiriya", "Polonnaruwa", "Minneriya safari", "Dambulla", "Kandy", "Pinnawala"],
+      "url": "https://www.royalkandytours.com/tour-5-day-round.html"
+    }
+  ],
+  "included": [
+    "Private AC vehicle with unlimited mileage",
+    "English-speaking chauffeur-guide",
+    "Driver and guide accommodation",
+    "Fuel, highway tolls and parking",
+    "Airport pickup and drop-off"
+  ],
+  "excluded": [
+    "Hotel accommodation",
+    "Meals",
+    "Entrance and train tickets",
+    "Safari jeeps and national park fees",
+    "Optional activities",
+    "International flights and visas",
+    "Personal expenses",
+    "Tips"
+  ],
+  "booking": {
+    "url": "https://www.royalkandytours.com/book.html",
+    "method": "Booking request sent via WhatsApp; confirmed in writing",
+    "whatsapp": "https://wa.me/94770266988"
+  }
+}
